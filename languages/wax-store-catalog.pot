@@ -2,9 +2,9 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Wax Store Catalog 0.28.0\n"
+"Project-Id-Version: Wax Store Catalog 0.28.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wax-store-catalog\n"
-"POT-Creation-Date: 2026-10-25T11:04:05+00:00\n"
+"POT-Creation-Date: 2026-10-25T16:43:22+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,11 @@ msgstr ""
 msgid "Wax Store Catalog"
 msgstr ""
 
+#. Plugin URI of the plugin
+#: wax-store-catalog.php
+msgid "https://github.com/ds-web73/wax-store-catalog"
+msgstr ""
+
 #. Description of the plugin
 #: wax-store-catalog.php
 msgid ""
@@ -30,6 +35,11 @@ msgstr ""
 #. Author of the plugin
 #: wax-store-catalog.php
 msgid "DS-Web"
+msgstr ""
+
+#. Author URI of the plugin
+#: wax-store-catalog.php
+msgid "https://github.com/ds-web73"
 msgstr ""
 
 #: src/Admin/CoversPage.php:41 src/Admin/CoversPage.php:42
@@ -593,6 +603,12 @@ msgstr ""
 
 #: src/Admin/LabelsPage.php:308
 msgid "No copy in stock matches this selection."
+msgstr ""
+
+#: src/Admin/LabelsPage.php:335
+msgid ""
+"QR codes cannot be drawn: the file assets/lib/qrcode.js of the plugin is "
+"missing. Reinstall the plugin."
 msgstr ""
 
 #: src/Admin/Menu.php:48

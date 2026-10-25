@@ -14,6 +14,10 @@ msgid "Wax Store Catalog"
 msgstr "Wax Store Catalog"
 
 #: wax-store-catalog.php
+msgid "https://github.com/ds-web73/wax-store-catalog"
+msgstr "https://github.com/ds-web73/wax-store-catalog"
+
+#: wax-store-catalog.php
 msgid ""
 "Record shop catalog for vinyl, CD, cassettes and merchandise: releases, "
 "formats, labels, conditions and structured data. Companion plugin of the Wax"
@@ -26,6 +30,10 @@ msgstr ""
 #: wax-store-catalog.php
 msgid "DS-Web"
 msgstr "DS-Web"
+
+#: wax-store-catalog.php
+msgid "https://github.com/ds-web73"
+msgstr "https://github.com/ds-web73"
 
 #: src/Admin/CoversPage.php:41 src/Admin/CoversPage.php:42
 #: src/Admin/CoversPage.php:85 src/Admin/Menu.php:50
@@ -636,6 +644,14 @@ msgstr "Imprimer"
 #: src/Admin/LabelsPage.php:308
 msgid "No copy in stock matches this selection."
 msgstr "Aucun exemplaire en stock ne correspond à cette sélection."
+
+#: src/Admin/LabelsPage.php:335
+msgid ""
+"QR codes cannot be drawn: the file assets/lib/qrcode.js of the plugin is "
+"missing. Reinstall the plugin."
+msgstr ""
+"Les QR codes ne peuvent pas être dessinés : le fichier assets/lib/qrcode.js "
+"de l’extension est manquant. Réinstallez l’extension."
 
 #: src/Admin/Menu.php:48
 msgid "CSV import"

@@ -329,10 +329,10 @@ body { margin: 0; font-family: "Arial Narrow", Arial, sans-serif; color: #000; b
 </div>
 <?php endforeach; ?>
 <?php
-wp_register_script( 'waxsc-qrcode', $url . 'vendor/qrcode.js', array(), VERSION, true );
+wp_register_script( 'waxsc-qrcode', $url . 'lib/qrcode.js', array(), VERSION, true );
 wp_add_inline_script(
 	'waxsc-qrcode',
-	"document.querySelectorAll( '[data-qr]' ).forEach( function ( box ) { var qr = qrcode( 0, 'M' ); qr.addData( box.getAttribute( 'data-qr' ) ); qr.make(); box.innerHTML = qr.createSvgTag( { cellSize: 2, margin: 0, scalable: true } ); } );"
+	"if ( typeof qrcode !== 'function' ) { var waxscBar = document.querySelector( '.toolbar span' ); if ( waxscBar ) { waxscBar.textContent = " . wp_json_encode( __( 'QR codes cannot be drawn: the file assets/lib/qrcode.js of the plugin is missing. Reinstall the plugin.', 'wax-store-catalog' ) ) . "; } } else { document.querySelectorAll( '[data-qr]' ).forEach( function ( box ) { var qr = qrcode( 0, 'M' ); qr.addData( box.getAttribute( 'data-qr' ) ); qr.make(); box.innerHTML = qr.createSvgTag( { cellSize: 2, margin: 0, scalable: true } ); } ); }"
 );
 wp_print_scripts( array( 'waxsc-qrcode' ) );
 ?>
