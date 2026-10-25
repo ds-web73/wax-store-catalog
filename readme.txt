@@ -1,10 +1,10 @@
 === Wax Store Catalog ===
-Contributors: dsweb
+Contributors: dsweb73
 Tags: record store, vinyl, music, catalog, ecommerce
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.28.2
+Stable tag: 0.28.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,6 +78,9 @@ This plugin connects to external services only when you start the Automatic cove
 * Cover Art Archive (coverartarchive.org), hosted by the Internet Archive: the front cover of the matched release is downloaded and added to your media library. Terms of use: https://archive.org/about/terms, privacy policy: https://archive.org/about/terms#privacy. Covers remain the property of their respective rights holders.
 
 == Changelog ==
+
+= 0.28.3 =
+* WordPress.org contributor.
 
 = 0.28.2 =
 * QR code library moved to assets/lib (folders named vendor are often ignored by Git and some deployment tools); the label sheet says so if the library is missing.
