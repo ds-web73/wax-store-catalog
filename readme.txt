@@ -4,7 +4,7 @@ Tags: record store, vinyl, music, catalog, ecommerce
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.28.1
+Stable tag: 0.28.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,7 +68,7 @@ No. The showcase mode lets visitors reserve copies without online payment. Insta
 
 == Third-party libraries ==
 
-* qrcode-generator 2.0.4 by Kazuhiko Arase, MIT licence, https://github.com/kazuhikoarase/qrcode-generator (assets/vendor/qrcode.js). QR codes are generated in the browser; no external service is called.
+* qrcode-generator 2.0.4 by Kazuhiko Arase, MIT licence, https://github.com/kazuhikoarase/qrcode-generator (assets/lib/qrcode.js). QR codes are generated in the browser; no external service is called.
 
 == External services ==
 
@@ -78,6 +78,9 @@ This plugin connects to external services only when you start the Automatic cove
 * Cover Art Archive (coverartarchive.org), hosted by the Internet Archive: the front cover of the matched release is downloaded and added to your media library. Terms of use: https://archive.org/about/terms, privacy policy: https://archive.org/about/terms#privacy. Covers remain the property of their respective rights holders.
 
 == Changelog ==
+
+= 0.28.2 =
+* QR code library moved to assets/lib (folders named vendor are often ignored by Git and some deployment tools); the label sheet says so if the library is missing.
 
 = 0.28.1 =
 * Plugin and author addresses.
