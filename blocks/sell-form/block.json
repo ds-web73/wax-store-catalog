@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "waxsc/sell-form",
+	"title": "Sell us your records",
+	"category": "widgets",
+	"icon": "upload",
+	"description": "Lets visitors offer you their records or a collection, with photos and a list.",
+	"textdomain": "wax-store-catalog",
+	"attributes": {},
+	"supports": {
+		"html": false,
+		"multiple": false,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		}
+	},
+	"editorScript": "waxsc-blocks-editor",
+	"style": "waxsc-blocks",
+	"render": "file:./render.php"
+}

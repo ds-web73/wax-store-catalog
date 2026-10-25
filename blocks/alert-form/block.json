@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "waxsc/alert-form",
+	"title": "Notify me",
+	"category": "widgets",
+	"icon": "bell",
+	"description": "Lets visitors get an e-mail when a record is back in stock, or when an artist or a label has new arrivals.",
+	"textdomain": "wax-store-catalog",
+	"attributes": {},
+	"supports": {
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		}
+	},
+	"editorScript": "waxsc-blocks-editor",
+	"style": "waxsc-blocks",
+	"render": "file:./render.php"
+}

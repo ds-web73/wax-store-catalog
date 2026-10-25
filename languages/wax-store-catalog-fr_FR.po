@@ -1,0 +1,3325 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wax-store-catalog\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Domain: wax-store-catalog\n"
+
+#: wax-store-catalog.php
+msgid "Wax Store Catalog"
+msgstr "Wax Store Catalog"
+
+#: wax-store-catalog.php
+msgid ""
+"Record shop catalog for vinyl, CD, cassettes and merchandise: releases, "
+"formats, labels, conditions and structured data. Companion plugin of the Wax"
+" Store theme, works with any theme."
+msgstr ""
+"Catalogue de disquaire pour vinyles, CD, cassettes et merchandising : "
+"références, formats, labels, états et données structurées. Extension "
+"compagnon du thème Wax Store, compatible avec tous les thèmes."
+
+#: wax-store-catalog.php
+msgid "DS-Web"
+msgstr "DS-Web"
+
+#: src/Admin/CoversPage.php:41 src/Admin/CoversPage.php:42
+#: src/Admin/CoversPage.php:85 src/Admin/Menu.php:50
+msgid "Automatic covers"
+msgstr "Pochettes automatiques"
+
+#: src/Admin/CoversPage.php:66
+msgid "%d releases left"
+msgstr "%d références restantes"
+
+#: src/Admin/CoversPage.php:67 src/Admin/PhotoImportPage.php:70
+msgid "Finished."
+msgstr "Terminé."
+
+#: src/Admin/CoversPage.php:68
+msgid "Stopped. Start again to resume."
+msgstr "Arrêté. Relancez pour reprendre."
+
+#: src/Admin/CoversPage.php:70
+msgid "Covers: %1$d, from another edition: %2$d, not found: %3$d"
+msgstr "Pochettes : %1$d, d’une autre édition : %2$d, introuvables : %3$d"
+
+#: src/Admin/CoversPage.php:86
+msgid ""
+"Looks for the cover of releases without photo in the Cover Art Archive, the "
+"open cover database of MusicBrainz and the Internet Archive. The pressing is"
+" identified by its Discogs ID, then its barcode, then its artist and catalog"
+" number."
+msgstr ""
+"Cherche la pochette des références sans photo dans le Cover Art Archive, la "
+"base ouverte de pochettes de MusicBrainz et de l’Internet Archive. Le "
+"pressage est identifié par son identifiant Discogs, puis son code-barre, "
+"puis son artiste et son numéro de catalogue."
+
+#: src/Admin/CoversPage.php:87
+msgid ""
+"These covers are shown with the mention \"Illustration\", since your copy "
+"may differ. Your own photos always take priority: importing a photo replaces"
+" the illustration."
+msgstr ""
+"Ces pochettes s’affichent avec la mention « Visuel d’illustration », puisque"
+" votre exemplaire peut différer. Vos propres photos restent prioritaires : "
+"importer une photo remplace l’illustration."
+
+#: src/Admin/CoversPage.php:89
+msgid ""
+"External service: for each release, its Discogs ID, barcode, catalog number "
+"and artist are sent to musicbrainz.org, and the cover is downloaded from "
+"coverartarchive.org (Internet Archive). Covers remain the property of their "
+"rights holders; the archive provides them without any licence. Displaying "
+"them is your decision."
+msgstr ""
+"Service externe : pour chaque référence, son identifiant Discogs, son code-"
+"barre, son numéro de catalogue et son artiste sont envoyés à "
+"musicbrainz.org, et la pochette est téléchargée depuis coverartarchive.org "
+"(Internet Archive). Les pochettes restent la propriété de leurs ayants droit"
+" ; l’archive les fournit sans aucune licence. Les afficher relève de votre "
+"décision."
+
+#: src/Admin/CoversPage.php:94
+msgid ""
+"When the exact pressing has no cover, use the cover of another edition of "
+"the same album"
+msgstr ""
+"Si le pressage exact n’a pas de pochette, utiliser celle d’une autre édition"
+" du même album"
+
+#: src/Admin/CoversPage.php:95
+msgid "Try again the releases already searched without success"
+msgstr "Relancer la recherche pour les références déjà cherchées sans succès"
+
+#: src/Admin/CoversPage.php:100
+msgid "%d release without cover has not been searched yet."
+msgid_plural "%d releases without cover have not been searched yet."
+msgstr[0] "%d référence sans pochette n’a pas encore été cherchée."
+msgstr[1] "%d références sans pochette n’ont pas encore été cherchées."
+
+#: src/Admin/CoversPage.php:102
+msgid ""
+"MusicBrainz allows one request per second: count about one hour for 1,500 "
+"releases. Keep this page open; you can stop and resume."
+msgstr ""
+"MusicBrainz autorise une requête par seconde : comptez environ une heure "
+"pour 1 500 références. Gardez cette page ouverte ; vous pouvez arrêter et "
+"reprendre."
+
+#: src/Admin/CoversPage.php:105
+msgid "Start"
+msgstr "Lancer"
+
+#: src/Admin/CoversPage.php:106
+msgid "Stop"
+msgstr "Arrêter"
+
+#: src/Admin/DiscogsExportPage.php:37 src/Admin/DiscogsExportPage.php:38
+#: src/Admin/DiscogsExportPage.php:55 src/Admin/Menu.php:51
+msgid "Discogs export"
+msgstr "Export Discogs"
+
+#: src/Admin/DiscogsExportPage.php:56
+msgid ""
+"Copies sold on your site that still have a listing on Discogs. Download the "
+"file, then on Discogs open the inventory upload page and choose the delete "
+"option: these listings are removed in one go, so the same copy can never be "
+"sold twice."
+msgstr ""
+"Exemplaires vendus sur votre site qui ont encore une annonce sur Discogs. "
+"Téléchargez le fichier, puis sur Discogs ouvrez la page d’envoi d’inventaire"
+" et choisissez l’option de suppression : ces annonces sont retirées en une "
+"fois, et un même exemplaire ne peut jamais être vendu deux fois."
+
+#: src/Admin/DiscogsExportPage.php:57
+msgid ""
+"The other way round, copies sold on Discogs are marked sold on your site "
+"when you import a full Discogs inventory export with the option \"Mark as "
+"sold the Discogs copies that are not in this file\"."
+msgstr ""
+"Dans l’autre sens, les exemplaires vendus sur Discogs sont marqués vendus "
+"sur votre site quand vous importez un export d’inventaire Discogs complet "
+"avec l’option « Marquer comme vendus les exemplaires Discogs absents de ce "
+"fichier »."
+
+#: src/Admin/DiscogsExportPage.php:61
+msgid "Sold copies only"
+msgstr "Exemplaires vendus uniquement"
+
+#: src/Admin/DiscogsExportPage.php:63
+msgid "Also include reserved copies"
+msgstr "Inclure aussi les exemplaires réservés"
+
+#: src/Admin/DiscogsExportPage.php:68
+msgid ""
+"Nothing to remove from Discogs: every copy sold on the site is already "
+"handled."
+msgstr ""
+"Rien à retirer de Discogs : chaque exemplaire vendu sur le site est déjà "
+"traité."
+
+#: src/Admin/DiscogsExportPage.php:73
+msgid "%d listing to remove"
+msgid_plural "%d listings to remove"
+msgstr[0] "%d annonce à retirer"
+msgstr[1] "%d annonces à retirer"
+
+#: src/Admin/DiscogsExportPage.php:79 src/Reservation/Requests.php:186
+#: src/Reservation/Requests.php:238
+msgid "Release"
+msgstr "Référence"
+
+#: src/Admin/DiscogsExportPage.php:80
+#: src/Commerce/Providers/WooCommerceProvider.php:84
+#: src/Commerce/WooSync.php:296 src/Commerce/WooSync.php:479
+#: src/Commerce/WooSync.php:499 src/Reservation/Requests.php:204
+msgid "Copy"
+msgstr "Exemplaire"
+
+#: src/Admin/DiscogsExportPage.php:81 src/Admin/ReleaseMetaBoxes.php:350
+#: src/Alerts/Alerts.php:363 src/Import/Fields.php:44
+msgid "Status"
+msgstr "Statut"
+
+#: src/Admin/DiscogsExportPage.php:82 src/Import/Fields.php:42
+#: src/Reservation/Requests.php:207
+msgid "Location in the shop"
+msgstr "Emplacement en boutique"
+
+#: src/Admin/DiscogsExportPage.php:83
+msgid "Discogs listing"
+msgstr "Annonce Discogs"
+
+#: src/Admin/DiscogsExportPage.php:91 src/Admin/ReleaseMetaBoxes.php:325
+#: src/Commerce/Providers/ShowcaseProvider.php:92 src/Front/Blocks.php:337
+#: src/Reservation/Requests.php:192
+msgid "Reserved"
+msgstr "Réservé"
+
+#: src/Admin/DiscogsExportPage.php:91 src/Admin/ReleaseMetaBoxes.php:326
+#: src/Commerce/Providers/ShowcaseProvider.php:88
+#: src/Commerce/Providers/WooCommerceProvider.php:74 src/Front/Blocks.php:228
+#: src/Front/Blocks.php:338 src/Reservation/Requests.php:193
+msgid "Sold"
+msgstr "Vendu"
+
+#: src/Admin/DiscogsExportPage.php:102
+msgid "Download the delete file for Discogs"
+msgstr "Télécharger le fichier de suppression pour Discogs"
+
+#: src/Admin/DiscogsExportPage.php:103
+msgid ""
+"These listings are then considered handled and will not be exported again. "
+"Past files stay available below."
+msgstr ""
+"Ces annonces sont ensuite considérées comme traitées et ne seront plus "
+"exportées. Les fichiers précédents restent disponibles ci-dessous."
+
+#: src/Admin/DiscogsExportPage.php:108
+msgid "Previous exports"
+msgstr "Exports précédents"
+
+#: src/Admin/DiscogsExportPage.php:116
+msgid "%1$s: %2$d listing"
+msgid_plural "%1$s: %2$d listings"
+msgstr[0] "%1$s : %2$d annonce"
+msgstr[1] "%1$s : %2$d annonces"
+
+#: src/Admin/DiscogsExportPage.php:122
+msgid "Download again"
+msgstr "Télécharger à nouveau"
+
+#: src/Admin/DiscogsExportPage.php:152 src/Admin/DiscogsExportPage.php:172
+msgid "You are not allowed to export releases."
+msgstr "Vous n’avez pas l’autorisation d’exporter des références."
+
+#: src/Admin/DiscogsExportPage.php:179
+msgid "This export no longer exists."
+msgstr "Cet export n’existe plus."
+
+#: src/Admin/ImportPage.php:46 src/Admin/ImportPage.php:301
+msgid "Import a catalog"
+msgstr "Importer un catalogue"
+
+#: src/Admin/ImportPage.php:47
+msgid "Import"
+msgstr "Importer"
+
+#: src/Admin/ImportPage.php:75 src/Admin/ImportPage.php:463
+msgid "%1$d of %2$d rows imported"
+msgstr "%1$d lignes importées sur %2$d"
+
+#: src/Admin/ImportPage.php:76
+msgid ""
+"The import was interrupted. Reload the page to resume where it stopped."
+msgstr ""
+"L’import a été interrompu. Rechargez la page pour reprendre là où il s’est "
+"arrêté."
+
+#: src/Admin/ImportPage.php:101 src/Admin/ImportPage.php:213
+msgid "You are not allowed to import releases."
+msgstr "Vous n’avez pas l’autorisation d’importer des références."
+
+#: src/Admin/ImportPage.php:325
+msgid "Please choose a CSV file."
+msgstr "Veuillez choisir un fichier CSV."
+
+#: src/Admin/ImportPage.php:326
+msgid "The file could not be uploaded. Check that it is a .csv file."
+msgstr ""
+"Le fichier n’a pas pu être envoyé. Vérifiez qu’il s’agit bien d’un fichier "
+".csv."
+
+#: src/Admin/ImportPage.php:327 src/Import/Importer.php:90
+msgid "No column headers were found on the first line."
+msgstr "Aucun en-tête de colonne n’a été trouvé sur la première ligne."
+
+#: src/Admin/ImportPage.php:328 src/Import/Importer.php:113
+msgid "The file contains no rows to import."
+msgstr "Le fichier ne contient aucune ligne à importer."
+
+#: src/Admin/ImportPage.php:329
+msgid "Choose the column holding the title: it is required."
+msgstr "Choisissez la colonne contenant le titre : elle est obligatoire."
+
+#: src/Admin/ImportPage.php:342
+msgid ""
+"Import releases and copies from a CSV file: the inventory export of your "
+"Discogs seller account, or your own spreadsheet saved as CSV. Delimiter and "
+"encoding are detected automatically."
+msgstr ""
+"Importez des références et des exemplaires depuis un fichier CSV : l’export "
+"d’inventaire de votre compte vendeur Discogs, ou votre propre tableur "
+"enregistré en CSV. Le séparateur et l’encodage sont détectés "
+"automatiquement."
+
+#: src/Admin/ImportPage.php:343
+msgid ""
+"Importing the same file again later updates prices, grades and statuses "
+"without creating duplicates. Release details you edited by hand are never "
+"overwritten."
+msgstr ""
+"Réimporter le même fichier plus tard met à jour les prix, gradings et "
+"statuts sans créer de doublons. Les détails que vous avez modifiés à la main"
+" ne sont jamais écrasés."
+
+#: src/Admin/ImportPage.php:348
+msgid "CSV file"
+msgstr "Fichier CSV"
+
+#: src/Admin/ImportPage.php:351
+msgid "Upload and continue"
+msgstr "Envoyer et continuer"
+
+#: src/Admin/ImportPage.php:353
+msgid "Complete releases with Discogs data"
+msgstr "Compléter les références avec les données Discogs"
+
+#: src/Admin/ImportPage.php:354
+msgid ""
+"Discogs publishes its whole database every month under the CC0 licence "
+"(public domain). The discogs_enrich tool, provided with this plugin, reads "
+"this file on your computer and keeps your releases only: genres, styles, "
+"year, country, barcode and tracklist. Images are not part of this open data."
+msgstr ""
+"Discogs publie chaque mois l’intégralité de sa base sous licence CC0 "
+"(domaine public). L’outil discogs_enrich, fourni avec cette extension, lit "
+"ce fichier sur votre ordinateur et ne garde que vos références : genres, "
+"styles, année, pays, code-barre et liste des titres. Les images ne font pas "
+"partie de ces données libres."
+
+#: src/Admin/ImportPage.php:357
+msgid "Download the list of your releases and the tool:"
+msgstr "Téléchargez la liste de vos références et l’outil :"
+
+#: src/Admin/ImportPage.php:358
+msgid "Discogs IDs of the catalog"
+msgstr "identifiants Discogs du catalogue"
+
+#: src/Admin/ImportPage.php:359
+msgid "discogs_enrich tool"
+msgstr "outil discogs_enrich"
+
+#: src/Admin/ImportPage.php:360
+msgid "instructions"
+msgstr "mode d’emploi"
+
+#: src/Admin/ImportPage.php:362
+msgid ""
+"On data.discogs.com, download the latest releases file "
+"(discogs_YYYYMMDD_releases.xml.gz, several GB, no need to unzip it)."
+msgstr ""
+"Sur data.discogs.com, téléchargez le dernier fichier des parutions "
+"(discogs_AAAAMMJJ_releases.xml.gz, plusieurs Go, inutile de le "
+"décompresser)."
+
+#: src/Admin/ImportPage.php:363
+msgid ""
+"In a terminal: python3 discogs_enrich.py discogs-ids-….csv "
+"discogs_…_releases.xml.gz (Python 3 is already installed on Linux and macOS;"
+" on Windows, install it from python.org and type py instead of python3)."
+msgstr ""
+"Dans un terminal : python3 discogs_enrich.py discogs-ids-….csv "
+"discogs_…_releases.xml.gz (Python 3 est déjà installé sous Linux et macOS ; "
+"sous Windows, installez-le depuis python.org et tapez py au lieu de "
+"python3)."
+
+#: src/Admin/ImportPage.php:364
+msgid ""
+"Upload the discogs-enrichment.csv file it produces with the form above: only"
+" empty fields of existing releases are filled."
+msgstr ""
+"Envoyez le fichier discogs-enrichment.csv produit avec le formulaire ci-"
+"dessus : seuls les champs vides des références existantes sont remplis."
+
+#: src/Admin/ImportPage.php:366
+msgid ""
+"With WP-CLI on your server, one command does it all: wp waxsc enrich "
+"/path/to/discogs_YYYYMMDD_releases.xml.gz"
+msgstr ""
+"Avec WP-CLI sur votre serveur, une seule commande fait tout : wp waxsc "
+"enrich /chemin/vers/discogs_AAAAMMJJ_releases.xml.gz"
+
+#: src/Admin/ImportPage.php:380
+msgid "%d row found. Check which column feeds each field."
+msgid_plural "%d rows found. Check which column feeds each field."
+msgstr[0] "%d ligne trouvée. Vérifiez quelle colonne alimente chaque champ."
+msgstr[1] "%d lignes trouvées. Vérifiez quelle colonne alimente chaque champ."
+
+#: src/Admin/ImportPage.php:389
+msgid "Field"
+msgstr "Champ"
+
+#: src/Admin/ImportPage.php:390
+msgid "Column in your file"
+msgstr "Colonne de votre fichier"
+
+#: src/Admin/ImportPage.php:391
+msgid "First row value"
+msgstr "Valeur de la première ligne"
+
+#: src/Admin/ImportPage.php:401
+msgid "— Ignore —"
+msgstr "— Ignorer —"
+
+#: src/Admin/ImportPage.php:411
+msgid "When empty or unrecognized:"
+msgstr "Si vide ou non reconnu :"
+
+#: src/Admin/ImportPage.php:413 src/Installer.php:357
+msgid "Used"
+msgstr "Occasion"
+
+#: src/Admin/ImportPage.php:414 src/Installer.php:353
+msgid "New"
+msgstr "Neuf"
+
+#: src/Admin/ImportPage.php:415
+msgid "Do not set"
+msgstr "Ne pas renseigner"
+
+#: src/Admin/ImportPage.php:425
+msgid "Options"
+msgstr "Options"
+
+#: src/Admin/ImportPage.php:429
+msgid ""
+"Publish new releases immediately (otherwise they are saved as drafts for "
+"review)"
+msgstr ""
+"Publier immédiatement les nouvelles références (sinon elles sont "
+"enregistrées en brouillon pour relecture)"
+
+#: src/Admin/ImportPage.php:435
+msgid ""
+"Mark as sold the Discogs copies that are not in this file (they were sold on"
+" Discogs)"
+msgstr ""
+"Marquer comme vendus les exemplaires Discogs absents de ce fichier (ils ont "
+"été vendus sur Discogs)"
+
+#: src/Admin/ImportPage.php:437
+msgid ""
+"Only with a full inventory export from Discogs, never with a partial file: "
+"every missing listing would be marked sold. Needs the listing ID column."
+msgstr ""
+"Uniquement avec un export d’inventaire Discogs complet, jamais avec un "
+"fichier partiel : chaque annonce absente serait marquée vendue. Nécessite la"
+" colonne d’identifiant d’annonce."
+
+#: src/Admin/ImportPage.php:439
+msgid ""
+"Tip: a column with a unique ID per copy (the Discogs listing ID, or your own"
+" SKU) makes later re-imports fully reliable."
+msgstr ""
+"Astuce : une colonne avec un identifiant unique par exemplaire "
+"(l’identifiant d’annonce Discogs, ou votre propre référence) rend les "
+"réimports parfaitement fiables."
+
+#: src/Admin/ImportPage.php:442 src/Admin/PhotoImportPage.php:100
+msgid "Start import"
+msgstr "Lancer l’import"
+
+#: src/Admin/ImportPage.php:446
+msgid "Cancel"
+msgstr "Annuler"
+
+#: src/Admin/ImportPage.php:458
+msgid ""
+"Import in progress. Keep this page open; if it closes, the import resumes "
+"where it stopped when you come back."
+msgstr ""
+"Import en cours. Gardez cette page ouverte ; si elle se ferme, l’import "
+"reprendra là où il s’est arrêté à votre retour."
+
+#: src/Admin/ImportPage.php:466
+msgid "JavaScript is required to run the import."
+msgstr "JavaScript est nécessaire pour lancer l’import."
+
+#: src/Admin/ImportPage.php:468
+msgid "Stop the import"
+msgstr "Arrêter l’import"
+
+#: src/Admin/ImportPage.php:479
+msgid "Import finished."
+msgstr "Import terminé."
+
+#: src/Admin/ImportPage.php:482
+msgid "Releases created: %d"
+msgstr "Références créées : %d"
+
+#: src/Admin/ImportPage.php:484
+msgid "Copies created: %d"
+msgstr "Exemplaires créés : %d"
+
+#: src/Admin/ImportPage.php:486
+msgid "Copies updated: %d"
+msgstr "Exemplaires mis à jour : %d"
+
+#: src/Admin/ImportPage.php:488
+msgid "Rows skipped: %d"
+msgstr "Lignes ignorées : %d"
+
+#: src/Admin/ImportPage.php:491
+msgid "Releases completed with new data: %d"
+msgstr "Références complétées avec de nouvelles données : %d"
+
+#: src/Admin/ImportPage.php:495
+msgid "Copies sold on Discogs, marked sold: %d"
+msgstr "Exemplaires vendus sur Discogs, marqués vendus : %d"
+
+#: src/Admin/ImportPage.php:499
+msgid "Unrecognized formats"
+msgstr "Formats non reconnus"
+
+#: src/Admin/ImportPage.php:500
+msgid ""
+"These releases were imported without a format. Set it with bulk edit, or "
+"tell us the wording so it can be recognized."
+msgstr ""
+"Ces références ont été importées sans format. Renseignez-le avec la "
+"modification groupée, ou signalez-nous ce libellé pour qu’il soit reconnu."
+
+#: src/Admin/ImportPage.php:508
+msgid "Skipped rows"
+msgstr "Lignes ignorées"
+
+#: src/Admin/ImportPage.php:516
+msgid "View the catalog"
+msgstr "Voir le catalogue"
+
+#: src/Admin/ImportPage.php:519
+msgid "New import"
+msgstr "Nouvel import"
+
+#: src/Admin/LabelsPage.php:34
+msgid "Small: 24 per sheet, 70 × 37 mm (3 × 8)"
+msgstr "Petit : 24 par planche, 70 × 37 mm (3 × 8)"
+
+#: src/Admin/LabelsPage.php:44
+msgid "Medium: 14 per sheet, 99.1 × 38.1 mm (2 × 7)"
+msgstr "Moyen : 14 par planche, 99,1 × 38,1 mm (2 × 7)"
+
+#: src/Admin/LabelsPage.php:54
+msgid "Large: 8 per sheet, 99.1 × 67.7 mm (2 × 4)"
+msgstr "Grand : 8 par planche, 99,1 × 67,7 mm (2 × 4)"
+
+#: src/Admin/LabelsPage.php:81 src/Admin/LabelsPage.php:82
+#: src/Admin/LabelsPage.php:123 src/Admin/LabelsPage.php:276
+#: src/Admin/Menu.php:52
+msgid "Labels"
+msgstr "Étiquettes"
+
+#: src/Admin/LabelsPage.php:95
+msgid "Print labels"
+msgstr "Imprimer les étiquettes"
+
+#: src/Admin/LabelsPage.php:124
+msgid ""
+"Price stickers for the sleeves: artist, title, format, grading, price and a "
+"QR code to the release page. One label per copy in stock."
+msgstr ""
+"Étiquettes de prix pour les pochettes : artiste, titre, format, grading, "
+"prix et un QR code vers la fiche. Une étiquette par exemplaire en stock."
+
+#: src/Admin/LabelsPage.php:125
+msgid ""
+"Tip: in Catalog > All releases, tick releases and choose \"Print labels\" in"
+" the bulk actions."
+msgstr ""
+"Astuce : dans Catalogue > Toutes les références, cochez des références et "
+"choisissez « Imprimer les étiquettes » dans les actions groupées."
+
+#: src/Admin/LabelsPage.php:134
+msgid "Selection"
+msgstr "Sélection"
+
+#: src/Admin/LabelsPage.php:138
+msgid "%d release selected in the catalog"
+msgid_plural "%d releases selected in the catalog"
+msgstr[0] "%d référence sélectionnée dans le catalogue"
+msgstr[1] "%d références sélectionnées dans le catalogue"
+
+#: src/Admin/LabelsPage.php:145
+msgid "Releases added since"
+msgstr "Références ajoutées depuis le"
+
+#: src/Admin/LabelsPage.php:150
+msgid "Location contains"
+msgstr "L’emplacement contient"
+
+#: src/Admin/LabelsPage.php:153
+msgid "Optional, e.g. \"Jazz\" to print one bin only."
+msgstr "Facultatif, par exemple « Jazz » pour n’imprimer qu’un bac."
+
+#: src/Admin/LabelsPage.php:157
+msgid "Sheet format"
+msgstr "Format de planche"
+
+#: src/Admin/LabelsPage.php:167
+msgid "Labels already used on the sheet"
+msgstr "Étiquettes déjà utilisées sur la planche"
+
+#: src/Admin/LabelsPage.php:170
+msgid ""
+"To reuse a partly used sheet: printing starts after this number of labels."
+msgstr ""
+"Pour réutiliser une planche entamée : l’impression commence après ce nombre "
+"d’étiquettes."
+
+#: src/Admin/LabelsPage.php:175
+msgid "Show the sheet to print"
+msgstr "Afficher la planche à imprimer"
+
+#: src/Admin/LabelsPage.php:251
+msgid "You are not allowed to print labels."
+msgstr "Vous n’avez pas l’autorisation d’imprimer des étiquettes."
+
+#: src/Admin/LabelsPage.php:301
+msgid "%1$d labels on %2$d sheet(s)."
+msgstr "%1$d étiquettes sur %2$d planche(s)."
+
+#: src/Admin/LabelsPage.php:303
+msgid "Print at 100% (no \"fit to page\"), without margins."
+msgstr "Imprimez à 100 % (sans « ajuster à la page »), sans marges."
+
+#: src/Admin/LabelsPage.php:305
+msgid "Print"
+msgstr "Imprimer"
+
+#: src/Admin/LabelsPage.php:308
+msgid "No copy in stock matches this selection."
+msgstr "Aucun exemplaire en stock ne correspond à cette sélection."
+
+#: src/Admin/Menu.php:48
+msgid "CSV import"
+msgstr "Import CSV"
+
+#: src/Admin/Menu.php:49 src/Admin/PhotoImportPage.php:94
+msgid "Photos"
+msgstr "Photos"
+
+#: src/Admin/Menu.php:86 src/Admin/Menu.php:87
+msgid "Record shop"
+msgstr "Disquaire"
+
+#: src/Admin/Menu.php:95 src/Admin/Menu.php:123 src/Admin/Menu.php:124
+msgid "Tools"
+msgstr "Outils"
+
+#: src/Admin/Menu.php:96 src/Admin/Menu.php:184
+msgid "Customer requests"
+msgstr "Demandes clients"
+
+#: src/Admin/Menu.php:158 src/Reservation/Requests.php:59
+#: src/Reservation/Requests.php:60
+msgid "Reservations"
+msgstr "Réservations"
+
+#: src/Admin/Menu.php:159 src/Alerts/Alerts.php:62 src/Alerts/Alerts.php:64
+msgid "Alerts"
+msgstr "Alertes"
+
+#: src/Admin/Menu.php:160 src/Buying/Offers.php:54 src/Buying/Offers.php:56
+#: src/Buying/Offers.php:348 src/Buying/Offers.php:362
+#: src/Buying/Offers.php:381
+msgid "Collection offers"
+msgstr "Propositions de vente"
+
+#: src/Admin/PhotoImportPage.php:44 src/Admin/PhotoImportPage.php:45
+#: src/Admin/PhotoImportPage.php:87
+msgid "Import photos"
+msgstr "Importer des photos"
+
+#: src/Admin/PhotoImportPage.php:69
+msgid "%1$d of %2$d files processed"
+msgstr "%1$d fichiers traités sur %2$d"
+
+#: src/Admin/PhotoImportPage.php:71
+msgid "Server error, file skipped."
+msgstr "Erreur du serveur, fichier ignoré."
+
+#: src/Admin/PhotoImportPage.php:73
+msgid ""
+"Covers: %1$d, gallery photos: %2$d, already imported: %3$d, not matched: "
+"%4$d"
+msgstr ""
+"Pochettes : %1$d, photos de galerie : %2$d, déjà importées : %3$d, sans "
+"correspondance : %4$d"
+
+#: src/Admin/PhotoImportPage.php:88
+msgid ""
+"Select your photos: each one is attached to its release by its file name. "
+"Files with no matching release are not uploaded."
+msgstr ""
+"Sélectionnez vos photos : chacune est rattachée à sa référence grâce à son "
+"nom de fichier. Les fichiers sans référence correspondante ne sont pas "
+"envoyés."
+
+#: src/Admin/PhotoImportPage.php:89
+msgid ""
+"The file name can be the catalog number (SHVL795.jpg, spaces and dashes do "
+"not matter), the Discogs listing or release ID, the barcode, or the release "
+"URL slug."
+msgstr ""
+"Le nom du fichier peut être le numéro de catalogue (SHVL795.jpg, les espaces"
+" et tirets ne comptent pas), l’identifiant d’annonce ou de référence "
+"Discogs, le code-barre, ou l’identifiant d’adresse de la fiche."
+
+#: src/Admin/PhotoImportPage.php:90
+msgid ""
+"The first photo becomes the cover. Add a suffix for the other ones: "
+"SHVL795-2.jpg, SHVL795_verso.jpg, SHVL795-label.jpg… They go to the release "
+"gallery."
+msgstr ""
+"La première photo devient la pochette. Ajoutez un suffixe aux suivantes : "
+"SHVL795-2.jpg, SHVL795_verso.jpg, SHVL795-label.jpg… Elles rejoignent la "
+"galerie de la référence."
+
+#: src/Admin/PhotoImportPage.php:98
+msgid ""
+"Replace covers that are already set (otherwise the photo goes to the "
+"gallery)"
+msgstr ""
+"Remplacer les pochettes déjà définies (sinon la photo rejoint la galerie)"
+
+#: src/Admin/PhotoImportPage.php:110
+msgid "File"
+msgstr "Fichier"
+
+#: src/Admin/PhotoImportPage.php:111
+msgid "Result"
+msgstr "Résultat"
+
+#: src/Admin/PhotoImportPage.php:128
+msgid "You are not allowed to upload files."
+msgstr "Vous n’avez pas l’autorisation d’envoyer des fichiers."
+
+#: src/Admin/PhotoImportPage.php:157
+msgid "Already imported for %s"
+msgstr "Déjà importée pour %s"
+
+#: src/Admin/PhotoImportPage.php:173
+msgid "No file received."
+msgstr "Aucun fichier reçu."
+
+#: src/Admin/PhotoImportPage.php:189
+msgid "Already imported"
+msgstr "Déjà importée"
+
+#: src/Admin/PhotoImportPage.php:202 src/Covers/Fetcher.php:153
+msgid "%s, cover"
+msgstr "%s, pochette"
+
+#: src/Admin/PhotoImportPage.php:204
+msgid "%s, photo"
+msgstr "%s, photo"
+
+#: src/Admin/PhotoImportPage.php:248
+msgid "Cover of %s"
+msgstr "Pochette de %s"
+
+#: src/Admin/PhotoImportPage.php:248
+msgid "Gallery of %s"
+msgstr "Galerie de %s"
+
+#: src/Admin/PhotoImportPage.php:294
+msgid ""
+"Several releases match \"%s\": rename the file with the Discogs ID or the "
+"release slug."
+msgstr ""
+"Plusieurs références correspondent à « %s » : renommez le fichier avec "
+"l’identifiant Discogs ou l’identifiant d’adresse de la fiche."
+
+#: src/Admin/PhotoImportPage.php:296
+msgid "No release matches \"%s\"."
+msgstr "Aucune référence ne correspond à « %s »."
+
+#: src/Admin/ReleaseMetaBoxes.php:46
+msgid "Release details"
+msgstr "Détails de la référence"
+
+#: src/Admin/ReleaseMetaBoxes.php:47 src/Front/Blocks.php:438
+msgid "Tracklist"
+msgstr "Liste des titres"
+
+#: src/Admin/ReleaseMetaBoxes.php:48
+msgid "Copies for sale"
+msgstr "Exemplaires en vente"
+
+#: src/Admin/ReleaseMetaBoxes.php:49
+msgid "Other photos"
+msgstr "Autres photos"
+
+#: src/Admin/ReleaseMetaBoxes.php:71
+msgid "Add photos to the gallery"
+msgstr "Ajouter des photos à la galerie"
+
+#: src/Admin/ReleaseMetaBoxes.php:72
+msgid "Add to the gallery"
+msgstr "Ajouter à la galerie"
+
+#: src/Admin/ReleaseMetaBoxes.php:73 src/Admin/ReleaseMetaBoxes.php:232
+msgid "Remove this photo"
+msgstr "Retirer cette photo"
+
+#: src/Admin/ReleaseMetaBoxes.php:87
+msgid "Valid barcode"
+msgstr "Code-barre valide"
+
+#: src/Admin/ReleaseMetaBoxes.php:88 src/Admin/ReleaseMetaBoxes.php:203
+msgid "Check digit or length looks wrong"
+msgstr "La clé de contrôle ou la longueur semble incorrecte"
+
+#: src/Admin/ReleaseMetaBoxes.php:190 src/Import/Fields.php:31
+msgid "Release year"
+msgstr "Année de sortie"
+
+#: src/Admin/ReleaseMetaBoxes.php:194 src/Front/Blocks.php:298
+#: src/Import/Fields.php:28
+msgid "Catalog number"
+msgstr "Numéro de catalogue"
+
+#: src/Admin/ReleaseMetaBoxes.php:198
+msgid "Barcode (EAN / UPC)"
+msgstr "Code-barre (EAN / UPC)"
+
+#: src/Admin/ReleaseMetaBoxes.php:209
+msgid "Pressing details"
+msgstr "Détails du pressage"
+
+#: src/Admin/ReleaseMetaBoxes.php:210
+msgid "Transparent red, marbled black, 500 copies"
+msgstr "Rouge transparent marbré noir, 500 exemplaires"
+
+#: src/Admin/ReleaseMetaBoxes.php:238
+msgid "Add photos"
+msgstr "Ajouter des photos"
+
+#: src/Admin/ReleaseMetaBoxes.php:239
+msgid ""
+"Back cover, center label, insert… The front cover is the featured image."
+msgstr ""
+"Verso, rond central, insert… La pochette (recto) est l’image mise en avant."
+
+#: src/Admin/ReleaseMetaBoxes.php:262
+msgid "Add a track"
+msgstr "Ajouter un titre"
+
+#: src/Admin/ReleaseMetaBoxes.php:278
+msgid "Position"
+msgstr "Position"
+
+#: src/Admin/ReleaseMetaBoxes.php:280 src/Admin/ReleaseMetaBoxes.php:281
+msgid "Title"
+msgstr "Titre"
+
+#: src/Admin/ReleaseMetaBoxes.php:282
+msgid "Duration"
+msgstr "Durée"
+
+#: src/Admin/ReleaseMetaBoxes.php:295
+msgid ""
+"One row per physical copy. For new stock, a single row with a quantity is "
+"enough."
+msgstr ""
+"Une ligne par exemplaire physique. Pour du neuf, une seule ligne avec une "
+"quantité suffit."
+
+#: src/Admin/ReleaseMetaBoxes.php:309
+msgid "Add a copy"
+msgstr "Ajouter un exemplaire"
+
+#: src/Admin/ReleaseMetaBoxes.php:324 src/Reservation/Requests.php:191
+msgid "In stock"
+msgstr "En stock"
+
+#: src/Admin/ReleaseMetaBoxes.php:334 src/Import/Fields.php:37
+msgid "Media grade"
+msgstr "État du disque"
+
+#: src/Admin/ReleaseMetaBoxes.php:335 src/Import/Fields.php:38
+msgid "Sleeve grade"
+msgstr "État de la pochette"
+
+#: src/Admin/ReleaseMetaBoxes.php:338 src/Import/Fields.php:39
+msgid "Size / variant"
+msgstr "Taille / variante"
+
+#: src/Admin/ReleaseMetaBoxes.php:342 src/Import/Fields.php:36
+msgid "Price"
+msgstr "Prix"
+
+#: src/Admin/ReleaseMetaBoxes.php:346
+#: src/Commerce/Providers/WooCommerceProvider.php:97 src/Import/Fields.php:43
+msgid "Quantity"
+msgstr "Quantité"
+
+#: src/Admin/ReleaseMetaBoxes.php:358
+msgid "Location in the shop (internal)"
+msgstr "Emplacement en boutique (interne)"
+
+#: src/Admin/ReleaseMetaBoxes.php:359
+msgid "Jazz bin, row 3"
+msgstr "Bac Jazz, rangée 3"
+
+#: src/Admin/ReleaseMetaBoxes.php:362
+msgid "Notes (pressing details, defects…)"
+msgstr "Notes (détails du pressage, défauts…)"
+
+#: src/Admin/ReleaseMetaBoxes.php:408
+msgid "Move up"
+msgstr "Monter"
+
+#: src/Admin/ReleaseMetaBoxes.php:409
+msgid "Move down"
+msgstr "Descendre"
+
+#: src/Admin/ReleaseMetaBoxes.php:410
+msgid "Remove"
+msgstr "Supprimer"
+
+#: src/Admin/SettingsPage.php:68 src/Admin/SettingsPage.php:219
+msgid "Record shop settings"
+msgstr "Réglages du disquaire"
+
+#: src/Admin/SettingsPage.php:69 src/Admin/SettingsPage.php:161
+#: assets/blocks-editor.js:47
+msgid "Settings"
+msgstr "Réglages"
+
+#: src/Admin/SettingsPage.php:102 src/Admin/SettingsPage.php:131
+msgid "You are not allowed to create pages."
+msgstr "Vous n’avez pas l’autorisation de créer des pages."
+
+#: src/Admin/SettingsPage.php:109
+msgid "Reservation"
+msgstr "Réservation"
+
+#: src/Admin/SettingsPage.php:110
+msgctxt "page slug"
+msgid "reservation"
+msgstr "reservation"
+
+#: src/Admin/SettingsPage.php:111
+msgid ""
+"Fill in this form: we keep the record for you and get back to you quickly."
+msgstr ""
+"Remplissez ce formulaire : nous vous mettons le disque de côté et revenons "
+"vers vous rapidement."
+
+#: src/Admin/SettingsPage.php:138
+msgid "Sell us your records"
+msgstr "Vendez-nous vos disques"
+
+#: src/Admin/SettingsPage.php:139
+msgctxt "page slug"
+msgid "sell-your-records"
+msgstr "vendez-nous-vos-disques"
+
+#: src/Admin/SettingsPage.php:140
+msgid ""
+"We buy records and collections of any size. Tell us about yours: we answer "
+"every offer."
+msgstr ""
+"Nous rachetons disques et collections de toutes tailles. Parlez-nous des "
+"vôtres : nous répondons à chaque proposition."
+
+#: src/Admin/SettingsPage.php:201 src/Content/PostType.php:61
+#: src/Front/ReleaseSchema.php:268 src/Front/Templates.php:118
+#: src/Front/Templates.php:194
+msgid "Catalog"
+msgstr "Catalogue"
+
+#: src/Admin/SettingsPage.php:222
+msgid "Settings sections"
+msgstr "Sections des réglages"
+
+#: src/Admin/SettingsPage.php:255
+msgid ""
+"These profiles are linked from the site and declared to search engines as "
+"belonging to your shop."
+msgstr ""
+"Ces profils sont liés depuis le site et déclarés aux moteurs de recherche "
+"comme appartenant à votre boutique."
+
+#: src/Admin/SettingsPage.php:335
+msgid "— Select a page —"
+msgstr "— Choisir une page —"
+
+#: src/Admin/SettingsPage.php:354 src/Front/ShopStatus.php:132
+#: src/Front/ShopStatus.php:237 src/Front/ShopStatus.php:296
+msgid "Closed"
+msgstr "Fermé"
+
+#: src/Admin/SettingsPage.php:402 src/Front/ShopStatus.php:273
+msgid "Monday"
+msgstr "Lundi"
+
+#: src/Admin/SettingsPage.php:403 src/Front/ShopStatus.php:274
+msgid "Tuesday"
+msgstr "Mardi"
+
+#: src/Admin/SettingsPage.php:404 src/Front/ShopStatus.php:275
+msgid "Wednesday"
+msgstr "Mercredi"
+
+#: src/Admin/SettingsPage.php:405 src/Front/ShopStatus.php:276
+msgid "Thursday"
+msgstr "Jeudi"
+
+#: src/Admin/SettingsPage.php:406 src/Front/ShopStatus.php:277
+msgid "Friday"
+msgstr "Vendredi"
+
+#: src/Admin/SettingsPage.php:407 src/Front/ShopStatus.php:278
+msgid "Saturday"
+msgstr "Samedi"
+
+#: src/Admin/SettingsPage.php:408 src/Front/ShopStatus.php:279
+msgid "Sunday"
+msgstr "Dimanche"
+
+#: src/Admin/SettingsPage.php:423
+msgid "Selling mode"
+msgstr "Mode de vente"
+
+#: src/Admin/SettingsPage.php:430
+msgid "Other selling modes appear here when a compatible plugin is active."
+msgstr ""
+"D’autres modes de vente apparaissent ici lorsqu’une extension compatible est"
+" active."
+
+#: src/Admin/SettingsPage.php:434
+msgid "Default catalog order"
+msgstr "Ordre par défaut du catalogue"
+
+#: src/Admin/SettingsPage.php:441
+msgid ""
+"Visitors can change it with the sort menu above the catalog. Artists are "
+"filed without their leading article: The Beatles under B."
+msgstr ""
+"Les visiteurs peuvent le changer avec le menu de tri au-dessus du catalogue."
+" Les artistes sont classés sans leur article : The Beatles à la lettre B."
+
+#: src/Admin/SettingsPage.php:445 src/Admin/SettingsPage.php:448
+msgid "Sold releases"
+msgstr "Références vendues"
+
+#: src/Admin/SettingsPage.php:450
+msgid "Hidden from the catalog and home page grids"
+msgstr "Masquées du catalogue et des grilles de la page d’accueil"
+
+#: src/Admin/SettingsPage.php:451
+msgid "Shown with a \"Sold\" sticker; visitors can hide them with a filter"
+msgstr ""
+"Affichées avec une pastille « Vendu » ; les visiteurs peuvent les masquer "
+"avec un filtre"
+
+#: src/Admin/SettingsPage.php:453
+msgid ""
+"Either way, the page of a sold release stays online: it keeps its search "
+"ranking and lets collectors ask you to look out for it."
+msgstr ""
+"Dans les deux cas, la fiche d’un disque vendu reste en ligne : elle garde "
+"son référencement et permet aux collectionneurs de vous demander de le leur "
+"mettre de côté s’il revient."
+
+#: src/Admin/SettingsPage.php:457
+msgid "Google Merchant Center"
+msgstr "Google Merchant Center"
+
+#: src/Admin/SettingsPage.php:460
+msgid "Publish a product feed for Google Shopping (free listings)"
+msgstr "Publier un flux de produits pour Google Shopping (fiches gratuites)"
+
+#: src/Admin/SettingsPage.php:462
+msgid ""
+"Feed address to add in Merchant Center (Products > Feeds, scheduled fetch):"
+msgstr ""
+"Adresse du flux à déclarer dans Merchant Center (Produits > Flux, "
+"récupération planifiée) :"
+
+#: src/Admin/SettingsPage.php:470
+msgid ""
+"Last generation: %1$d products in the feed. Left out: %2$d without photo "
+"(Google refuses products without a real image), %3$d without price."
+msgstr ""
+"Dernière génération : %1$d produits dans le flux. Écartés : %2$d sans photo "
+"(Google refuse les produits sans vraie image), %3$d sans prix."
+
+#: src/Admin/SettingsPage.php:479
+msgid ""
+"One product per release in stock, at the lowest price of its copies. "
+"Shipping and returns are set in your Merchant Center account."
+msgstr ""
+"Un produit par référence en stock, au prix de son exemplaire le moins cher. "
+"La livraison et les retours se règlent dans votre compte Merchant Center."
+
+#: src/Admin/SettingsPage.php:483
+msgid "Currency"
+msgstr "Devise"
+
+#: src/Admin/SettingsPage.php:486
+msgid "ISO code: EUR, USD, GBP, CHF…"
+msgstr "Code ISO : EUR, USD, GBP, CHF…"
+
+#: src/Admin/SettingsPage.php:490 src/Admin/SettingsPage.php:493
+msgid "Grading"
+msgstr "Grading"
+
+#: src/Admin/SettingsPage.php:494
+msgid "Goldmine standard (M, NM, VG+, VG, G+, G, F, P)"
+msgstr "Norme Goldmine (M, NM, VG+, VG, G+, G, F, P)"
+
+#: src/Admin/SettingsPage.php:495
+msgid "Free text, your own wording"
+msgstr "Texte libre, avec vos propres termes"
+
+#: src/Admin/SettingsPage.php:497
+msgid ""
+"Switching to Goldmine clears grades that do not match the scale the next "
+"time a release is saved."
+msgstr ""
+"Passer à Goldmine efface les gradings hors échelle au prochain "
+"enregistrement de chaque référence."
+
+#: src/Admin/SettingsPage.php:501
+msgid "Reservation page"
+msgstr "Page de réservation"
+
+#: src/Admin/SettingsPage.php:509
+msgid "— No reservation button —"
+msgstr "— Pas de bouton de réservation —"
+
+#: src/Admin/SettingsPage.php:514
+msgid ""
+"Page holding the Reservation form block. The \"Reserve\" buttons link to it "
+"with the chosen record and copy."
+msgstr ""
+"Page contenant le bloc Formulaire de réservation. Les boutons « Réserver » y"
+" renvoient avec le disque et l’exemplaire choisis."
+
+#: src/Admin/SettingsPage.php:516
+msgid "Create the reservation page"
+msgstr "Créer la page de réservation"
+
+#: src/Admin/SettingsPage.php:521
+msgid "Buying records"
+msgstr "Rachat de disques"
+
+#: src/Admin/SettingsPage.php:527
+msgid "Create the \"Sell us your records\" page"
+msgstr "Créer la page « Vendez-nous vos disques »"
+
+#: src/Admin/SettingsPage.php:529
+msgid ""
+"Offers arrive by e-mail and in Record shop > Customer requests, with their "
+"photos and lists."
+msgstr ""
+"Les propositions arrivent par e-mail et dans Disquaire > Demandes clients, "
+"avec leurs photos et leurs listes."
+
+#: src/Admin/SettingsPage.php:533
+msgid "Requests sent to"
+msgstr "Demandes envoyées à"
+
+#: src/Admin/SettingsPage.php:536
+msgid ""
+"Leave empty to use the shop e-mail from the Contact tab. Every request is "
+"also kept in Record shop > Customer requests."
+msgstr ""
+"Laissez vide pour utiliser l’e-mail de l’onglet Coordonnées. Chaque demande "
+"est aussi conservée dans Disquaire > Demandes clients."
+
+#: src/Admin/SettingsPage.php:540
+msgid "Automatic reservation"
+msgstr "Réservation automatique"
+
+#: src/Admin/SettingsPage.php:542
+msgid "Mark the copy as reserved as soon as a request arrives"
+msgstr "Passer l’exemplaire en « Réservé » dès qu’une demande arrive"
+
+#: src/Admin/SettingsPage.php:543
+msgid ""
+"Off by default, so that an unwanted request never blocks your stock: you "
+"reserve from the request screen."
+msgstr ""
+"Désactivé par défaut, pour qu’une demande indésirable ne bloque jamais votre"
+" stock : vous réservez depuis l’écran de la demande."
+
+#: src/Admin/SingleTermBox.php:47 assets/editor.js:24
+msgid "None"
+msgstr "Aucun"
+
+#: src/Alerts/Alerts.php:63 src/Alerts/Alerts.php:361 src/Alerts/Form.php:217
+#: src/Alerts/Form.php:237
+msgid "Alert"
+msgstr "Alerte"
+
+#: src/Alerts/Alerts.php:65
+msgid "Search alerts"
+msgstr "Rechercher des alertes"
+
+#: src/Alerts/Alerts.php:66
+msgid "No alert yet."
+msgstr "Aucune alerte pour le moment."
+
+#: src/Alerts/Alerts.php:362 src/Alerts/Alerts.php:457
+msgid "Follows"
+msgstr "Suit"
+
+#: src/Alerts/Alerts.php:364 src/Alerts/Alerts.php:461
+#: src/Buying/Offers.php:262 src/Reservation/Requests.php:239
+msgid "Date"
+msgstr "Date"
+
+#: src/Alerts/Alerts.php:380
+msgid "Release back in stock"
+msgstr "Retour en stock d’une référence"
+
+#: src/Alerts/Alerts.php:381
+msgid "New arrivals of an artist"
+msgstr "Arrivages d’un artiste"
+
+#: src/Alerts/Alerts.php:382
+msgid "New arrivals of a label"
+msgstr "Arrivages d’un label"
+
+#: src/Alerts/Alerts.php:388
+msgid "Confirmed"
+msgstr "Confirmée"
+
+#: src/Alerts/Alerts.php:388
+msgid "Waiting for confirmation"
+msgstr "En attente de confirmation"
+
+#: src/Alerts/Alerts.php:399 src/Alerts/Alerts.php:413
+#: src/Alerts/Alerts.php:453
+msgid "Record shop alerts"
+msgstr "Alertes du disquaire"
+
+#: src/Alerts/Form.php:56
+msgid "when %s is back in stock"
+msgstr "quand %s revient en stock"
+
+#: src/Alerts/Form.php:64 src/Alerts/Form.php:72
+msgid "of the new arrivals of %s"
+msgstr "des nouveaux arrivages de %s"
+
+#: src/Alerts/Form.php:82
+msgid "Almost done: check your e-mails and click the confirmation link."
+msgstr ""
+"C’est presque fini : consultez vos e-mails et cliquez sur le lien de "
+"confirmation."
+
+#: src/Alerts/Form.php:83
+msgid "Please enter a valid e-mail address."
+msgstr "Merci d’indiquer une adresse e-mail valide."
+
+#: src/Alerts/Form.php:84
+msgid "Please choose at least one alert."
+msgstr "Merci de choisir au moins une alerte."
+
+#: src/Alerts/Form.php:85
+msgid ""
+"Too many requests were sent from your connection. Please try again later."
+msgstr ""
+"Trop de demandes ont été envoyées depuis votre connexion. Réessayez plus "
+"tard."
+
+#: src/Alerts/Form.php:96 src/Alerts/Form.php:112
+msgid "Notify me"
+msgstr "Me prévenir"
+
+#: src/Alerts/Form.php:102
+msgid "Send me an e-mail"
+msgstr "M’envoyer un e-mail"
+
+#: src/Alerts/Form.php:109 src/Buying/SellForm.php:94
+#: src/Reservation/Form.php:81
+msgid "Your e-mail address"
+msgstr "Votre adresse e-mail"
+
+#: src/Alerts/Form.php:110 src/Buying/SellForm.php:116
+#: src/Reservation/Form.php:89
+msgid "Leave this field empty"
+msgstr "Laissez ce champ vide"
+
+#: src/Alerts/Form.php:111
+msgid ""
+"You will receive a confirmation e-mail first. Every alert e-mail has a link "
+"to stop it."
+msgstr ""
+"Vous recevrez d’abord un e-mail de confirmation. Chaque e-mail d’alerte "
+"contient un lien pour l’arrêter."
+
+#: src/Alerts/Form.php:217
+msgid ""
+"This link is no longer valid: the alert was already stopped or has expired."
+msgstr "Ce lien n’est plus valide : l’alerte a déjà été arrêtée ou a expiré."
+
+#: src/Alerts/Form.php:230
+msgid ""
+"Your alert is active: %s. We will send you an e-mail as soon as it happens."
+msgstr ""
+"Votre alerte est active : %s. Nous vous enverrons un e-mail dès que ce sera "
+"le cas."
+
+#: src/Alerts/Form.php:234
+msgid "Alert stopped: %s. You will not receive these e-mails any more."
+msgstr "Alerte arrêtée : %s. Vous ne recevrez plus ces e-mails."
+
+#: src/Alerts/Mailer.php:42 src/Alerts/Mailer.php:71
+msgid "Hello,"
+msgstr "Bonjour,"
+
+#: src/Alerts/Mailer.php:44
+msgid "Please confirm the alerts you asked for, by clicking on each link:"
+msgstr ""
+"Merci de confirmer les alertes demandées en cliquant sur chaque lien :"
+
+#: src/Alerts/Mailer.php:54
+msgid ""
+"If you did not ask for this, ignore this e-mail: nothing will be sent to "
+"you."
+msgstr ""
+"Si vous n’êtes pas à l’origine de cette demande, ignorez cet e-mail : rien "
+"ne vous sera envoyé."
+
+#: src/Alerts/Mailer.php:60
+msgid "Confirm your alert at %s"
+msgstr "Confirmez votre alerte chez %s"
+
+#: src/Alerts/Mailer.php:106
+msgid "Second-hand copies are unique: first come, first served."
+msgstr ""
+"Les exemplaires d’occasion sont uniques : premier arrivé, premier servi."
+
+#: src/Alerts/Mailer.php:122
+msgid "Stop these alerts:"
+msgstr "Arrêter ces alertes :"
+
+#: src/Alerts/Mailer.php:126 src/Covers/Fetcher.php:201
+msgid "%1$s: %2$s"
+msgstr "%1$s : %2$s"
+
+#: src/Alerts/Mailer.php:132
+msgid "Back-in-stock alerts are sent once: this one is now closed."
+msgstr ""
+"Les alertes de retour en stock ne sont envoyées qu’une fois : celle-ci est "
+"maintenant close."
+
+#: src/Alerts/Mailer.php:137
+msgid "%1$s: %2$d record you are waiting for is in the bins"
+msgid_plural "%1$s: %2$d records you are waiting for are in the bins"
+msgstr[0] "%1$s : %2$d disque que vous attendiez est dans les bacs"
+msgstr[1] "%1$s : %2$d disques que vous attendiez sont dans les bacs"
+
+#: src/Alerts/Mailer.php:157
+msgid "%s back in stock"
+msgstr "%s de retour en stock"
+
+#: src/Alerts/Mailer.php:159
+msgid "New arrivals of %s"
+msgstr "Nouveaux arrivages de %s"
+
+#: src/Buying/Offers.php:55 src/Buying/Offers.php:57
+msgid "Collection offer"
+msgstr "Proposition de vente"
+
+#: src/Buying/Offers.php:58
+msgid "Search offers"
+msgstr "Rechercher des propositions"
+
+#: src/Buying/Offers.php:59
+msgid "No collection offer yet."
+msgstr "Aucune proposition de vente pour le moment."
+
+#: src/Buying/Offers.php:105
+msgid "%1$s – %2$s"
+msgstr "%1$s – %2$s"
+
+#: src/Buying/Offers.php:122
+msgid "Fewer than 50 records"
+msgstr "Moins de 50 disques"
+
+#: src/Buying/Offers.php:123
+msgid "50 to 200 records"
+msgstr "50 à 200 disques"
+
+#: src/Buying/Offers.php:124
+msgid "200 to 1,000 records"
+msgstr "200 à 1 000 disques"
+
+#: src/Buying/Offers.php:125
+msgid "More than 1,000 records"
+msgstr "Plus de 1 000 disques"
+
+#: src/Buying/Offers.php:134 src/Installer.php:291
+msgid "Vinyl"
+msgstr "Vinyle"
+
+#: src/Buying/Offers.php:135 src/Installer.php:317
+msgid "CD"
+msgstr "CD"
+
+#: src/Buying/Offers.php:136 src/Installer.php:329
+msgid "Cassette"
+msgstr "Cassette"
+
+#: src/Buying/Offers.php:137
+msgid "Other (DVD, merchandise…)"
+msgstr "Autre (DVD, merchandising…)"
+
+#: src/Buying/Offers.php:154
+msgid "Offer details"
+msgstr "Détails de la proposition"
+
+#: src/Buying/Offers.php:167 src/Reservation/Requests.php:178
+msgid "Received"
+msgstr "Reçue le"
+
+#: src/Buying/Offers.php:168 src/Buying/Offers.php:385
+#: src/Front/LegalNotice.php:37 src/Front/LegalNotice.php:51
+msgid "Name"
+msgstr "Nom"
+
+#: src/Buying/Offers.php:169 src/Buying/Offers.php:260
+#: src/Front/LegalNotice.php:42 src/Reservation/Requests.php:179
+#: src/Reservation/Requests.php:237 src/Settings/Settings.php:125
+msgid "Email"
+msgstr "E-mail"
+
+#: src/Buying/Offers.php:170 src/Buying/Offers.php:389
+#: src/Front/LegalNotice.php:41 src/Front/LegalNotice.php:60
+#: src/Reservation/Requests.php:182 src/Settings/Settings.php:121
+msgid "Phone"
+msgstr "Téléphone"
+
+#: src/Buying/Offers.php:171 src/Buying/Offers.php:261
+#: src/Buying/Offers.php:393 src/Settings/Settings.php:111
+msgid "City"
+msgstr "Ville"
+
+#: src/Buying/Offers.php:172
+msgid "Collection size"
+msgstr "Taille de la collection"
+
+#: src/Buying/Offers.php:173 src/Buying/SellForm.php:105
+msgid "Formats"
+msgstr "Formats"
+
+#: src/Buying/Offers.php:174 src/Buying/SellForm.php:112
+msgid "Main genres"
+msgstr "Genres principaux"
+
+#: src/Buying/Offers.php:175 src/Buying/Offers.php:397
+msgid "Description"
+msgstr "Description"
+
+#: src/Buying/Offers.php:187
+msgid "Files"
+msgstr "Fichiers"
+
+#: src/Buying/Offers.php:215
+msgid "You are not allowed to see this file."
+msgstr "Vous n’avez pas l’autorisation de voir ce fichier."
+
+#: src/Buying/Offers.php:223
+msgid "This file no longer exists."
+msgstr "Ce fichier n’existe plus."
+
+#: src/Buying/Offers.php:259
+msgid "Offer"
+msgstr "Proposition"
+
+#: src/Buying/SellForm.php:70
+msgid "Thank you, your offer has been sent."
+msgstr "Merci, votre proposition a bien été envoyée."
+
+#: src/Buying/SellForm.php:70
+msgid ""
+"We will look at it and get back to you. A copy has been sent to your e-mail "
+"address."
+msgstr ""
+"Nous l’étudions et revenons vers vous. Une copie vous a été envoyée par "
+"e-mail."
+
+#: src/Buying/SellForm.php:74 src/Reservation/Form.php:166
+msgid "Please enter your name."
+msgstr "Merci d’indiquer votre nom."
+
+#: src/Buying/SellForm.php:75 src/Reservation/Form.php:167
+msgid "Please enter a valid e-mail address, so we can answer you."
+msgstr ""
+"Merci d’indiquer une adresse e-mail valide, pour que nous puissions vous "
+"répondre."
+
+#: src/Buying/SellForm.php:76
+msgid "Please describe your records in a few words."
+msgstr "Merci de décrire vos disques en quelques mots."
+
+#: src/Buying/SellForm.php:77 src/Reservation/Form.php:168
+msgid "Please tick the box to agree that your details are used to answer you."
+msgstr ""
+"Merci de cocher la case pour accepter que vos coordonnées soient utilisées "
+"pour vous répondre."
+
+#: src/Buying/SellForm.php:78
+msgid ""
+"A file could not be accepted: photos in JPEG, PNG or WebP, list in "
+"spreadsheet, PDF or text, 8 MB at most each, 5 photos at most."
+msgstr ""
+"Un fichier n’a pas pu être accepté : photos en JPEG, PNG ou WebP, liste en "
+"tableur, PDF ou texte, 8 Mo maximum chacun, 5 photos au plus."
+
+#: src/Buying/SellForm.php:79 src/Reservation/Form.php:170
+msgid "This form was open for too long. Please send it again."
+msgstr ""
+"Ce formulaire est resté ouvert trop longtemps. Merci de l’envoyer à nouveau."
+
+#: src/Buying/SellForm.php:80 src/Reservation/Form.php:171
+msgid ""
+"Too many requests were sent from your connection. Please try again in an "
+"hour, or call us."
+msgstr ""
+"Trop de demandes ont été envoyées depuis votre connexion. Réessayez dans une"
+" heure, ou appelez-nous."
+
+#: src/Buying/SellForm.php:81
+msgid "Your offer could not be saved. Please try again, or call us."
+msgstr ""
+"Votre proposition n’a pas pu être enregistrée. Réessayez, ou appelez-nous."
+
+#: src/Buying/SellForm.php:93 src/Reservation/Form.php:80
+msgid "Your name"
+msgstr "Votre nom"
+
+#: src/Buying/SellForm.php:95 src/Reservation/Form.php:82
+msgid "Phone (optional)"
+msgstr "Téléphone (facultatif)"
+
+#: src/Buying/SellForm.php:96
+msgid "City where the records are"
+msgstr "Ville où se trouvent les disques"
+
+#: src/Buying/SellForm.php:98
+msgid "Number of records"
+msgstr "Nombre de disques"
+
+#: src/Buying/SellForm.php:112
+msgid "Rock, jazz, French pop…"
+msgstr "Rock, jazz, chanson française…"
+
+#: src/Buying/SellForm.php:113
+msgid "Your records"
+msgstr "Vos disques"
+
+#: src/Buying/SellForm.php:113
+msgid ""
+"A few artists or titles, the general condition, original pressings or "
+"reissues…"
+msgstr ""
+"Quelques artistes ou titres, l’état général, pressages originaux ou "
+"rééditions…"
+
+#: src/Buying/SellForm.php:114
+msgid "Photos (optional, 5 at most)"
+msgstr "Photos (facultatif, 5 au plus)"
+
+#: src/Buying/SellForm.php:115
+msgid "Your list (optional: spreadsheet, PDF or text)"
+msgstr "Votre liste (facultatif : tableur, PDF ou texte)"
+
+#: src/Buying/SellForm.php:121 src/Reservation/Form.php:94
+msgid "I agree that my details are used to answer this request (%s)."
+msgstr ""
+"J’accepte que mes coordonnées soient utilisées pour répondre à cette demande"
+" (%s)."
+
+#: src/Buying/SellForm.php:121 src/Reservation/Form.php:94
+msgid "privacy policy"
+msgstr "politique de confidentialité"
+
+#: src/Buying/SellForm.php:122 src/Reservation/Form.php:95
+msgid "I agree that my details are used to answer this request."
+msgstr ""
+"J’accepte que mes coordonnées soient utilisées pour répondre à cette "
+"demande."
+
+#: src/Buying/SellForm.php:125
+msgid "Send my offer"
+msgstr "Envoyer ma proposition"
+
+#: src/Buying/SellForm.php:344 src/Reservation/Mailer.php:49
+msgid "Name: %s"
+msgstr "Nom : %s"
+
+#: src/Buying/SellForm.php:346 src/Reservation/Mailer.php:51
+msgid "E-mail: %s"
+msgstr "E-mail : %s"
+
+#: src/Buying/SellForm.php:348 src/Reservation/Mailer.php:53
+msgid "Phone: %s"
+msgstr "Téléphone : %s"
+
+#: src/Buying/SellForm.php:350
+msgid "City: %s"
+msgstr "Ville : %s"
+
+#: src/Buying/SellForm.php:353
+msgid "Genres: %s"
+msgstr "Genres : %s"
+
+#: src/Buying/SellForm.php:362
+msgid "%d file attached to the offer, visible in the admin."
+msgid_plural "%d files attached to the offer, visible in the admin."
+msgstr[0] "%d fichier joint à la proposition, visible dans l’administration."
+msgstr[1] ""
+"%d fichiers joints à la proposition, visibles dans l’administration."
+
+#: src/Buying/SellForm.php:366
+msgid "See the offer: %s"
+msgstr "Voir la proposition : %s"
+
+#: src/Buying/SellForm.php:371
+msgid "Records to sell: %1$s, %2$s"
+msgstr "Disques à vendre : %1$s, %2$s"
+
+#: src/Buying/SellForm.php:380
+msgid "Your offer to %s"
+msgstr "Votre proposition à %s"
+
+#: src/Buying/SellForm.php:382 src/Reservation/Mailer.php:81
+msgid "Hello %s,"
+msgstr "Bonjour %s,"
+
+#: src/Buying/SellForm.php:382
+msgid ""
+"We have received your offer and will get back to you after looking at it."
+msgstr ""
+"Nous avons bien reçu votre proposition et revenons vers vous après l’avoir "
+"étudiée."
+
+#: src/Commerce/Providers/ShowcaseProvider.php:36
+msgid "Showcase (reservation, no online checkout)"
+msgstr "Vitrine (réservation, sans paiement en ligne)"
+
+#: src/Commerce/Providers/ShowcaseProvider.php:68
+msgctxt "before the lowest price"
+msgid "From"
+msgstr "À partir de"
+
+#: src/Commerce/Providers/ShowcaseProvider.php:104
+msgid "Reserve this item"
+msgstr "Réserver cet article"
+
+#: src/Commerce/Providers/WooCommerceProvider.php:34
+msgid "WooCommerce (online checkout)"
+msgstr "WooCommerce (paiement en ligne)"
+
+#: src/Commerce/Providers/WooCommerceProvider.php:89
+msgid "%1$s (%2$d in stock)"
+msgid_plural "%1$s (%2$d in stock)"
+msgstr[0] "%1$s (%2$d en stock)"
+msgstr[1] "%1$s (%2$d en stock)"
+
+#: src/Commerce/Providers/WooCommerceProvider.php:101
+msgid "Add to cart"
+msgstr "Ajouter au panier"
+
+#: src/Commerce/WooSync.php:162 src/Commerce/WooSync.php:177
+msgctxt "page slug"
+msgid "shop"
+msgstr "boutique"
+
+#: src/Commerce/WooSync.php:176
+msgid "Shop"
+msgstr "Boutique"
+
+#: src/Commerce/WooSync.php:206
+msgid ""
+"WooCommerce had chosen your home page as shop page, which hides your catalog"
+" sections. The shop now uses the page \"%s\"; your home page is back."
+msgstr ""
+"WooCommerce avait choisi votre page d’accueil comme page Boutique, ce qui "
+"masquait vos sections de catalogue. La boutique utilise maintenant la page «"
+" %s » ; votre accueil est rétabli."
+
+#: src/Commerce/WooSync.php:225
+msgid ""
+"Your home page is also the WooCommerce shop page: WooCommerce replaces its "
+"content with its own product list, and your catalog sections disappear. "
+"Choose another page (or none) as shop page."
+msgstr ""
+"Votre page d’accueil est aussi la page Boutique de WooCommerce : WooCommerce"
+" remplace son contenu par sa propre liste de produits, et vos sections de "
+"catalogue disparaissent. Choisissez une autre page (ou aucune) comme page "
+"Boutique."
+
+#: src/Commerce/WooSync.php:227
+msgid "Open the WooCommerce product settings"
+msgstr "Ouvrir les réglages produits de WooCommerce"
+
+#: src/Commerce/WooSync.php:668 src/Reservation/Mailer.php:34
+msgid "Location in the shop: %s"
+msgstr "Emplacement en boutique : %s"
+
+#: src/Commerce/WooSync.php:859
+msgid ""
+"WooCommerce: %d release is waiting for its product. It is created in the "
+"background."
+msgid_plural ""
+"WooCommerce: %d releases are waiting for their product. They are created in "
+"the background."
+msgstr[0] ""
+"WooCommerce : %d référence attend son produit. Il est créé en arrière-plan."
+msgstr[1] ""
+"WooCommerce : %d références attendent leur produit. Ils sont créés en "
+"arrière-plan."
+
+#: src/Commerce/WooSync.php:863
+msgid "Convert now"
+msgstr "Convertir maintenant"
+
+#: src/Commerce/WooSync.php:866
+msgid "All releases are ready for WooCommerce."
+msgstr "Toutes les références sont prêtes pour WooCommerce."
+
+#: src/Commerce/WooSync.php:868
+msgid "Converting… %d left"
+msgstr "Conversion en cours… %d restantes"
+
+#: src/Content/Grading.php:38
+msgid "M · Mint"
+msgstr "M · Mint (neuf)"
+
+#: src/Content/Grading.php:39
+msgid "NM · Near Mint (M-)"
+msgstr "NM · Near Mint (M-)"
+
+#: src/Content/Grading.php:40
+msgid "VG+ · Very Good Plus"
+msgstr "VG+ · Very Good Plus"
+
+#: src/Content/Grading.php:41
+msgid "VG · Very Good"
+msgstr "VG · Very Good"
+
+#: src/Content/Grading.php:42
+msgid "G+ · Good Plus"
+msgstr "G+ · Good Plus"
+
+#: src/Content/Grading.php:43
+msgid "G · Good"
+msgstr "G · Good"
+
+#: src/Content/Grading.php:44
+msgid "F · Fair"
+msgstr "F · Fair"
+
+#: src/Content/Grading.php:45
+msgid "P · Poor"
+msgstr "P · Poor"
+
+#: src/Content/Grading.php:56
+msgid "Generic sleeve"
+msgstr "Pochette générique"
+
+#: src/Content/Grading.php:57
+msgid "No sleeve"
+msgstr "Sans pochette"
+
+#: src/Content/PostType.php:34
+msgctxt "catalog URL slug"
+msgid "catalog"
+msgstr "catalogue"
+
+#: src/Content/PostType.php:48
+msgctxt "post type general name"
+msgid "Releases"
+msgstr "Références"
+
+#: src/Content/PostType.php:49
+msgctxt "post type singular name"
+msgid "Release"
+msgstr "Référence"
+
+#: src/Content/PostType.php:50
+msgctxt "admin menu"
+msgid "Catalog"
+msgstr "Catalogue"
+
+#: src/Content/PostType.php:51
+msgid "Add new"
+msgstr "Ajouter"
+
+#: src/Content/PostType.php:52
+msgid "Add new release"
+msgstr "Ajouter une référence"
+
+#: src/Content/PostType.php:53
+msgid "Edit release"
+msgstr "Modifier la référence"
+
+#: src/Content/PostType.php:54
+msgid "New release"
+msgstr "Nouvelle référence"
+
+#: src/Content/PostType.php:55
+msgid "View release"
+msgstr "Voir la référence"
+
+#: src/Content/PostType.php:56
+msgid "View catalog"
+msgstr "Voir le catalogue"
+
+#: src/Content/PostType.php:57
+msgid "Search releases"
+msgstr "Rechercher des références"
+
+#: src/Content/PostType.php:58
+msgid "No releases found."
+msgstr "Aucune référence trouvée."
+
+#: src/Content/PostType.php:59
+msgid "No releases found in Trash."
+msgstr "Aucune référence dans la corbeille."
+
+#: src/Content/PostType.php:60
+msgid "All releases"
+msgstr "Toutes les références"
+
+#: src/Content/PostType.php:62
+msgid "Front cover"
+msgstr "Pochette (recto)"
+
+#: src/Content/PostType.php:63
+msgid "Set front cover"
+msgstr "Définir la pochette"
+
+#: src/Content/PostType.php:64
+msgid "Remove front cover"
+msgstr "Retirer la pochette"
+
+#: src/Content/PostType.php:65
+msgid "Use as front cover"
+msgstr "Utiliser comme pochette"
+
+#: src/Content/PostType.php:66
+msgid "Release published."
+msgstr "Référence publiée."
+
+#: src/Content/PostType.php:67
+msgid "Release updated."
+msgstr "Référence mise à jour."
+
+#: src/Content/Taxonomies.php:229
+msgctxt "taxonomy URL slug"
+msgid "format"
+msgstr "format"
+
+#: src/Content/Taxonomies.php:231
+msgctxt "taxonomy general name"
+msgid "Formats"
+msgstr "Formats"
+
+#: src/Content/Taxonomies.php:232
+msgctxt "taxonomy singular name"
+msgid "Format"
+msgstr "Format"
+
+#: src/Content/Taxonomies.php:233 src/Front/Blocks.php:505
+msgid "All formats"
+msgstr "Tous les formats"
+
+#: src/Content/Taxonomies.php:234
+msgid "Edit format"
+msgstr "Modifier le format"
+
+#: src/Content/Taxonomies.php:235
+msgid "View format"
+msgstr "Voir le format"
+
+#: src/Content/Taxonomies.php:236
+msgid "Add new format"
+msgstr "Ajouter un format"
+
+#: src/Content/Taxonomies.php:237
+msgid "New format name"
+msgstr "Nom du nouveau format"
+
+#: src/Content/Taxonomies.php:238
+msgid "Parent format"
+msgstr "Format parent"
+
+#: src/Content/Taxonomies.php:239
+msgid "Search formats"
+msgstr "Rechercher des formats"
+
+#: src/Content/Taxonomies.php:240
+msgid "No formats found."
+msgstr "Aucun format trouvé."
+
+#: src/Content/Taxonomies.php:241
+msgid "&larr; Go to formats"
+msgstr "&larr; Aller aux formats"
+
+#: src/Content/Taxonomies.php:247
+msgctxt "taxonomy URL slug"
+msgid "genre"
+msgstr "genre"
+
+#: src/Content/Taxonomies.php:249
+msgctxt "taxonomy general name"
+msgid "Genres"
+msgstr "Genres"
+
+#: src/Content/Taxonomies.php:250
+msgctxt "taxonomy singular name"
+msgid "Genre"
+msgstr "Genre"
+
+#: src/Content/Taxonomies.php:251 src/Front/Blocks.php:506
+msgid "All genres"
+msgstr "Tous les genres"
+
+#: src/Content/Taxonomies.php:252
+msgid "Edit genre"
+msgstr "Modifier le genre"
+
+#: src/Content/Taxonomies.php:253
+msgid "View genre"
+msgstr "Voir le genre"
+
+#: src/Content/Taxonomies.php:254
+msgid "Add new genre"
+msgstr "Ajouter un genre"
+
+#: src/Content/Taxonomies.php:255
+msgid "New genre name"
+msgstr "Nom du nouveau genre"
+
+#: src/Content/Taxonomies.php:256
+msgid "Parent genre"
+msgstr "Genre parent"
+
+#: src/Content/Taxonomies.php:257
+msgid "Search genres"
+msgstr "Rechercher des genres"
+
+#: src/Content/Taxonomies.php:258
+msgid "No genres found."
+msgstr "Aucun genre trouvé."
+
+#: src/Content/Taxonomies.php:259
+msgid "&larr; Go to genres"
+msgstr "&larr; Aller aux genres"
+
+#: src/Content/Taxonomies.php:265
+msgctxt "taxonomy URL slug"
+msgid "artist"
+msgstr "artiste"
+
+#: src/Content/Taxonomies.php:267
+msgctxt "taxonomy general name"
+msgid "Artists"
+msgstr "Artistes"
+
+#: src/Content/Taxonomies.php:268
+msgctxt "taxonomy singular name"
+msgid "Artist"
+msgstr "Artiste"
+
+#: src/Content/Taxonomies.php:269
+msgid "All artists"
+msgstr "Tous les artistes"
+
+#: src/Content/Taxonomies.php:270
+msgid "Edit artist"
+msgstr "Modifier l’artiste"
+
+#: src/Content/Taxonomies.php:271
+msgid "View artist"
+msgstr "Voir l’artiste"
+
+#: src/Content/Taxonomies.php:272
+msgid "Add new artist"
+msgstr "Ajouter un artiste"
+
+#: src/Content/Taxonomies.php:273
+msgid "New artist name"
+msgstr "Nom du nouvel artiste"
+
+#: src/Content/Taxonomies.php:274
+msgid "Search artists"
+msgstr "Rechercher des artistes"
+
+#: src/Content/Taxonomies.php:275
+msgid "No artists found."
+msgstr "Aucun artiste trouvé."
+
+#: src/Content/Taxonomies.php:276
+msgid "Separate artists with commas"
+msgstr "Séparez les artistes par des virgules"
+
+#: src/Content/Taxonomies.php:277
+msgid "Choose from the most used artists"
+msgstr "Choisir parmi les artistes les plus utilisés"
+
+#: src/Content/Taxonomies.php:278
+msgid "&larr; Go to artists"
+msgstr "&larr; Aller aux artistes"
+
+#: src/Content/Taxonomies.php:284
+msgctxt "taxonomy URL slug"
+msgid "label"
+msgstr "label"
+
+#: src/Content/Taxonomies.php:286
+msgctxt "taxonomy general name"
+msgid "Record labels"
+msgstr "Labels"
+
+#: src/Content/Taxonomies.php:287
+msgctxt "taxonomy singular name"
+msgid "Record label"
+msgstr "Label"
+
+#: src/Content/Taxonomies.php:288
+msgid "All record labels"
+msgstr "Tous les labels"
+
+#: src/Content/Taxonomies.php:289
+msgid "Edit record label"
+msgstr "Modifier le label"
+
+#: src/Content/Taxonomies.php:290
+msgid "View record label"
+msgstr "Voir le label"
+
+#: src/Content/Taxonomies.php:291
+msgid "Add new record label"
+msgstr "Ajouter un label"
+
+#: src/Content/Taxonomies.php:292
+msgid "New record label name"
+msgstr "Nom du nouveau label"
+
+#: src/Content/Taxonomies.php:293
+msgid "Search record labels"
+msgstr "Rechercher des labels"
+
+#: src/Content/Taxonomies.php:294
+msgid "No record labels found."
+msgstr "Aucun label trouvé."
+
+#: src/Content/Taxonomies.php:295
+msgid "Separate record labels with commas"
+msgstr "Séparez les labels par des virgules"
+
+#: src/Content/Taxonomies.php:296
+msgid "Choose from the most used record labels"
+msgstr "Choisir parmi les labels les plus utilisés"
+
+#: src/Content/Taxonomies.php:297
+msgid "&larr; Go to record labels"
+msgstr "&larr; Aller aux labels"
+
+#: src/Content/Taxonomies.php:303
+msgctxt "taxonomy URL slug"
+msgid "country"
+msgstr "pays"
+
+#: src/Content/Taxonomies.php:305
+msgctxt "taxonomy general name"
+msgid "Countries"
+msgstr "Pays"
+
+#: src/Content/Taxonomies.php:306
+msgctxt "taxonomy singular name"
+msgid "Country"
+msgstr "Pays"
+
+#: src/Content/Taxonomies.php:307
+msgid "All countries"
+msgstr "Tous les pays"
+
+#: src/Content/Taxonomies.php:308
+msgid "Edit country"
+msgstr "Modifier le pays"
+
+#: src/Content/Taxonomies.php:309
+msgid "View country"
+msgstr "Voir le pays"
+
+#: src/Content/Taxonomies.php:310
+msgid "Add new country"
+msgstr "Ajouter un pays"
+
+#: src/Content/Taxonomies.php:311
+msgid "New country name"
+msgstr "Nom du nouveau pays"
+
+#: src/Content/Taxonomies.php:312
+msgid "Search countries"
+msgstr "Rechercher des pays"
+
+#: src/Content/Taxonomies.php:313
+msgid "No countries found."
+msgstr "Aucun pays trouvé."
+
+#: src/Content/Taxonomies.php:314
+msgid "Separate countries with commas"
+msgstr "Séparez les pays par des virgules"
+
+#: src/Content/Taxonomies.php:315
+msgid "Choose from the most used countries"
+msgstr "Choisir parmi les pays les plus utilisés"
+
+#: src/Content/Taxonomies.php:316
+msgid "&larr; Go to countries"
+msgstr "&larr; Aller aux pays"
+
+#: src/Content/Taxonomies.php:322
+msgctxt "taxonomy URL slug"
+msgid "condition"
+msgstr "etat"
+
+#: src/Content/Taxonomies.php:324
+msgctxt "taxonomy general name"
+msgid "Conditions"
+msgstr "États"
+
+#: src/Content/Taxonomies.php:325
+msgctxt "taxonomy singular name"
+msgid "Condition"
+msgstr "État"
+
+#: src/Content/Taxonomies.php:326
+msgid "All conditions"
+msgstr "Tous les états"
+
+#: src/Content/Taxonomies.php:327
+msgid "Edit condition"
+msgstr "Modifier l’état"
+
+#: src/Content/Taxonomies.php:328
+msgid "View condition"
+msgstr "Voir l’état"
+
+#: src/Content/Taxonomies.php:329
+msgid "Add new condition"
+msgstr "Ajouter un état"
+
+#: src/Content/Taxonomies.php:330
+msgid "New condition name"
+msgstr "Nom du nouvel état"
+
+#: src/Content/Taxonomies.php:331
+msgid "Parent condition"
+msgstr "État parent"
+
+#: src/Content/Taxonomies.php:332
+msgid "Search conditions"
+msgstr "Rechercher des états"
+
+#: src/Content/Taxonomies.php:333
+msgid "No conditions found."
+msgstr "Aucun état trouvé."
+
+#: src/Content/Taxonomies.php:334
+msgid "&larr; Go to conditions"
+msgstr "&larr; Aller aux états"
+
+#: src/Content/Taxonomies.php:340
+msgctxt "taxonomy URL slug"
+msgid "edition"
+msgstr "edition"
+
+#: src/Content/Taxonomies.php:342
+msgctxt "taxonomy general name"
+msgid "Editions"
+msgstr "Éditions"
+
+#: src/Content/Taxonomies.php:343
+msgctxt "taxonomy singular name"
+msgid "Edition"
+msgstr "Édition"
+
+#: src/Content/Taxonomies.php:344
+msgid "All editions"
+msgstr "Toutes les éditions"
+
+#: src/Content/Taxonomies.php:345
+msgid "Edit edition"
+msgstr "Modifier l’édition"
+
+#: src/Content/Taxonomies.php:346
+msgid "View edition"
+msgstr "Voir l’édition"
+
+#: src/Content/Taxonomies.php:347
+msgid "Add new edition"
+msgstr "Ajouter une édition"
+
+#: src/Content/Taxonomies.php:348
+msgid "New edition name"
+msgstr "Nom de la nouvelle édition"
+
+#: src/Content/Taxonomies.php:349
+msgid "Parent edition"
+msgstr "Édition parente"
+
+#: src/Content/Taxonomies.php:350
+msgid "Search editions"
+msgstr "Rechercher des éditions"
+
+#: src/Content/Taxonomies.php:351
+msgid "No editions found."
+msgstr "Aucune édition trouvée."
+
+#: src/Content/Taxonomies.php:352
+msgid "&larr; Go to editions"
+msgstr "&larr; Aller aux éditions"
+
+#: src/Content/Taxonomies.php:358
+msgctxt "taxonomy URL slug"
+msgid "feature"
+msgstr "particularite"
+
+#: src/Content/Taxonomies.php:360
+msgctxt "taxonomy general name"
+msgid "Features"
+msgstr "Particularités"
+
+#: src/Content/Taxonomies.php:361
+msgctxt "taxonomy singular name"
+msgid "Feature"
+msgstr "Particularité"
+
+#: src/Content/Taxonomies.php:362
+msgid "All features"
+msgstr "Toutes les particularités"
+
+#: src/Content/Taxonomies.php:363
+msgid "Edit feature"
+msgstr "Modifier la particularité"
+
+#: src/Content/Taxonomies.php:364
+msgid "View feature"
+msgstr "Voir la particularité"
+
+#: src/Content/Taxonomies.php:365
+msgid "Add new feature"
+msgstr "Ajouter une particularité"
+
+#: src/Content/Taxonomies.php:366
+msgid "New feature name"
+msgstr "Nom de la nouvelle particularité"
+
+#: src/Content/Taxonomies.php:367
+msgid "Parent feature"
+msgstr "Particularité parente"
+
+#: src/Content/Taxonomies.php:368
+msgid "Search features"
+msgstr "Rechercher des particularités"
+
+#: src/Content/Taxonomies.php:369
+msgid "No features found."
+msgstr "Aucune particularité trouvée."
+
+#: src/Content/Taxonomies.php:370
+msgid "&larr; Go to features"
+msgstr "&larr; Aller aux particularités"
+
+#: src/Covers/Fetcher.php:189
+msgid "Cover found"
+msgstr "pochette trouvée"
+
+#: src/Covers/Fetcher.php:190
+msgid "Cover of another edition of the album"
+msgstr "pochette d’une autre édition de l’album"
+
+#: src/Covers/Fetcher.php:191
+msgid "Not found on MusicBrainz"
+msgstr "introuvable sur MusicBrainz"
+
+#: src/Covers/Fetcher.php:192
+msgid "Found on MusicBrainz, but without cover"
+msgstr "trouvée sur MusicBrainz, mais sans pochette"
+
+#: src/Covers/Fetcher.php:193
+msgid "Connection problem, will be retried"
+msgstr "problème de connexion, nouvelle tentative"
+
+#: src/Covers/Fetcher.php:194
+msgid "MusicBrainz asks to slow down, will be retried"
+msgstr "MusicBrainz demande de ralentir, nouvelle tentative"
+
+#: src/Feeds/GoogleMerchant.php:245
+msgid "Copy graded %s."
+msgstr "Exemplaire gradé %s."
+
+#: src/Front/Blocks.php:113
+msgid "Illustration: your copy may differ"
+msgstr "Visuel d’illustration : votre exemplaire peut différer"
+
+#: src/Front/Blocks.php:128
+msgid "Record shop catalog"
+msgstr "Catalogue du disquaire"
+
+#: src/Front/Blocks.php:134 src/Front/Blocks.php:141
+#: src/Front/CatalogQuery.php:252
+msgid "Latest arrivals"
+msgstr "Derniers arrivages"
+
+#: src/Front/Blocks.php:135
+msgid ""
+"Artist index, filters and a grid of the latest releases, with a link to the "
+"full catalog."
+msgstr ""
+"Index des artistes, filtres et grille des dernières références, avec un lien"
+" vers le catalogue complet."
+
+#: src/Front/Blocks.php:157
+msgid "Browse the whole catalog"
+msgstr "Parcourir tout le catalogue"
+
+#: src/Front/Blocks.php:275
+msgid "%d copy"
+msgid_plural "%d copies"
+msgstr[0] "%d exemplaire"
+msgstr[1] "%d exemplaires"
+
+#: src/Front/Blocks.php:296 src/Front/Blocks.php:505 src/Import/Fields.php:29
+msgid "Format"
+msgstr "Format"
+
+#: src/Front/Blocks.php:297 src/Import/Fields.php:27
+msgid "Record label"
+msgstr "Label"
+
+#: src/Front/Blocks.php:299
+msgid "Year"
+msgstr "Année"
+
+#: src/Front/Blocks.php:300 src/Import/Fields.php:32
+msgid "Country"
+msgstr "Pays"
+
+#: src/Front/Blocks.php:301 src/Front/Blocks.php:506
+msgid "Genre"
+msgstr "Genre"
+
+#: src/Front/Blocks.php:302
+msgid "Edition"
+msgstr "Édition"
+
+#: src/Front/Blocks.php:303
+msgid "Features"
+msgstr "Particularités"
+
+#: src/Front/Blocks.php:304
+msgid "Pressing"
+msgstr "Pressage"
+
+#: src/Front/Blocks.php:305 src/Import/Fields.php:35
+msgid "Barcode"
+msgstr "Code-barre"
+
+#: src/Front/Blocks.php:353
+msgid "Price on request"
+msgstr "Prix sur demande"
+
+#: src/Front/Blocks.php:361
+msgid "Reserve"
+msgstr "Réserver"
+
+#: src/Front/Blocks.php:379
+msgid "No copy available right now. Ask us, it may come back in the bins."
+msgstr ""
+"Aucun exemplaire disponible pour le moment. Demandez-nous, il reviendra "
+"peut-être dans les bacs."
+
+#: src/Front/Blocks.php:382
+msgid "Copy for sale"
+msgid_plural "Copies for sale"
+msgstr[0] "Exemplaire en vente"
+msgstr[1] "Exemplaires en vente"
+
+#: src/Front/Blocks.php:501
+msgid "Filter the catalog"
+msgstr "Filtrer le catalogue"
+
+#: src/Front/Blocks.php:501
+msgid "releases shown"
+msgstr "références affichées"
+
+#: src/Front/Blocks.php:503
+msgid "Search"
+msgstr "Rechercher"
+
+#: src/Front/Blocks.php:504
+msgid "Artist, album, catalog number"
+msgstr "Artiste, album, n° de catalogue"
+
+#: src/Front/Blocks.php:510
+msgid "Sort by"
+msgstr "Trier par"
+
+#: src/Front/Blocks.php:515
+msgid "Hide sold items"
+msgstr "Masquer les articles vendus"
+
+#: src/Front/Blocks.php:522
+msgid "Filter"
+msgstr "Filtrer"
+
+#: src/Front/Blocks.php:525
+msgid "Clear filters"
+msgstr "Effacer les filtres"
+
+#: src/Front/Blocks.php:557
+msgctxt "catalog filter"
+msgid "Sub-genre"
+msgstr "Sous-genre"
+
+#: src/Front/Blocks.php:557
+msgid "All sub-genres"
+msgstr "Tous les sous-genres"
+
+#: src/Front/Blocks.php:612
+msgid "Artists starting with a digit or symbol"
+msgstr "Artistes commençant par un chiffre ou un symbole"
+
+#: src/Front/Blocks.php:718
+msgid "Record: %s"
+msgstr "Disque : %s"
+
+#: src/Front/Blocks.php:723
+msgid "Sleeve: %s"
+msgstr "Pochette : %s"
+
+#: src/Front/CatalogQuery.php:251
+msgid "Artist, A to Z"
+msgstr "Artiste, de A à Z"
+
+#: src/Front/CatalogQuery.php:253
+msgid "Price, low to high"
+msgstr "Prix croissant"
+
+#: src/Front/CatalogQuery.php:254
+msgid "Price, high to low"
+msgstr "Prix décroissant"
+
+#: src/Front/LegalNotice.php:35
+msgid "Site publisher"
+msgstr "Éditeur du site"
+
+#: src/Front/LegalNotice.php:38 src/Settings/Settings.php:92
+msgid "Legal form"
+msgstr "Forme juridique"
+
+#: src/Front/LegalNotice.php:39 src/Settings/Settings.php:170
+msgid "Share capital"
+msgstr "Capital social"
+
+#: src/Front/LegalNotice.php:40 src/Front/LegalNotice.php:59
+msgid "Address"
+msgstr "Adresse"
+
+#: src/Front/LegalNotice.php:43 src/Settings/Settings.php:153
+msgid "Registration number"
+msgstr "Numéro d’immatriculation"
+
+#: src/Front/LegalNotice.php:44 src/Settings/Settings.php:165
+msgid "VAT number"
+msgstr "Numéro de TVA"
+
+#: src/Front/LegalNotice.php:49 src/Settings/Settings.php:176
+msgid "Publication director"
+msgstr "Directeur de la publication"
+
+#: src/Front/LegalNotice.php:56 src/Settings/Settings.php:203
+msgid "Hosting"
+msgstr "Hébergement"
+
+#: src/Front/LegalNotice.php:58
+msgid "Provider"
+msgstr "Hébergeur"
+
+#: src/Front/LegalNotice.php:61 src/Front/LegalNotice.php:70
+msgid "Website"
+msgstr "Site web"
+
+#: src/Front/LegalNotice.php:67
+msgid "Consumer mediation"
+msgstr "Médiation de la consommation"
+
+#: src/Front/LegalNotice.php:69
+msgid "Mediator"
+msgstr "Médiateur"
+
+#: src/Front/LegalNotice.php:99
+msgctxt "label followed by its value"
+msgid "%s:"
+msgstr "%s :"
+
+#: src/Front/ReleaseSchema.php:335
+msgid "%1$s \"%2$s\" by %3$s"
+msgstr "%1$s « %2$s » de %3$s"
+
+#: src/Front/ReleaseSchema.php:336
+msgid "Record"
+msgstr "Disque"
+
+#: src/Front/ReleaseSchema.php:338
+msgid "various artists"
+msgstr "artistes divers"
+
+#: src/Front/ShopStatus.php:91 src/Front/ShopStatus.php:228
+msgid "Opens today at %s"
+msgstr "Ouvre aujourd’hui à %s"
+
+#: src/Front/ShopStatus.php:91 src/Front/ShopStatus.php:230
+msgid "Closed now, reopens at %s"
+msgstr "Fermé, réouverture à %s"
+
+#: src/Front/ShopStatus.php:99 src/Front/ShopStatus.php:232
+msgid "Open today until %s"
+msgstr "Ouvert aujourd’hui jusqu’à %s"
+
+#: src/Front/ShopStatus.php:119 src/Front/ShopStatus.php:234
+msgid "Closed, opens tomorrow at %s"
+msgstr "Fermé, ouvre demain à %s"
+
+#: src/Front/ShopStatus.php:121 src/Front/ShopStatus.php:236
+msgid "Closed, opens %1$s at %2$s"
+msgstr "Fermé, ouvre %1$s à %2$s"
+
+#: src/Front/ShopStatus.php:146
+msgid "Closed, reopens on %s"
+msgstr "Fermé, réouverture le %s"
+
+#: src/Front/ShopStatus.php:147
+msgctxt "reopening date"
+msgid "F j"
+msgstr "j F"
+
+#: src/Front/ShopStatus.php:176
+msgctxt "opening time, whole hour"
+msgid "g a"
+msgstr "G \\h"
+
+#: src/Front/ShopStatus.php:177
+msgctxt "opening time with minutes"
+msgid "g:i a"
+msgstr "G \\h i"
+
+#: src/Front/ShopStatus.php:187
+msgctxt "in a sentence"
+msgid "Monday"
+msgstr "lundi"
+
+#: src/Front/ShopStatus.php:188
+msgctxt "in a sentence"
+msgid "Tuesday"
+msgstr "mardi"
+
+#: src/Front/ShopStatus.php:189
+msgctxt "in a sentence"
+msgid "Wednesday"
+msgstr "mercredi"
+
+#: src/Front/ShopStatus.php:190
+msgctxt "in a sentence"
+msgid "Thursday"
+msgstr "jeudi"
+
+#: src/Front/ShopStatus.php:191
+msgctxt "in a sentence"
+msgid "Friday"
+msgstr "vendredi"
+
+#: src/Front/ShopStatus.php:192
+msgctxt "in a sentence"
+msgid "Saturday"
+msgstr "samedi"
+
+#: src/Front/ShopStatus.php:193
+msgctxt "in a sentence"
+msgid "Sunday"
+msgstr "dimanche"
+
+#: src/Front/ShopStatus.php:291
+msgid "%1$s to %2$s"
+msgstr "%1$s à %2$s"
+
+#: src/Front/ShopStatus.php:306 src/Settings/Settings.php:129
+msgid "Opening hours"
+msgstr "Horaires d’ouverture"
+
+#: src/Front/Templates.php:109
+msgid "Single release"
+msgstr "Fiche référence"
+
+#: src/Front/Templates.php:110
+msgid "A release page: cover, details, copies for sale and tracklist."
+msgstr ""
+"La page d’une référence : pochette, détails, exemplaires en vente et liste "
+"des titres."
+
+#: src/Front/Templates.php:119
+msgid "All releases, with the artist index and the format and genre filters."
+msgstr ""
+"Toutes les références, avec l’index des artistes et les filtres par format "
+"et genre."
+
+#: src/Front/Templates.php:137
+msgid "Catalog: %s"
+msgstr "Catalogue : %s"
+
+#: src/Front/Templates.php:138
+msgid "Releases of one artist, label, genre, format…"
+msgstr "Les références d’un artiste, d’un label, d’un genre, d’un format…"
+
+#: src/Front/Templates.php:221
+msgid ""
+"No release matches these filters. Try another format or genre, or clear the "
+"filters."
+msgstr ""
+"Aucun disque ne correspond à ces filtres. Essayez un autre format ou genre, "
+"ou effacez les filtres."
+
+#: src/Import/Fields.php:25
+msgid "Title (required)"
+msgstr "Titre (obligatoire)"
+
+#: src/Import/Fields.php:26
+msgid "Artist"
+msgstr "Artiste"
+
+#: src/Import/Fields.php:30
+msgid "Condition (new / used)"
+msgstr "État (neuf / occasion)"
+
+#: src/Import/Fields.php:33
+msgid "Genres"
+msgstr "Genres"
+
+#: src/Import/Fields.php:34
+msgid "Sub-genres (styles)"
+msgstr "Sous-genres (styles)"
+
+#: src/Import/Fields.php:40
+msgid ""
+"Tracklist (one track per line: position, title, duration separated by tabs)"
+msgstr ""
+"Liste des titres (un morceau par ligne : position, titre, durée séparés par "
+"des tabulations)"
+
+#: src/Import/Fields.php:41
+msgid "Copy notes"
+msgstr "Notes de l’exemplaire"
+
+#: src/Import/Fields.php:45
+msgid "Unique copy ID (e.g. Discogs listing ID)"
+msgstr ""
+"Identifiant unique de l’exemplaire (ex. identifiant d’annonce Discogs)"
+
+#: src/Import/Fields.php:46
+msgid "Discogs release ID"
+msgstr "Identifiant de référence Discogs"
+
+#: src/Import/Importer.php:70
+msgid "The file could not be read."
+msgstr "Le fichier n’a pas pu être lu."
+
+#: src/Import/Importer.php:160
+msgid "The uploaded file is no longer available."
+msgstr "Le fichier envoyé n’est plus disponible."
+
+#: src/Import/Importer.php:194
+msgid "Row %1$d: %2$s"
+msgstr "Ligne %1$d : %2$s"
+
+#: src/Import/Importer.php:239
+msgid "missing title."
+msgstr "titre manquant."
+
+#: src/Import/Importer.php:255
+msgid "release not in the catalog, nothing to complete."
+msgstr "référence absente du catalogue, rien à compléter."
+
+#: src/Installer.php:295
+msgid "LP (33 rpm)"
+msgstr "33 tours (LP)"
+
+#: src/Installer.php:299
+msgid "Single (7\" 45 rpm)"
+msgstr "45 tours (7\")"
+
+#: src/Installer.php:303
+msgid "Maxi single (12\" 45 rpm)"
+msgstr "Maxi 45 tours (12\")"
+
+#: src/Installer.php:307
+msgid "10\" record"
+msgstr "25 cm (10\")"
+
+#: src/Installer.php:311
+msgid "Box set"
+msgstr "Coffret"
+
+#: src/Installer.php:321
+msgid "DVD"
+msgstr "DVD"
+
+#: src/Installer.php:325
+msgid "Blu-ray"
+msgstr "Blu-ray"
+
+#: src/Installer.php:333
+msgid "Merchandise"
+msgstr "Merchandising"
+
+#: src/Installer.php:337
+msgid "T-shirts"
+msgstr "T-shirts"
+
+#: src/Installer.php:341
+msgid "Posters"
+msgstr "Affiches"
+
+#: src/Installer.php:345
+msgid "Accessories"
+msgstr "Accessoires"
+
+#: src/Installer.php:363
+msgid "Original pressing"
+msgstr "Pressage original"
+
+#: src/Installer.php:367
+msgid "Reissue"
+msgstr "Réédition"
+
+#: src/Installer.php:373
+msgid "Colored vinyl"
+msgstr "Vinyle couleur"
+
+#: src/Installer.php:377
+msgid "Splatter / marbled"
+msgstr "Splatter / marbré"
+
+#: src/Installer.php:381
+msgid "Picture disc"
+msgstr "Picture disc"
+
+#: src/Installer.php:385
+msgid "Limited edition"
+msgstr "Édition limitée"
+
+#: src/Installer.php:389
+msgid "Numbered"
+msgstr "Numérotée"
+
+#: src/Installer.php:393
+msgid "Promo"
+msgstr "Promo"
+
+#: src/Installer.php:397
+msgid "Record Store Day"
+msgstr "Disquaire Day / Record Store Day"
+
+#: src/Installer.php:401
+msgid "Test pressing"
+msgstr "Test pressing"
+
+#: src/Installer.php:405
+msgid "White label"
+msgstr "White label"
+
+#: src/Installer.php:409
+msgid "180 g"
+msgstr "180 g"
+
+#: src/Installer.php:413
+msgid "Gatefold sleeve"
+msgstr "Pochette ouvrante"
+
+#: src/Installer.php:417
+msgid "Poster included"
+msgstr "Poster inclus"
+
+#: src/Installer.php:421
+msgid "Goodies included"
+msgstr "Goodies inclus"
+
+#: src/Installer.php:425
+msgid "Special packaging"
+msgstr "Packaging spécial"
+
+#: src/Reservation/Form.php:59
+msgid "Thank you, your request has been sent."
+msgstr "Merci, votre demande a bien été envoyée."
+
+#: src/Reservation/Form.php:59
+msgid ""
+"We will get back to you quickly. A copy of your request has been sent to "
+"your e-mail address."
+msgstr ""
+"Nous revenons vers vous rapidement. Une copie de votre demande vous a été "
+"envoyée par e-mail."
+
+#: src/Reservation/Form.php:60
+msgid "Back to the catalog"
+msgstr "Retour au catalogue"
+
+#: src/Reservation/Form.php:84
+msgid "When will you come by the shop? Any question about the record?"
+msgstr "Quand passerez-vous à la boutique ? Une question sur le disque ?"
+
+#: src/Reservation/Form.php:84
+msgid "Which record are you looking for? Artist, title, format…"
+msgstr "Quel disque cherchez-vous ? Artiste, titre, format…"
+
+#: src/Reservation/Form.php:85
+msgid "Message (optional)"
+msgstr "Message (facultatif)"
+
+#: src/Reservation/Form.php:85
+msgid "Your request"
+msgstr "Votre demande"
+
+#: src/Reservation/Form.php:98
+msgid "Send my reservation request"
+msgstr "Envoyer ma demande de réservation"
+
+#: src/Reservation/Form.php:98
+msgid "Send my request"
+msgstr "Envoyer ma demande"
+
+#: src/Reservation/Form.php:120 src/Reservation/Mailer.php:112
+msgid "Copy graded %s"
+msgstr "Exemplaire gradé %s"
+
+#: src/Reservation/Form.php:128
+msgid ""
+"This copy is already reserved or sold, but you can still send a request: we "
+"will tell you if another one comes in."
+msgstr ""
+"Cet exemplaire est déjà réservé ou vendu, mais vous pouvez quand même "
+"envoyer une demande : nous vous préviendrons si un autre arrive."
+
+#: src/Reservation/Form.php:169
+msgid "Please tell us which record you are looking for."
+msgstr "Merci de nous indiquer quel disque vous cherchez."
+
+#: src/Reservation/Form.php:172
+msgid "Your request could not be saved. Please try again, or call us."
+msgstr ""
+"Votre demande n’a pas pu être enregistrée. Réessayez, ou appelez-nous."
+
+#: src/Reservation/Mailer.php:39
+msgid "Reservation request: %s"
+msgstr "Demande de réservation : %s"
+
+#: src/Reservation/Mailer.php:41
+msgid "Record request from %s"
+msgstr "Recherche de disque de %s"
+
+#: src/Reservation/Mailer.php:63
+msgid "See the request: %s"
+msgstr "Voir la demande : %s"
+
+#: src/Reservation/Mailer.php:76
+msgid "Your request to %s"
+msgstr "Votre demande à %s"
+
+#: src/Reservation/Mailer.php:81
+msgid "We have received your request and will get back to you quickly."
+msgstr "Nous avons bien reçu votre demande et revenons vers vous rapidement."
+
+#: src/Reservation/Requests.php:57
+msgid "Reservation requests"
+msgstr "Demandes de réservation"
+
+#: src/Reservation/Requests.php:58 src/Reservation/Requests.php:61
+msgid "Reservation request"
+msgstr "Demande de réservation"
+
+#: src/Reservation/Requests.php:62
+msgid "Search requests"
+msgstr "Rechercher des demandes"
+
+#: src/Reservation/Requests.php:63
+msgid "No reservation request yet."
+msgstr "Aucune demande de réservation pour le moment."
+
+#: src/Reservation/Requests.php:161
+msgid "Request details"
+msgstr "Détails de la demande"
+
+#: src/Reservation/Requests.php:201
+msgid "Mark this copy as reserved"
+msgstr "Passer cet exemplaire en « Réservé »"
+
+#: src/Reservation/Requests.php:212
+msgid "Message"
+msgstr "Message"
+
+#: src/Reservation/Requests.php:236
+msgid "Request"
+msgstr "Demande"
+
+#: src/Reservation/Requests.php:272
+msgid "You are not allowed to edit this release."
+msgstr "Vous n’avez pas l’autorisation de modifier cette référence."
+
+#: src/Reservation/Requests.php:294
+msgid "The copy is now reserved."
+msgstr "L’exemplaire est maintenant réservé."
+
+#: src/Reservation/Requests.php:294
+msgid "This copy is no longer in stock."
+msgstr "Cet exemplaire n’est plus en stock."
+
+#: src/Reservation/Requests.php:342
+msgid ""
+"When you send a reservation request, we store your name, e-mail address, "
+"phone number if given, message and the record you asked about. We use them "
+"only to answer your request. They are deleted automatically after 12 months."
+msgstr ""
+"Lorsque vous envoyez une demande de réservation, nous conservons votre nom, "
+"votre adresse e-mail, votre téléphone s’il est indiqué, votre message et le "
+"disque demandé. Nous les utilisons uniquement pour répondre à votre demande."
+" Ils sont supprimés automatiquement au bout de 12 mois."
+
+#: src/Settings/Settings.php:63
+msgid "Identity"
+msgstr "Identité"
+
+#: src/Settings/Settings.php:67
+msgid "Who runs this shop?"
+msgstr "Qui gère cette boutique ?"
+
+#: src/Settings/Settings.php:70
+msgid "An individual (private seller)"
+msgstr "Un particulier"
+
+#: src/Settings/Settings.php:71
+msgid "A professional (sole trader or company)"
+msgstr "Un professionnel (entrepreneur individuel ou société)"
+
+#: src/Settings/Settings.php:73
+msgid ""
+"Selling regularly may require a professional status, depending on your "
+"country."
+msgstr ""
+"Vendre régulièrement peut imposer un statut professionnel, selon votre pays."
+
+#: src/Settings/Settings.php:77
+msgid "Shop name"
+msgstr "Nom de la boutique"
+
+#: src/Settings/Settings.php:78
+msgid "Leave empty to use the site title."
+msgstr "Laissez vide pour utiliser le titre du site."
+
+#: src/Settings/Settings.php:82
+msgid "Owner full name"
+msgstr "Nom et prénom du responsable"
+
+#: src/Settings/Settings.php:86
+msgid "Legal name"
+msgstr "Raison sociale"
+
+#: src/Settings/Settings.php:87
+msgid "Company or trade name as registered."
+msgstr "Dénomination ou nom commercial tel qu’immatriculé."
+
+#: src/Settings/Settings.php:99
+msgid "Contact"
+msgstr "Coordonnées"
+
+#: src/Settings/Settings.php:103
+msgid "Street address"
+msgstr "Adresse"
+
+#: src/Settings/Settings.php:107
+msgid "Postal code"
+msgstr "Code postal"
+
+#: src/Settings/Settings.php:115
+msgid "Country code"
+msgstr "Code pays"
+
+#: src/Settings/Settings.php:116
+msgid "Two letters, e.g. FR, BE, CH."
+msgstr "Deux lettres, par exemple FR, BE, CH."
+
+#: src/Settings/Settings.php:130
+msgid ""
+"One or two ranges per day, e.g. 10:00-13:00, 14:00-19:00. Leave empty when "
+"closed."
+msgstr ""
+"Une ou deux plages par jour, par exemple 10:00-13:00, 14:00-19:00. Laissez "
+"vide les jours de fermeture."
+
+#: src/Settings/Settings.php:134
+msgid "Exceptional closure from"
+msgstr "Fermeture exceptionnelle du"
+
+#: src/Settings/Settings.php:135
+msgid "Holidays, inventory… Leave empty when there is none."
+msgstr "Congés, inventaire… Laissez vide s’il n’y en a pas."
+
+#: src/Settings/Settings.php:139
+msgid "Until (included)"
+msgstr "Au (inclus)"
+
+#: src/Settings/Settings.php:143
+msgid "Closure reason"
+msgstr "Motif de la fermeture"
+
+#: src/Settings/Settings.php:144
+msgid "Optional, shown to visitors, e.g. \"summer holidays\"."
+msgstr "Facultatif, affiché aux visiteurs, par exemple « congés d’été »."
+
+#: src/Settings/Settings.php:149
+msgid "Legal information"
+msgstr "Infos légales"
+
+#: src/Settings/Settings.php:154
+msgid "SIRET in France, company number elsewhere."
+msgstr "SIRET en France, numéro d’entreprise ailleurs."
+
+#: src/Settings/Settings.php:159
+msgid "Trade registry"
+msgstr "Registre"
+
+#: src/Settings/Settings.php:160
+msgid "e.g. RCS Paris, RNE."
+msgstr "Par exemple RCS Paris, RNE."
+
+#: src/Settings/Settings.php:171
+msgid "Companies only, e.g. 1 000 €."
+msgstr "Sociétés uniquement, par exemple 1 000 €."
+
+#: src/Settings/Settings.php:177
+msgid "Person legally responsible for the site content."
+msgstr "Personne légalement responsable du contenu du site."
+
+#: src/Settings/Settings.php:181
+msgid "Consumer mediator"
+msgstr "Médiateur de la consommation"
+
+#: src/Settings/Settings.php:182
+msgid "Mandatory for professionals selling to consumers in the EU."
+msgstr ""
+"Obligatoire pour les professionnels vendant aux particuliers dans l’UE."
+
+#: src/Settings/Settings.php:187
+msgid "Mediator website"
+msgstr "Site du médiateur"
+
+#: src/Settings/Settings.php:192
+msgid "Legal notice page"
+msgstr "Page des mentions légales"
+
+#: src/Settings/Settings.php:193
+msgid ""
+"Add the [waxsc_legal_notice] shortcode to this page: it is filled from these"
+" settings."
+msgstr ""
+"Ajoutez le code court [waxsc_legal_notice] à cette page : il est rempli à "
+"partir de ces réglages."
+
+#: src/Settings/Settings.php:197
+msgid "Terms of sale page"
+msgstr "Page des CGV"
+
+#: src/Settings/Settings.php:207
+msgid "Hosting provider"
+msgstr "Hébergeur"
+
+#: src/Settings/Settings.php:212
+msgid "Hosting provider address"
+msgstr "Adresse de l’hébergeur"
+
+#: src/Settings/Settings.php:216
+msgid "Hosting provider phone"
+msgstr "Téléphone de l’hébergeur"
+
+#: src/Settings/Settings.php:220
+msgid "Hosting provider website"
+msgstr "Site de l’hébergeur"
+
+#: src/Settings/Settings.php:225
+msgid "Local SEO"
+msgstr "Référencement local"
+
+#: src/Settings/Settings.php:229
+msgid "Business type"
+msgstr "Type d’établissement"
+
+#: src/Settings/Settings.php:232
+msgid "Record shop with a physical store"
+msgstr "Disquaire avec une boutique physique"
+
+#: src/Settings/Settings.php:233
+msgid "Other shop with a physical store"
+msgstr "Autre commerce avec une boutique physique"
+
+#: src/Settings/Settings.php:234
+msgid "Online only, no store open to the public"
+msgstr "Vente en ligne uniquement, sans boutique ouverte au public"
+
+#: src/Settings/Settings.php:239
+msgid "Short description"
+msgstr "Description courte"
+
+#: src/Settings/Settings.php:240
+msgid ""
+"Two or three sentences: what you sell, your specialties. Used by search "
+"engines and AI assistants."
+msgstr ""
+"Deux ou trois phrases : ce que vous vendez, vos spécialités. Utilisée par "
+"les moteurs de recherche et les assistants IA."
+
+#: src/Settings/Settings.php:244
+msgid "Latitude"
+msgstr "Latitude"
+
+#: src/Settings/Settings.php:245
+msgid "Right-click your shop on an online map to copy its coordinates."
+msgstr ""
+"Faites un clic droit sur votre boutique dans une carte en ligne pour copier "
+"ses coordonnées."
+
+#: src/Settings/Settings.php:249
+msgid "Longitude"
+msgstr "Longitude"
+
+#: src/Settings/Settings.php:253
+msgid "Map link"
+msgstr "Lien vers la carte"
+
+#: src/Settings/Settings.php:257
+msgid "Area served"
+msgstr "Zone desservie"
+
+#: src/Settings/Settings.php:258
+msgid "e.g. Paris, Île-de-France, France. Separate with commas."
+msgstr "Par exemple Paris, Île-de-France, France. Séparez par des virgules."
+
+#: src/Settings/Settings.php:262
+msgid "Price range"
+msgstr "Gamme de prix"
+
+#: src/Settings/Settings.php:264
+msgid "Not specified"
+msgstr "Non précisée"
+
+#: src/Settings/Settings.php:273
+msgid "Network"
+msgstr "Réseaux"
+
+#: assets/blocks-editor.js:19
+msgid "Show the reserve or buy button"
+msgstr "Afficher le bouton de réservation ou d’achat"
+
+#: assets/blocks-editor.js:21
+msgid "Show the address"
+msgstr "Afficher l’adresse"
+
+#: assets/blocks-editor.js:22
+msgid "Show the hours of the week"
+msgstr "Afficher les horaires de la semaine"
+
+#: blocks/alert-form/block.json
+msgctxt "block title"
+msgid "Notify me"
+msgstr "Me prévenir"
+
+#: blocks/alert-form/block.json
+msgctxt "block description"
+msgid ""
+"Lets visitors get an e-mail when a record is back in stock, or when an "
+"artist or a label has new arrivals."
+msgstr ""
+"Permet aux visiteurs de recevoir un e-mail quand un disque revient en stock,"
+" ou quand un artiste ou un label a de nouveaux arrivages."
+
+#: blocks/artist-index/block.json
+msgctxt "block title"
+msgid "Artist index"
+msgstr "Index des artistes"
+
+#: blocks/artist-index/block.json
+msgctxt "block description"
+msgid "A to Z index of artists, like record bin dividers."
+msgstr "Index des artistes de A à Z, comme les intercalaires des bacs."
+
+#: blocks/catalog-filters/block.json
+msgctxt "block title"
+msgid "Catalog filters"
+msgstr "Filtres du catalogue"
+
+#: blocks/catalog-filters/block.json
+msgctxt "block description"
+msgid "Filter the catalog by format and genre."
+msgstr "Filtrer le catalogue par format et par genre."
+
+#: blocks/release-copies/block.json
+msgctxt "block title"
+msgid "Copies for sale"
+msgstr "Exemplaires en vente"
+
+#: blocks/release-copies/block.json
+msgctxt "block description"
+msgid "Each copy with its grades, notes, price and status."
+msgstr "Chaque exemplaire avec ses gradings, notes, prix et statut."
+
+#: blocks/release-details/block.json
+msgctxt "block title"
+msgid "Release details"
+msgstr "Détails de la référence"
+
+#: blocks/release-details/block.json
+msgctxt "block description"
+msgid "Format, label, catalog number, year, country, barcode and features."
+msgstr ""
+"Format, label, numéro de catalogue, année, pays, code-barre et "
+"particularités."
+
+#: blocks/release-gallery/block.json
+msgctxt "block title"
+msgid "Release gallery"
+msgstr "Galerie de la référence"
+
+#: blocks/release-gallery/block.json
+msgctxt "block description"
+msgid "Other photos of a release: back cover, center label, insert…"
+msgstr "Autres photos d’une référence : verso, rond central, insert…"
+
+#: blocks/release-price/block.json
+msgctxt "block title"
+msgid "Release price"
+msgstr "Prix de la référence"
+
+#: blocks/release-price/block.json
+msgctxt "block description"
+msgid "Price of a release, with the reserve or buy button."
+msgstr "Prix d’une référence, avec le bouton de réservation ou d’achat."
+
+#: blocks/release-summary/block.json
+msgctxt "block title"
+msgid "Release summary"
+msgstr "Résumé de la référence"
+
+#: blocks/release-summary/block.json
+msgctxt "block description"
+msgid "Format, year and grades, for catalog grids."
+msgstr "Format, année et gradings, pour les grilles du catalogue."
+
+#: blocks/release-tracklist/block.json
+msgctxt "block title"
+msgid "Tracklist"
+msgstr "Liste des titres"
+
+#: blocks/release-tracklist/block.json
+msgctxt "block description"
+msgid "Track positions, titles and durations."
+msgstr "Positions, titres et durées des morceaux."
+
+#: blocks/reservation-form/block.json
+msgctxt "block title"
+msgid "Reservation form"
+msgstr "Formulaire de réservation"
+
+#: blocks/reservation-form/block.json
+msgctxt "block description"
+msgid ""
+"Lets visitors reserve a copy, or ask for a record. Place it on your "
+"reservation page."
+msgstr ""
+"Permet aux visiteurs de réserver un exemplaire ou de demander un disque. À "
+"placer sur votre page de réservation."
+
+#: blocks/sell-form/block.json
+msgctxt "block title"
+msgid "Sell us your records"
+msgstr "Vendez-nous vos disques"
+
+#: blocks/sell-form/block.json
+msgctxt "block description"
+msgid ""
+"Lets visitors offer you their records or a collection, with photos and a "
+"list."
+msgstr ""
+"Permet aux visiteurs de vous proposer leurs disques ou une collection, avec "
+"photos et liste."
+
+#: blocks/shop-status/block.json
+msgctxt "block title"
+msgid "Shop opening status"
+msgstr "Ouvert aujourd’hui"
+
+#: blocks/shop-status/block.json
+msgctxt "block description"
+msgid ""
+"Open today until 7 pm, opens tomorrow at 11 am… from the opening hours of "
+"the shop settings."
+msgstr ""
+"Ouvert aujourd’hui jusqu’à 19 h, ouvre demain à 11 h… d’après les horaires "
+"des réglages de la boutique."

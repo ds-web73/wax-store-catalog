@@ -1,0 +1,143 @@
+/* Wax Store Catalog: release edit screen. */
+
+.waxsc-details {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+	gap: 0 1.5rem;
+}
+
+.waxsc-field--wide {
+	grid-column: 1 / -1;
+}
+
+.waxsc-field label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 0.25rem;
+}
+
+.waxsc-field input,
+.waxsc-field select {
+	width: 100%;
+	max-width: 100%;
+}
+
+.waxsc-barcode-status {
+	display: block;
+	min-height: 1.4em;
+	margin-top: 0.25rem;
+	font-size: 0.85em;
+	color: #b32d2e;
+}
+
+.waxsc-barcode-status.is-valid {
+	color: #007017;
+}
+
+.waxsc-rows {
+	margin: 0 0 1rem;
+	padding: 0;
+	list-style: none;
+}
+
+.waxsc-row {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.5rem 0;
+	border-bottom: 1px solid #dcdcde;
+}
+
+.waxsc-row--copy {
+	align-items: flex-start;
+}
+
+.waxsc-track-position {
+	flex: 0 0 4rem;
+	width: 4rem;
+}
+
+.waxsc-track-title {
+	flex: 1 1 auto;
+}
+
+.waxsc-track-duration {
+	flex: 0 0 5rem;
+	width: 5rem;
+}
+
+.waxsc-copy-fields {
+	flex: 1 1 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+	gap: 0 1rem;
+}
+
+.waxsc-copy-fields .waxsc-field {
+	margin: 0.25rem 0;
+}
+
+.waxsc-field--note {
+	grid-column: 1 / -1;
+}
+
+.waxsc-row-actions {
+	display: flex;
+	flex: 0 0 auto;
+	gap: 0.25rem;
+}
+
+.waxsc-row-actions .button-link {
+	min-width: 1.75rem;
+	min-height: 1.75rem;
+	font-size: 1.1em;
+	text-decoration: none;
+}
+
+/* Merchandise: no tracklist nor grades, a size or variant instead. */
+.waxsc-field--variant,
+.waxsc-is-merchandise #waxsc_tracklist,
+.waxsc-is-merchandise .waxsc-field--grade {
+	display: none;
+}
+
+.waxsc-is-merchandise .waxsc-field--variant {
+	display: block;
+}
+
+/* Classic editor: single-choice taxonomies. */
+.waxsc-single-term__item {
+	display: block;
+	margin: 0.35rem 0;
+}
+
+/* Gallery meta box. */
+.waxsc-gallery-admin {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0.5rem;
+	margin: 0 0 0.75rem;
+	padding: 0;
+	list-style: none;
+}
+
+.waxsc-gallery-admin li {
+	position: relative;
+	margin: 0;
+}
+
+.waxsc-gallery-admin img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.waxsc-gallery-admin button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-width: 1.5rem;
+	min-height: 1.5rem;
+	background: #fff;
+	text-decoration: none;
+}

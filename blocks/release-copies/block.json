@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "waxsc/release-copies",
+	"title": "Copies for sale",
+	"category": "widgets",
+	"icon": "album",
+	"description": "Each copy with its grades, notes, price and status.",
+	"textdomain": "wax-store-catalog",
+	"attributes": {},
+	"supports": {
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"typography": {
+			"fontSize": true
+		}
+	},
+	"editorScript": "waxsc-blocks-editor",
+	"style": "waxsc-blocks",
+	"render": "file:./render.php",
+	"usesContext": [
+		"postId",
+		"postType"
+	]
+}

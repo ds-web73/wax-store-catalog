@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "waxsc/shop-status",
+	"title": "Shop opening status",
+	"category": "widgets",
+	"icon": "clock",
+	"description": "Open today until 7 pm, opens tomorrow at 11 am… from the opening hours of the shop settings.",
+	"textdomain": "wax-store-catalog",
+	"attributes": {
+		"showAddress": {
+			"type": "boolean",
+			"default": true
+		},
+		"showWeek": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ],
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"typography": {
+			"fontSize": true
+		}
+	},
+	"editorScript": "waxsc-blocks-editor",
+	"style": "waxsc-blocks",
+	"viewScript": "waxsc-shop-status",
+	"render": "file:./render.php"
+}

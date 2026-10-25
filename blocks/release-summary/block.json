@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "waxsc/release-summary",
+	"title": "Release summary",
+	"category": "widgets",
+	"icon": "info-outline",
+	"description": "Format, year and grades, for catalog grids.",
+	"textdomain": "wax-store-catalog",
+	"attributes": {},
+	"supports": {
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"typography": {
+			"fontSize": true
+		}
+	},
+	"editorScript": "waxsc-blocks-editor",
+	"style": "waxsc-blocks",
+	"render": "file:./render.php",
+	"usesContext": [
+		"postId",
+		"postType"
+	]
+}

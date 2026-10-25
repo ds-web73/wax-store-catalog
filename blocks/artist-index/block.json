@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "waxsc/artist-index",
+	"title": "Artist index",
+	"category": "widgets",
+	"icon": "editor-ol",
+	"description": "A to Z index of artists, like record bin dividers.",
+	"textdomain": "wax-store-catalog",
+	"attributes": {},
+	"supports": {
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"typography": {
+			"fontSize": true
+		},
+		"align": [
+			"wide",
+			"full"
+		]
+	},
+	"editorScript": "waxsc-blocks-editor",
+	"style": "waxsc-blocks",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,476 @@
+/* Wax Store Catalog: catalog blocks. Works with any theme; themes adjust
+   the colors through the --waxsc-* variables below. */
+
+:root {
+	--waxsc-sticker: #c2391f;
+	--waxsc-sticker-text: #fff;
+	--waxsc-sold: #6b7280;
+	--waxsc-muted: #6b7280;
+	--waxsc-cover-bg: #8a8f99;
+	--waxsc-cover-disc: #1f1f1f;
+	--waxsc-cover-label: #e8e8e8;
+}
+
+.waxsc-filters__form {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	gap: 0.75rem 1.25rem;
+}
+
+.waxsc-filters__field {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	margin: 0;
+}
+
+.waxsc-filters__style:empty {
+	display: none;
+}
+
+.waxsc-filters__field--check {
+	align-self: center;
+}
+
+.waxsc-filters__form.is-enhanced .waxsc-filters__submit {
+	display: none;
+}
+
+.waxsc-results[aria-busy="true"] {
+	opacity: 0.5;
+	transition: opacity 0.15s;
+}
+
+.waxsc-index__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.25rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.waxsc-index__letter {
+	display: inline-block;
+	min-width: 1.75em;
+	padding: 0.25em 0;
+	text-align: center;
+}
+
+.waxsc-index__letter.is-empty {
+	opacity: 0.35;
+}
+
+.waxsc-details {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap: 0.35rem 1.25rem;
+	margin: 0;
+}
+
+.waxsc-details__row {
+	display: contents;
+}
+
+.waxsc-details dd {
+	margin: 0;
+}
+
+.waxsc-copies__list,
+.waxsc-tracklist__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.waxsc-copy {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 0.75rem 0;
+	border-bottom: 1px solid currentColor;
+	border-bottom-color: color-mix(in srgb, currentColor 20%, transparent);
+}
+
+.waxsc-copy p {
+	margin: 0;
+}
+
+.waxsc-copy__price {
+	white-space: nowrap;
+	font-weight: 700;
+}
+
+.waxsc-tracklist__list li {
+	display: grid;
+	grid-template-columns: 3rem 1fr auto;
+	gap: 0.75rem;
+	padding: 0.35rem 0;
+}
+
+.waxsc-editor-placeholder {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	padding: 1rem;
+	border: 1px dashed currentColor;
+	font-size: 0.875rem;
+}
+
+/* Release without a photo: a stylized record. Themes can restyle it. */
+.waxsc-cover-placeholder {
+	margin: 0;
+	border-radius: 2px;
+	background:
+		radial-gradient(circle, var(--waxsc-cover-label) 0 13%, transparent 13.5%),
+		radial-gradient(circle, var(--waxsc-cover-disc) 0 44%, transparent 44.5%),
+		var(--waxsc-cover-bg);
+}
+
+.waxsc-cover-placeholder a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* Reservation form. */
+.waxsc-reservation__item {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.waxsc-reservation__item p {
+	margin: 0;
+}
+
+.waxsc-reservation__cover {
+	width: 5rem;
+	height: 5rem;
+	object-fit: cover;
+}
+
+.waxsc-reservation__field label {
+	display: block;
+	margin-bottom: 0.25rem;
+	font-weight: 600;
+}
+
+.waxsc-reservation__field input,
+.waxsc-reservation__field textarea {
+	width: 100%;
+	max-width: 32rem;
+	box-sizing: border-box;
+	font: inherit;
+}
+
+.waxsc-reservation__hp {
+	position: absolute;
+	left: -9999px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.waxsc-reservation__error {
+	padding: 0.75rem 1rem;
+	border-left: 4px solid #b32d2e;
+}
+
+.waxsc-reservation__sent {
+	padding: 1rem 1.25rem;
+	border-left: 4px solid #007017;
+}
+
+.waxsc-copy__reserve {
+	display: inline-block;
+	margin-left: 0.75rem;
+}
+
+/* Release gallery. */
+.waxsc-gallery__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+	gap: 0.5rem;
+	margin: 0.75rem 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.waxsc-gallery__list img {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1;
+	object-fit: cover;
+}
+
+/* Shop opening status. */
+.waxsc-status__now {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 0;
+	font-weight: 600;
+}
+
+.waxsc-status__dot {
+	flex: none;
+	width: 0.6em;
+	height: 0.6em;
+	border-radius: 50%;
+	background: #8a8f99;
+}
+
+.waxsc-status__now.is-open .waxsc-status__dot {
+	background: #2e8540;
+}
+
+.waxsc-status__address {
+	margin: 0.25rem 0 0;
+}
+
+.waxsc-status__week {
+	margin-top: 0.75rem;
+	border-collapse: collapse;
+}
+
+.waxsc-status__week th,
+.waxsc-status__week td {
+	padding: 0.2rem 1.5rem 0.2rem 0;
+	text-align: left;
+	font-weight: 400;
+}
+
+.waxsc-status__week .is-today th,
+.waxsc-status__week .is-today td {
+	font-weight: 700;
+}
+
+/* Add to cart (WooCommerce mode). */
+.waxsc-cart {
+	margin-top: 1rem;
+}
+
+.waxsc-cart__field label {
+	display: block;
+	margin-bottom: 0.25rem;
+	font-weight: 600;
+}
+
+.waxsc-cart__field select,
+.waxsc-cart__field input {
+	max-width: 100%;
+	font: inherit;
+}
+
+.waxsc-cart__field input {
+	width: 5rem;
+}
+
+/* Cover from the Cover Art Archive. */
+.waxsc-cover-note {
+	margin-top: 0.4rem;
+	font-size: 0.8125rem;
+	opacity: 0.75;
+}
+
+/* Keyword search. */
+.waxsc-filters__field--search input {
+	min-width: 16rem;
+	font: inherit;
+}
+
+/* Catalog cards. */
+.waxsc-grid .wp-block-post {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.15rem;
+}
+
+.waxsc-grid .wp-block-post-featured-image {
+	margin: 0 0 0.6rem;
+}
+
+.waxsc-grid .waxsc-artist {
+	margin: 0;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.waxsc-grid .waxsc-card-title {
+	margin: 0;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.3;
+}
+
+.waxsc-artist a,
+.waxsc-card-title a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.waxsc-artist a:hover,
+.waxsc-card-title a:hover {
+	text-decoration: underline;
+}
+
+.wp-block-waxsc-release-summary {
+	color: var(--waxsc-muted);
+	font-size: 0.875em;
+}
+
+.wp-block-waxsc-release-summary p {
+	margin: 0.25rem 0 0;
+}
+
+/* Price sticker, as stuck on the shrink wrap. */
+.waxsc-grid .wp-block-waxsc-release-price {
+	position: absolute;
+	z-index: 1;
+	top: -0.6rem;
+	right: -0.6rem;
+	margin: 0;
+}
+
+.waxsc-price {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	width: 4.5rem;
+	height: 4.5rem;
+	padding: 0.35rem;
+	border-radius: 50%;
+	background: var(--waxsc-sticker);
+	color: var(--waxsc-sticker-text);
+	line-height: 1;
+	text-align: center;
+	rotate: -8deg;
+}
+
+.waxsc-price__amount {
+	font-size: 1rem;
+	font-weight: 800;
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+}
+
+.waxsc-price__from {
+	margin-bottom: 0.15rem;
+	font-size: 0.5625rem;
+	font-weight: 600;
+	line-height: 1.1;
+}
+
+.waxsc-price--sold {
+	background: var(--waxsc-sold);
+	font-weight: 700;
+	font-size: 0.875rem;
+}
+
+/* Index letters. */
+.waxsc-index__letter {
+	border-top: 3px solid transparent;
+	color: inherit;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+a.waxsc-index__letter:hover,
+.waxsc-index__letter.is-current {
+	border-top-color: currentColor;
+}
+
+/* Classic themes: the plugin templates sit between the theme header and footer. */
+.waxsc-classic {
+	box-sizing: border-box;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem 1.25rem 3rem;
+}
+
+.waxsc-classic .waxsc-release__columns {
+	gap: 2.5rem;
+}
+
+/* Notify me. */
+.waxsc-alert {
+	margin-top: 1.5rem;
+	padding: 0.75rem 1rem;
+	border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+	border-radius: 3px;
+}
+
+.waxsc-alert summary {
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.waxsc-alert fieldset {
+	margin: 0.75rem 0 0;
+	padding: 0;
+	border: 0;
+}
+
+.waxsc-alert legend {
+	margin-bottom: 0.25rem;
+	font-weight: 600;
+}
+
+.waxsc-alert__choice {
+	display: block;
+	margin: 0.25rem 0;
+}
+
+.waxsc-alert__field label {
+	display: block;
+	margin-bottom: 0.25rem;
+	font-weight: 600;
+}
+
+.waxsc-alert__field input {
+	width: 100%;
+	max-width: 24rem;
+	box-sizing: border-box;
+	font: inherit;
+}
+
+.waxsc-alert__help {
+	font-size: 0.875em;
+	opacity: 0.8;
+}
+
+.waxsc-alert__notice {
+	margin-top: 1rem;
+	padding: 0.5rem 0.75rem;
+	border-left: 4px solid currentColor;
+}
+
+/* Sell us your records. */
+.waxsc-sell__formats {
+	margin: 0 0 1rem;
+	padding: 0;
+	border: 0;
+}
+
+.waxsc-sell__formats legend {
+	margin-bottom: 0.25rem;
+	font-weight: 600;
+}
+
+.waxsc-sell__formats label {
+	display: inline-block;
+	margin-right: 1.25rem;
+}
+
+.waxsc-reservation__field select,
+.waxsc-reservation__field input[type="file"] {
+	max-width: 32rem;
+	font: inherit;
+}
