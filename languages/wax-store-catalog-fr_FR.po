@@ -1214,6 +1214,32 @@ msgstr ""
 msgid "None"
 msgstr "Aucun"
 
+#: src/Admin/ThemeNotice.php:50
+msgid ""
+"Wax Store Catalog works with any theme. For a design made for record shops "
+"(price stickers, bin dividers, vinyl-style release pages), try its companion"
+" theme, Wax Store."
+msgstr ""
+"Wax Store Catalog fonctionne avec tous les thèmes. Pour un rendu pensé pour "
+"les disquaires (pastilles de prix, intercalaires, fiches façon vinyle), "
+"essayez son thème compagnon, Wax Store."
+
+#: src/Admin/ThemeNotice.php:52
+msgid "Preview Wax Store"
+msgstr "Prévisualiser Wax Store"
+
+#: src/Admin/ThemeNotice.php:52
+msgid "Get the Wax Store theme"
+msgstr "Obtenir le thème Wax Store"
+
+#: src/Admin/ThemeNotice.php:53
+msgid "More about the theme"
+msgstr "En savoir plus sur le thème"
+
+#: src/Admin/ThemeNotice.php:54
+msgid "Dismiss"
+msgstr "Ne plus afficher"
+
 #: src/Alerts/Alerts.php:63 src/Alerts/Alerts.php:361 src/Alerts/Form.php:217
 #: src/Alerts/Form.php:237
 msgid "Alert"

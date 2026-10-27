@@ -2,9 +2,9 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Wax Store Catalog 0.28.2\n"
+"Project-Id-Version: Wax Store Catalog 0.29.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wax-store-catalog\n"
-"POT-Creation-Date: 2026-10-25T16:43:22+00:00\n"
+"POT-Creation-Date: 2026-10-25T23:19:52+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1144,6 +1144,29 @@ msgstr ""
 
 #: src/Admin/SingleTermBox.php:47 assets/editor.js:24
 msgid "None"
+msgstr ""
+
+#: src/Admin/ThemeNotice.php:50
+msgid ""
+"Wax Store Catalog works with any theme. For a design made for record shops "
+"(price stickers, bin dividers, vinyl-style release pages), try its companion"
+" theme, Wax Store."
+msgstr ""
+
+#: src/Admin/ThemeNotice.php:52
+msgid "Preview Wax Store"
+msgstr ""
+
+#: src/Admin/ThemeNotice.php:52
+msgid "Get the Wax Store theme"
+msgstr ""
+
+#: src/Admin/ThemeNotice.php:53
+msgid "More about the theme"
+msgstr ""
+
+#: src/Admin/ThemeNotice.php:54
+msgid "Dismiss"
 msgstr ""
 
 #: src/Alerts/Alerts.php:63 src/Alerts/Alerts.php:361 src/Alerts/Form.php:217

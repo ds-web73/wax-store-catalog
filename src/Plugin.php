@@ -12,6 +12,7 @@ use WaxStore\Catalog\Admin\DiscogsExportPage;
 use WaxStore\Catalog\Admin\ImportPage;
 use WaxStore\Catalog\Admin\LabelsPage;
 use WaxStore\Catalog\Admin\Menu;
+use WaxStore\Catalog\Admin\ThemeNotice;
 use WaxStore\Catalog\Admin\PhotoImportPage;
 use WaxStore\Catalog\Admin\ReleaseMetaBoxes;
 use WaxStore\Catalog\Admin\SettingsPage;
@@ -127,6 +128,7 @@ final class Plugin {
 			DiscogsExportPage::init();
 			LabelsPage::init();
 			Menu::init();
+			ThemeNotice::init();
 			SettingsPage::init();
 		}
 	}
