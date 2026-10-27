@@ -4,7 +4,7 @@ Tags: record store, vinyl, music, catalog, ecommerce
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.28.3
+Stable tag: 0.29.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,10 @@ Wax Store Catalog turns WordPress into a record shop catalog. It is the companio
 * Commerce providers API: selling engines plug in without touching the theme
 
 == Frequently Asked Questions ==
+
+= Is there a theme made for it? =
+
+Yes: the Wax Store theme was designed together with this plugin (price stickers, bin dividers, vinyl-style release pages, dark "Vinyl" variation). The plugin suggests it with a dismissible notice on its own screens; it works with any other theme too.
 
 = Does it work with my theme? =
 
@@ -77,7 +81,24 @@ This plugin connects to external services only when you start the Automatic cove
 * MusicBrainz API (musicbrainz.org), run by the MetaBrainz Foundation: for each release without cover, its Discogs release ID, barcode, catalog number and artist name are sent to find the matching MusicBrainz release. The request also carries your site address in its User-Agent, as MusicBrainz requires. Terms: https://musicbrainz.org/doc/About/Data_License, privacy policy: https://metabrainz.org/privacy
 * Cover Art Archive (coverartarchive.org), hosted by the Internet Archive: the front cover of the matched release is downloaded and added to your media library. Terms of use: https://archive.org/about/terms, privacy policy: https://archive.org/about/terms#privacy. Covers remain the property of their respective rights holders.
 
+== Screenshots ==
+
+1. Home page with the latest arrivals: price stickers, sold sticker, artist index, search and filters.
+2. The catalog, filtered by artist initial, with the bin divider of the Wax Store theme.
+3. A release page: copies for sale with their grading, reserve button, details and tracklist.
+4. Editing a release: year, catalog number, barcode, pressing details and copies (grading, price, quantity, status).
+5. The reservation form, with spam protection and no captcha.
+6. Record shop > Tools: CSV import (Discogs inventory export), photos, automatic covers, Discogs export and labels.
+7. Record shop > Customer requests: reservations, alerts and collection offers.
+8. WooCommerce mode: add to cart from the release page, one choice per grading.
+
 == Changelog ==
+
+= 0.29.1 =
+* Screenshot captions.
+
+= 0.29.0 =
+* Dismissible suggestion of the companion Wax Store theme, on the Record shop screens only, when another theme is active.
 
 = 0.28.3 =
 * WordPress.org contributor.
