@@ -2,9 +2,9 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Wax Store Catalog 0.29.0\n"
+"Project-Id-Version: Wax Store Catalog 0.30.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wax-store-catalog\n"
-"POT-Creation-Date: 2026-10-25T23:19:52+00:00\n"
+"POT-Creation-Date: 2026-10-28T07:13:18+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -588,24 +588,24 @@ msgid "You are not allowed to print labels."
 msgstr ""
 
 #. translators: 1: number of labels, 2: number of sheets.
-#: src/Admin/LabelsPage.php:301
+#: src/Admin/LabelsPage.php:303
 #, php-format
 msgid "%1$d labels on %2$d sheet(s)."
 msgstr ""
 
-#: src/Admin/LabelsPage.php:303
+#: src/Admin/LabelsPage.php:305
 msgid "Print at 100% (no \"fit to page\"), without margins."
 msgstr ""
 
-#: src/Admin/LabelsPage.php:305
+#: src/Admin/LabelsPage.php:307
 msgid "Print"
 msgstr ""
 
-#: src/Admin/LabelsPage.php:308
+#: src/Admin/LabelsPage.php:310
 msgid "No copy in stock matches this selection."
 msgstr ""
 
-#: src/Admin/LabelsPage.php:335
+#: src/Admin/LabelsPage.php:337
 msgid ""
 "QR codes cannot be drawn: the file assets/lib/qrcode.js of the plugin is "
 "missing. Reinstall the plugin."
@@ -1169,8 +1169,8 @@ msgstr ""
 msgid "Dismiss"
 msgstr ""
 
-#: src/Alerts/Alerts.php:63 src/Alerts/Alerts.php:361 src/Alerts/Form.php:217
-#: src/Alerts/Form.php:237
+#: src/Alerts/Alerts.php:63 src/Alerts/Alerts.php:361 src/Alerts/Form.php:223
+#: src/Alerts/Form.php:243
 msgid "Alert"
 msgstr ""
 
@@ -1245,44 +1245,49 @@ msgid ""
 "Too many requests were sent from your connection. Please try again later."
 msgstr ""
 
-#: src/Alerts/Form.php:96 src/Alerts/Form.php:112
+#: src/Alerts/Form.php:86 src/Buying/SellForm.php:79
+#: src/Reservation/Form.php:171
+msgid "This form was open for too long. Please send it again."
+msgstr ""
+
+#: src/Alerts/Form.php:97 src/Alerts/Form.php:114
 msgid "Notify me"
 msgstr ""
 
-#: src/Alerts/Form.php:102
+#: src/Alerts/Form.php:104
 msgid "Send me an e-mail"
 msgstr ""
 
-#: src/Alerts/Form.php:109 src/Buying/SellForm.php:94
-#: src/Reservation/Form.php:81
+#: src/Alerts/Form.php:111 src/Buying/SellForm.php:95
+#: src/Reservation/Form.php:82
 msgid "Your e-mail address"
 msgstr ""
 
-#: src/Alerts/Form.php:110 src/Buying/SellForm.php:116
-#: src/Reservation/Form.php:89
+#: src/Alerts/Form.php:112 src/Buying/SellForm.php:117
+#: src/Reservation/Form.php:90
 msgid "Leave this field empty"
 msgstr ""
 
-#: src/Alerts/Form.php:111
+#: src/Alerts/Form.php:113
 msgid ""
 "You will receive a confirmation e-mail first. Every alert e-mail has a link "
 "to stop it."
 msgstr ""
 
-#: src/Alerts/Form.php:217
+#: src/Alerts/Form.php:223
 msgid ""
 "This link is no longer valid: the alert was already stopped or has expired."
 msgstr ""
 
 #. translators: %s: alert description.
-#: src/Alerts/Form.php:230
+#: src/Alerts/Form.php:236
 #, php-format
 msgid ""
 "Your alert is active: %s. We will send you an e-mail as soon as it happens."
 msgstr ""
 
 #. translators: %s: alert description.
-#: src/Alerts/Form.php:234
+#: src/Alerts/Form.php:240
 #, php-format
 msgid "Alert stopped: %s. You will not receive these e-mails any more."
 msgstr ""
@@ -1430,11 +1435,11 @@ msgstr ""
 msgid "Collection size"
 msgstr ""
 
-#: src/Buying/Offers.php:173 src/Buying/SellForm.php:105
+#: src/Buying/Offers.php:173 src/Buying/SellForm.php:106
 msgid "Formats"
 msgstr ""
 
-#: src/Buying/Offers.php:174 src/Buying/SellForm.php:112
+#: src/Buying/Offers.php:174 src/Buying/SellForm.php:113
 msgid "Main genres"
 msgstr ""
 
@@ -1468,11 +1473,11 @@ msgid ""
 "address."
 msgstr ""
 
-#: src/Buying/SellForm.php:74 src/Reservation/Form.php:166
+#: src/Buying/SellForm.php:74 src/Reservation/Form.php:167
 msgid "Please enter your name."
 msgstr ""
 
-#: src/Buying/SellForm.php:75 src/Reservation/Form.php:167
+#: src/Buying/SellForm.php:75 src/Reservation/Form.php:168
 msgid "Please enter a valid e-mail address, so we can answer you."
 msgstr ""
 
@@ -1480,7 +1485,7 @@ msgstr ""
 msgid "Please describe your records in a few words."
 msgstr ""
 
-#: src/Buying/SellForm.php:77 src/Reservation/Form.php:168
+#: src/Buying/SellForm.php:77 src/Reservation/Form.php:169
 msgid "Please tick the box to agree that your details are used to answer you."
 msgstr ""
 
@@ -1490,11 +1495,7 @@ msgid ""
 "spreadsheet, PDF or text, 8 MB at most each, 5 photos at most."
 msgstr ""
 
-#: src/Buying/SellForm.php:79 src/Reservation/Form.php:170
-msgid "This form was open for too long. Please send it again."
-msgstr ""
-
-#: src/Buying/SellForm.php:80 src/Reservation/Form.php:171
+#: src/Buying/SellForm.php:80 src/Reservation/Form.php:172
 msgid ""
 "Too many requests were sent from your connection. Please try again in an "
 "hour, or call us."
@@ -1504,98 +1505,98 @@ msgstr ""
 msgid "Your offer could not be saved. Please try again, or call us."
 msgstr ""
 
-#: src/Buying/SellForm.php:93 src/Reservation/Form.php:80
+#: src/Buying/SellForm.php:94 src/Reservation/Form.php:81
 msgid "Your name"
 msgstr ""
 
-#: src/Buying/SellForm.php:95 src/Reservation/Form.php:82
+#: src/Buying/SellForm.php:96 src/Reservation/Form.php:83
 msgid "Phone (optional)"
 msgstr ""
 
-#: src/Buying/SellForm.php:96
+#: src/Buying/SellForm.php:97
 msgid "City where the records are"
 msgstr ""
 
-#: src/Buying/SellForm.php:98
+#: src/Buying/SellForm.php:99
 msgid "Number of records"
 msgstr ""
 
-#: src/Buying/SellForm.php:112
+#: src/Buying/SellForm.php:113
 msgid "Rock, jazz, French pop…"
 msgstr ""
 
-#: src/Buying/SellForm.php:113
+#: src/Buying/SellForm.php:114
 msgid "Your records"
 msgstr ""
 
-#: src/Buying/SellForm.php:113
+#: src/Buying/SellForm.php:114
 msgid ""
 "A few artists or titles, the general condition, original pressings or "
 "reissues…"
 msgstr ""
 
-#: src/Buying/SellForm.php:114
+#: src/Buying/SellForm.php:115
 msgid "Photos (optional, 5 at most)"
 msgstr ""
 
-#: src/Buying/SellForm.php:115
+#: src/Buying/SellForm.php:116
 msgid "Your list (optional: spreadsheet, PDF or text)"
 msgstr ""
 
 #. translators: %s: privacy policy link.
-#: src/Buying/SellForm.php:121 src/Reservation/Form.php:94
+#: src/Buying/SellForm.php:122 src/Reservation/Form.php:95
 #, php-format
 msgid "I agree that my details are used to answer this request (%s)."
 msgstr ""
 
 #. translators: %s: privacy policy link.
-#: src/Buying/SellForm.php:121 src/Reservation/Form.php:94
+#: src/Buying/SellForm.php:122 src/Reservation/Form.php:95
 msgid "privacy policy"
 msgstr ""
 
-#: src/Buying/SellForm.php:122 src/Reservation/Form.php:95
+#: src/Buying/SellForm.php:123 src/Reservation/Form.php:96
 msgid "I agree that my details are used to answer this request."
 msgstr ""
 
-#: src/Buying/SellForm.php:125
+#: src/Buying/SellForm.php:126
 msgid "Send my offer"
 msgstr ""
 
 #. translators: %s: name.
 #. translators: %s: customer name.
-#: src/Buying/SellForm.php:344 src/Reservation/Mailer.php:49
+#: src/Buying/SellForm.php:345 src/Reservation/Mailer.php:49
 #, php-format
 msgid "Name: %s"
 msgstr ""
 
 #. translators: %s: e-mail.
 #. translators: %s: e-mail address.
-#: src/Buying/SellForm.php:346 src/Reservation/Mailer.php:51
+#: src/Buying/SellForm.php:347 src/Reservation/Mailer.php:51
 #, php-format
 msgid "E-mail: %s"
 msgstr ""
 
 #. translators: %s: phone.
 #. translators: %s: phone number.
-#: src/Buying/SellForm.php:348 src/Reservation/Mailer.php:53
+#: src/Buying/SellForm.php:349 src/Reservation/Mailer.php:53
 #, php-format
 msgid "Phone: %s"
 msgstr ""
 
 #. translators: %s: city.
-#: src/Buying/SellForm.php:350
+#: src/Buying/SellForm.php:351
 #, php-format
 msgid "City: %s"
 msgstr ""
 
 #. translators: %s: genres.
-#: src/Buying/SellForm.php:353
+#: src/Buying/SellForm.php:354
 #, php-format
 msgid "Genres: %s"
 msgstr ""
 
 #. translators: %d: number of files.
-#: src/Buying/SellForm.php:362
+#: src/Buying/SellForm.php:363
 #, php-format
 msgid "%d file attached to the offer, visible in the admin."
 msgid_plural "%d files attached to the offer, visible in the admin."
@@ -1603,32 +1604,32 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. translators: %s: admin URL.
-#: src/Buying/SellForm.php:366
+#: src/Buying/SellForm.php:367
 #, php-format
 msgid "See the offer: %s"
 msgstr ""
 
 #. translators: 1: name, 2: collection size.
-#: src/Buying/SellForm.php:371
+#: src/Buying/SellForm.php:372
 #, php-format
 msgid "Records to sell: %1$s, %2$s"
 msgstr ""
 
 #. translators: %s: shop name.
-#: src/Buying/SellForm.php:380
+#: src/Buying/SellForm.php:381
 #, php-format
 msgid "Your offer to %s"
 msgstr ""
 
 #. translators: %s: name.
 #. translators: %s: customer name.
-#: src/Buying/SellForm.php:382 src/Reservation/Mailer.php:81
+#: src/Buying/SellForm.php:383 src/Reservation/Mailer.php:81
 #, php-format
 msgid "Hello %s,"
 msgstr ""
 
 #. translators: %s: name.
-#: src/Buying/SellForm.php:382
+#: src/Buying/SellForm.php:383
 msgid ""
 "We have received your offer and will get back to you after looking at it."
 msgstr ""
@@ -1713,14 +1714,14 @@ msgstr[1] ""
 msgid "Convert now"
 msgstr ""
 
-#: src/Commerce/WooSync.php:866
-msgid "All releases are ready for WooCommerce."
-msgstr ""
-
 #. translators: %d: number of releases.
-#: src/Commerce/WooSync.php:868
+#: src/Commerce/WooSync.php:875
 #, php-format
 msgid "Converting… %d left"
+msgstr ""
+
+#: src/Commerce/WooSync.php:876
+msgid "All releases are ready for WooCommerce."
 msgstr ""
 
 #: src/Content/Grading.php:38
@@ -2825,47 +2826,47 @@ msgstr ""
 msgid "Back to the catalog"
 msgstr ""
 
-#: src/Reservation/Form.php:84
+#: src/Reservation/Form.php:85
 msgid "When will you come by the shop? Any question about the record?"
 msgstr ""
 
-#: src/Reservation/Form.php:84
+#: src/Reservation/Form.php:85
 msgid "Which record are you looking for? Artist, title, format…"
 msgstr ""
 
-#: src/Reservation/Form.php:85
+#: src/Reservation/Form.php:86
 msgid "Message (optional)"
 msgstr ""
 
-#: src/Reservation/Form.php:85
+#: src/Reservation/Form.php:86
 msgid "Your request"
 msgstr ""
 
-#: src/Reservation/Form.php:98
+#: src/Reservation/Form.php:99
 msgid "Send my reservation request"
 msgstr ""
 
-#: src/Reservation/Form.php:98
+#: src/Reservation/Form.php:99
 msgid "Send my request"
 msgstr ""
 
 #. translators: %s: grades, e.g. "VG+ / VG".
-#: src/Reservation/Form.php:120 src/Reservation/Mailer.php:112
+#: src/Reservation/Form.php:121 src/Reservation/Mailer.php:112
 #, php-format
 msgid "Copy graded %s"
 msgstr ""
 
-#: src/Reservation/Form.php:128
+#: src/Reservation/Form.php:129
 msgid ""
 "This copy is already reserved or sold, but you can still send a request: we "
 "will tell you if another one comes in."
 msgstr ""
 
-#: src/Reservation/Form.php:169
+#: src/Reservation/Form.php:170
 msgid "Please tell us which record you are looking for."
 msgstr ""
 
-#: src/Reservation/Form.php:172
+#: src/Reservation/Form.php:173
 msgid "Your request could not be saved. Please try again, or call us."
 msgstr ""
 
