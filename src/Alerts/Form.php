@@ -82,7 +82,8 @@ final class Form {
 			'sent'  => __( 'Almost done: check your e-mails and click the confirmation link.', 'wax-store-catalog' ),
 			'email' => __( 'Please enter a valid e-mail address.', 'wax-store-catalog' ),
 			'none'  => __( 'Please choose at least one alert.', 'wax-store-catalog' ),
-			'limit' => __( 'Too many requests were sent from your connection. Please try again later.', 'wax-store-catalog' ),
+			'limit'   => __( 'Too many requests were sent from your connection. Please try again later.', 'wax-store-catalog' ),
+			'expired' => __( 'This form was open for too long. Please send it again.', 'wax-store-catalog' ),
 		);
 		$time    = time();
 		$open    = $release && 'in_stock' !== Copies::availability( $release );
@@ -98,6 +99,7 @@ final class Form {
 		$html .= '<input type="hidden" name="action" value="' . esc_attr( self::ACTION ) . '">';
 		$html .= '<input type="hidden" name="waxsc_ts" value="' . esc_attr( (string) $time ) . '">';
 		$html .= '<input type="hidden" name="waxsc_tsh" value="' . esc_attr( wp_hash( 'waxsc_alert_' . $time ) ) . '">';
+		$html .= \WaxStore\Catalog\Front\FormNonce::field( 'waxsc_alert' );
 		$html .= '<input type="hidden" name="waxsc_return" value="' . esc_url( self::current_url() ) . '">';
 		$html .= '<fieldset><legend>' . esc_html__( 'Send me an e-mail', 'wax-store-catalog' ) . '</legend>';
 
@@ -128,7 +130,7 @@ final class Form {
 	 * Form handler.
 	 */
 	public static function handle(): void {
-		// phpcs:disable WordPress.Security.NonceVerification.Missing -- public form, often cached: spam checks instead of a nonce.
+		// phpcs:disable WordPress.Security.NonceVerification.Missing -- nonce checked below with FormNonce::verify(), after the anti-spam checks.
 		$return = wp_validate_redirect( esc_url_raw( wp_unslash( $_POST['waxsc_return'] ?? '' ) ), home_url( '/' ) );
 		$email  = sanitize_email( wp_unslash( $_POST['waxsc_email'] ?? '' ) );
 		$follow = isset( $_POST['waxsc_follow'] ) && is_array( $_POST['waxsc_follow'] ) ? array_map( 'sanitize_text_field', wp_unslash( $_POST['waxsc_follow'] ) ) : array();
@@ -144,6 +146,10 @@ final class Form {
 
 		if ( $bot || ! $time || time() - $time < 3 || ! hash_equals( wp_hash( 'waxsc_alert_' . $time ), $hash ) ) {
 			$back( 'sent' );
+		}
+
+		if ( ! \WaxStore\Catalog\Front\FormNonce::verify( 'waxsc_alert' ) ) {
+			$back( 'expired' );
 		}
 
 		if ( ! is_email( $email ) ) {

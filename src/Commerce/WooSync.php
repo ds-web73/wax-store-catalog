@@ -852,7 +852,7 @@ final class WooSync {
 
 		printf(
 			'<div class="notice notice-info" data-waxsc-wc-sync="%1$s"><p>%2$s <button type="button" class="button">%3$s</button></p></div>',
-			esc_attr( wp_create_nonce( 'waxsc_wc_sync_now' ) ),
+			'1',
 			esc_html(
 				sprintf(
 					/* translators: %d: number of releases. */
@@ -863,11 +863,20 @@ final class WooSync {
 			esc_html__( 'Convert now', 'wax-store-catalog' )
 		);
 
-		$done = esc_js( __( 'All releases are ready for WooCommerce.', 'wax-store-catalog' ) );
-		/* translators: %d: number of releases. */
-		$left_text = esc_js( __( 'Converting… %d left', 'wax-store-catalog' ) );
-
-		echo "<script>(function(){var n=document.querySelector('[data-waxsc-wc-sync]');if(!n)return;var b=n.querySelector('button'),p=n.querySelector('p');b.addEventListener('click',function(){b.disabled=true;(function step(){var f=new FormData();f.append('action','waxsc_wc_sync_now');f.append('nonce',n.dataset.waxscWcSync);fetch(ajaxurl,{method:'POST',body:f,credentials:'same-origin'}).then(function(r){return r.json();}).then(function(j){if(!j.success)return;if(j.data.left>0){p.firstChild.textContent='" . $left_text . "'.replace('%d',j.data.left)+' ';setTimeout(step,j.data.busy?3000:0);}else{p.textContent='" . $done . "';n.className='notice notice-success';}});})();});})();</script>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped above.
+		wp_enqueue_script( 'waxsc-wc-sync', plugins_url( 'assets/wc-sync.js', \WaxStore\Catalog\PLUGIN_FILE ), array(), \WaxStore\Catalog\VERSION, true );
+		wp_localize_script(
+			'waxsc-wc-sync',
+			'waxscWcSync',
+			array(
+				'ajaxUrl' => admin_url( 'admin-ajax.php' ),
+				'nonce'   => wp_create_nonce( 'waxsc_wc_sync_now' ),
+				'i18n'    => array(
+					/* translators: %d: number of releases. */
+					'left' => __( 'Converting… %d left', 'wax-store-catalog' ),
+					'done' => __( 'All releases are ready for WooCommerce.', 'wax-store-catalog' ),
+				),
+			)
+		);
 	}
 
 	/**

@@ -337,12 +337,28 @@ final class Settings {
 		$current = get_option( self::OPTION, array() );
 		$current = is_array( $current ) ? $current : array();
 
-		if ( ! is_array( $input ) || empty( $input['_tab'] ) ) {
-			return is_array( $input ) ? $input : $current;
+		if ( ! is_array( $input ) ) {
+			return $current;
 		}
 
-		$tab    = sanitize_key( $input['_tab'] );
 		$schema = self::schema();
+
+		// A whole option (no tab): every known group is sanitized, unknown keys are dropped.
+		if ( empty( $input['_tab'] ) ) {
+			$clean = array();
+
+			foreach ( $schema as $group => $definition ) {
+				$values = isset( $input[ $group ] ) && is_array( $input[ $group ] ) ? $input[ $group ] : ( $current[ $group ] ?? array() );
+
+				foreach ( $definition['fields'] as $key => $field ) {
+					$clean[ $group ][ $key ] = self::sanitize_field( $field, $values[ $key ] ?? '' );
+				}
+			}
+
+			return $clean;
+		}
+
+		$tab = sanitize_key( $input['_tab'] );
 
 		if ( ! isset( $schema[ $tab ] ) ) {
 			return $current;

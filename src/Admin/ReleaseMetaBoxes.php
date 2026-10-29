@@ -136,7 +136,7 @@ final class ReleaseMetaBoxes {
 		}
 
 		wp_add_inline_script( 'waxsc-editor', 'window.waxscEditor = ' . wp_json_encode( array( 'taxonomies' => $taxonomies ) ) . ';', 'before' );
-		wp_set_script_translations( 'waxsc-editor', 'wax-store-catalog', plugin_dir_path( PLUGIN_FILE ) . 'languages' );
+		wp_set_script_translations( 'waxsc-editor', 'wax-store-catalog' );
 	}
 
 	/**

@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Wax Store Catalog
  * Description:       Record shop catalog for vinyl, CD, cassettes and merchandise: releases, formats, labels, conditions and structured data. Companion plugin of the Wax Store theme, works with any theme.
- * Version:           0.30.0
+ * Version:           0.30.2
  * Requires at least: 6.7
  * Requires PHP:      7.4
  * Plugin URI:        https://github.com/ds-web73/wax-store-catalog
@@ -20,7 +20,7 @@ namespace WaxStore\Catalog;
 
 defined( 'ABSPATH' ) || exit;
 
-const VERSION     = '0.29.1';
+const VERSION     = '0.30.2';
 const PLUGIN_FILE = __FILE__;
 
 spl_autoload_register(

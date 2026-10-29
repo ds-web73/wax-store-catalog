@@ -171,7 +171,7 @@ final class Blocks {
 
 		wp_register_script( 'waxsc-blocks-editor', $url . 'blocks-editor.js', array( 'wp-blocks', 'wp-element', 'wp-block-editor', 'wp-components', 'wp-i18n' ), VERSION, true );
 		wp_register_script( 'waxsc-shop-status', $url . 'shop-status.js', array(), VERSION, true );
-		wp_set_script_translations( 'waxsc-blocks-editor', 'wax-store-catalog', plugin_dir_path( PLUGIN_FILE ) . 'languages' );
+		wp_set_script_translations( 'waxsc-blocks-editor', 'wax-store-catalog' );
 		wp_register_script( 'waxsc-catalog-filters', $url . 'catalog-filters.js', array(), VERSION, true );
 		wp_register_style( 'waxsc-blocks', $url . 'blocks.css', array(), VERSION );
 

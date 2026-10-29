@@ -274,24 +274,26 @@ final class LabelsPage {
 <head>
 <meta charset="utf-8">
 <title><?php esc_html_e( 'Labels', 'wax-store-catalog' ); ?></title>
-<style>
-@page { size: A4; margin: 0; }
-* { box-sizing: border-box; }
-body { margin: 0; font-family: "Arial Narrow", Arial, sans-serif; color: #000; background: #ddd; }
-.toolbar { padding: 12px 16px; background: #1e2433; color: #fff; font: 14px/1.4 system-ui, sans-serif; display: flex; gap: 16px; align-items: center; }
-.toolbar button { font: inherit; padding: 6px 14px; cursor: pointer; }
-.sheet { width: 210mm; height: 297mm; margin: 10mm auto; background: #fff; padding: <?php echo esc_attr( $format['top'] . 'mm 0 0 ' . $format['left'] . 'mm' ); ?>; display: grid; grid-template-columns: repeat(<?php echo (int) $format['cols']; ?>, <?php echo esc_attr( $format['w'] . 'mm' ); ?>); grid-auto-rows: <?php echo esc_attr( $format['h'] . 'mm' ); ?>; column-gap: <?php echo esc_attr( $format['gap'] . 'mm' ); ?>; page-break-after: always; overflow: hidden; }
-.label { display: flex; gap: 2.5mm; align-items: center; padding: 2.5mm 3mm; overflow: hidden; }
-.qr { flex: none; width: <?php echo esc_attr( 'large' === $key ? '30mm' : '22mm' ); ?>; }
-.qr svg { display: block; width: 100%; height: auto; }
-.text { min-width: 0; line-height: 1.15; }
-.artist { font-weight: 700; font-size: <?php echo 'large' === $key ? '13pt' : '10pt'; ?>; }
-.title { font-size: <?php echo 'large' === $key ? '11pt' : '8.5pt'; ?>; }
-.meta { font-size: 7.5pt; margin-top: 1mm; }
-.price { font-weight: 700; font-size: <?php echo 'large' === $key ? '18pt' : '13pt'; ?>; margin-top: 1mm; }
-.artist, .title { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-@media print { body { background: none; } .toolbar { display: none; } .sheet { margin: 0; } }
-</style>
+<?php
+wp_register_style( 'waxsc-labels', $url . 'labels.css', array(), VERSION );
+wp_add_inline_style(
+	'waxsc-labels',
+	sprintf(
+		':root{--cols:%1$d;--w:%2$smm;--h:%3$smm;--gap:%4$smm;--top:%5$smm;--left:%6$smm;--qr:%7$s;--artist:%8$s;--title:%9$s;--price:%10$s}',
+		(int) $format['cols'],
+		(float) $format['w'],
+		(float) $format['h'],
+		(float) $format['gap'],
+		(float) $format['top'],
+		(float) $format['left'],
+		'large' === $key ? '30mm' : '22mm',
+		'large' === $key ? '13pt' : '10pt',
+		'large' === $key ? '11pt' : '8.5pt',
+		'large' === $key ? '18pt' : '13pt'
+	)
+);
+wp_print_styles( array( 'waxsc-labels' ) );
+?>
 </head>
 <body>
 <div class="toolbar">

@@ -34,7 +34,6 @@ final class SettingsPage {
 	 * Hooks.
 	 */
 	public static function init(): void {
-		add_action( 'admin_init', array( self::class, 'register' ) );
 		add_action( 'admin_menu', array( self::class, 'menu' ), 11 );
 		add_action( 'admin_menu', array( self::class, 'old_address' ), 1 );
 		add_filter( 'plugin_action_links_' . plugin_basename( PLUGIN_FILE ), array( self::class, 'action_link' ) );

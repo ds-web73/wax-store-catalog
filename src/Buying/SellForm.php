@@ -88,6 +88,7 @@ final class SellForm {
 		$html .= '<input type="hidden" name="action" value="' . esc_attr( self::ACTION ) . '">';
 		$html .= '<input type="hidden" name="waxsc_ts" value="' . esc_attr( (string) $time ) . '">';
 		$html .= '<input type="hidden" name="waxsc_tsh" value="' . esc_attr( wp_hash( 'waxsc_sell_' . $time ) ) . '">';
+		$html .= \WaxStore\Catalog\Front\FormNonce::field( 'waxsc_sell' );
 		$html .= '<input type="hidden" name="waxsc_return" value="' . esc_url( (string) get_permalink() ) . '">';
 
 		$html .= self::input( 'name', __( 'Your name', 'wax-store-catalog' ), 'text', true, 'name' );
@@ -153,7 +154,7 @@ final class SellForm {
 	 * Submission handler.
 	 */
 	public static function handle(): void {
-		// phpcs:disable WordPress.Security.NonceVerification.Missing -- public form, often cached: spam checks instead of a nonce.
+		// phpcs:disable WordPress.Security.NonceVerification.Missing -- nonce checked below with FormNonce::verify(), after the anti-spam checks.
 		$return = wp_validate_redirect( esc_url_raw( wp_unslash( $_POST['waxsc_return'] ?? '' ) ), home_url( '/' ) );
 		$data   = array(
 			'name'    => mb_substr( sanitize_text_field( wp_unslash( $_POST['waxsc_name'] ?? '' ) ), 0, 120 ),
@@ -184,7 +185,7 @@ final class SellForm {
 			$back( 'sent' );
 		}
 
-		if ( ! $time || ! hash_equals( wp_hash( 'waxsc_sell_' . $time ), $hash ) || time() - $time > WEEK_IN_SECONDS ) {
+		if ( ! \WaxStore\Catalog\Front\FormNonce::verify( 'waxsc_sell' ) || ! $time || ! hash_equals( wp_hash( 'waxsc_sell_' . $time ), $hash ) || time() - $time > WEEK_IN_SECONDS ) {
 			$back( 'expired' );
 		}
 

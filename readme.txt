@@ -4,7 +4,7 @@ Tags: record store, vinyl, music, catalog, ecommerce
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.30.0
+Stable tag: 0.30.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -86,13 +86,28 @@ This plugin connects to external services only when you start the Automatic cove
 1. Home page with the latest arrivals: price stickers, sold sticker, artist index, search and filters.
 2. The catalog, filtered by artist initial, with the bin divider of the Wax Store theme.
 3. A release page: copies for sale with their grading, reserve button, details and tracklist.
-4. Editing a release: year, catalog number, barcode, pressing details and copies (grading, price, quantity, status).
-5. The reservation form, with spam protection and no captcha.
-6. Record shop > Tools: CSV import (Discogs inventory export), photos, automatic covers, Discogs export and labels.
-7. Record shop > Customer requests: reservations, alerts and collection offers.
-8. WooCommerce mode: add to cart from the release page, one choice per grading.
+4. "Notify me": visitors get an e-mail when a record is back in stock or when an artist or a label has new arrivals.
+5. "Sell us your records": collection offers with size, formats, photos and a list file.
+6. Editing a release: year, catalog number, barcode, pressing details and copies (grading, price, quantity, status, location in the shop).
+7. Record shop > Tools: CSV import (Discogs inventory export), photos, automatic covers, Discogs export and labels.
+8. Printable price labels with a QR code to the release page.
+9. Record shop > Customer requests: reservations, alerts and collection offers.
+10. A reservation request, with a button to mark the copy as reserved.
+11. WooCommerce mode: add to cart from the release page, one choice per grading, cart and checkout by WooCommerce.
 
 == Changelog ==
+
+= 0.30.2 =
+* Screenshot caption for the WooCommerce mode.
+
+= 0.30.1 =
+* Screenshot captions.
+
+= 0.30.0 =
+* Plugin review: scripts and styles of the label sheet and the WooCommerce notice are enqueued; structured data printed with wp_print_inline_script_tag().
+* Public forms (reservation, alerts, collection offers) carry a nonce, refreshed by the browser when the visitor starts typing, so cached pages keep working.
+* Settings sanitized in every case, also when saved without a tab.
+* Translations come from translate.wordpress.org; bundled translation files and load_plugin_textdomain() removed.
 
 = 0.29.1 =
 * Screenshot captions.

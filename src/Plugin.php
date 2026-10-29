@@ -87,7 +87,6 @@ final class Plugin {
 	 * Registers WordPress hooks.
 	 */
 	private function hooks(): void {
-		add_action( 'init', array( $this, 'load_textdomain' ), 0 );
 		add_action( 'init', array( $this, 'register_content' ) );
 		add_action( 'set_object_terms', array( Taxonomies::class, 'enforce_single_term' ), 10, 4 );
 		add_action( 'init', array( Installer::class, 'maybe_upgrade' ), 20 );
@@ -103,6 +102,7 @@ final class Plugin {
 		SortKeys::init();
 		Requests::init();
 		Form::init();
+		Front\FormNonce::init();
 		Alerts::init();
 		Offers::init();
 		SellForm::init();
@@ -119,6 +119,9 @@ final class Plugin {
 		CatalogQuery::init();
 		Templates::init();
 
+		// Settings are registered everywhere, so options saved from any context are sanitized.
+		add_action( 'init', array( SettingsPage::class, 'register' ) );
+
 		if ( is_admin() ) {
 			add_action( 'admin_init', array( Installer::class, 'heal_sort_keys' ) );
 			ReleaseMetaBoxes::init();
@@ -131,16 +134,6 @@ final class Plugin {
 			ThemeNotice::init();
 			SettingsPage::init();
 		}
-	}
-
-	/**
-	 * Bundled translations, used until WordPress.org language packs are installed
-	 * (those take precedence, as they live in wp-content/languages).
-	 */
-	public function load_textdomain(): void {
-		// Kept on purpose: loads the bundled French translation until a language
-		// pack exists on translate.wordpress.org (language packs take precedence).
-		load_plugin_textdomain( 'wax-store-catalog', false, dirname( plugin_basename( PLUGIN_FILE ) ) . '/languages' ); // phpcs:ignore PluginCheck.CodeAnalysis.DiscouragedFunctions.load_plugin_textdomainFound
 	}
 
 	/**

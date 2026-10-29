@@ -75,6 +75,7 @@ final class Form {
 		$html .= '<input type="hidden" name="waxsc_copy" value="' . esc_attr( $copy_id ) . '">';
 		$html .= '<input type="hidden" name="waxsc_ts" value="' . esc_attr( (string) $time ) . '">';
 		$html .= '<input type="hidden" name="waxsc_tsh" value="' . esc_attr( wp_hash( 'waxsc_ts_' . $time ) ) . '">';
+		$html .= \WaxStore\Catalog\Front\FormNonce::field( 'waxsc_reserve' );
 		$html .= '<input type="hidden" name="waxsc_return" value="' . esc_url( get_permalink() ) . '">';
 
 		$html .= self::field( 'name', __( 'Your name', 'wax-store-catalog' ), 'text', $old['name'], true, 'name', 'name' === $error );
@@ -203,7 +204,7 @@ final class Form {
 	 * page cache, where nonces expire; spam checks replace it.
 	 */
 	public static function handle(): void {
-		// phpcs:disable WordPress.Security.NonceVerification.Missing -- public form, see above.
+		// phpcs:disable WordPress.Security.NonceVerification.Missing -- nonce checked below with FormNonce::verify(), after the anti-spam checks.
 		$return = wp_validate_redirect( esc_url_raw( wp_unslash( $_POST['waxsc_return'] ?? '' ) ), home_url( '/' ) );
 		$data   = array(
 			'name'    => mb_substr( sanitize_text_field( wp_unslash( $_POST['waxsc_name'] ?? '' ) ), 0, 120 ),
@@ -240,7 +241,7 @@ final class Form {
 
 		$error = '';
 
-		if ( ! $time || ! hash_equals( wp_hash( 'waxsc_ts_' . $time ), $hash ) || time() - $time > self::MAX_AGE ) {
+		if ( ! \WaxStore\Catalog\Front\FormNonce::verify( 'waxsc_reserve' ) || ! $time || ! hash_equals( wp_hash( 'waxsc_ts_' . $time ), $hash ) || time() - $time > self::MAX_AGE ) {
 			$error = 'expired';
 		} elseif ( '' === $data['name'] ) {
 			$error = 'name';
