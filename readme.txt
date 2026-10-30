@@ -4,7 +4,7 @@ Tags: record store, vinyl, music, catalog, ecommerce
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.31.1
+Stable tag: 0.31.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -96,6 +96,9 @@ This plugin connects to external services only when you start the Automatic cove
 11. WooCommerce mode: add to cart from the release page, one choice per grading, cart and checkout by WooCommerce.
 
 == Changelog ==
+
+= 0.31.2 =
+* Same code as 0.31.1, released again under a new number (the 0.31.1 tag was first published with the files of 0.31.0).
 
 = 0.31.1 =
 * Direct access protection in uninstall.php.
