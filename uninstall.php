@@ -1,12 +1,15 @@
 <?php
 /**
- * Uninstall: removes settings only. Releases and terms are the shop's data
- * and are deliberately kept, so that reinstalling restores the catalog.
+ * Uninstall: removes settings and personal data (requests, alerts, offers).
+ * Releases and terms are the shop's data and are deliberately kept, so that
+ * reinstalling restores the catalog.
  *
  * @package WaxStore\Catalog
  */
 
-defined( 'WP_UNINSTALL_PLUGIN' ) || exit;
+if ( ! defined( 'ABSPATH' ) || ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
+	exit;
+}
 
 $waxsc_state = get_option( 'waxsc_import_state' );
 
