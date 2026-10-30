@@ -2,9 +2,9 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Wax Store Catalog 0.30.0\n"
+"Project-Id-Version: Wax Store Catalog 0.31.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wax-store-catalog\n"
-"POT-Creation-Date: 2026-10-28T07:13:18+00:00\n"
+"POT-Creation-Date: 2026-10-29T12:51:34+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,7 +247,7 @@ msgid "Import"
 msgstr ""
 
 #. translators: 1: rows done, 2: total rows.
-#: src/Admin/ImportPage.php:75 src/Admin/ImportPage.php:463
+#: src/Admin/ImportPage.php:75 src/Admin/ImportPage.php:462
 #, php-format
 msgid "%1$d of %2$d rows imported"
 msgstr ""
@@ -310,9 +310,10 @@ msgstr ""
 #: src/Admin/ImportPage.php:354
 msgid ""
 "Discogs publishes its whole database every month under the CC0 licence "
-"(public domain). The discogs_enrich tool, provided with this plugin, reads "
-"this file on your computer and keeps your releases only: genres, styles, "
-"year, country, barcode and tracklist. Images are not part of this open data."
+"(public domain). The free discogs_enrich tool, by the authors of this "
+"plugin, reads this file on your computer and keeps your releases only: "
+"genres, styles, year, country, barcode and tracklist. Images are not part of"
+" this open data."
 msgstr ""
 
 #: src/Admin/ImportPage.php:357
@@ -324,187 +325,183 @@ msgid "Discogs IDs of the catalog"
 msgstr ""
 
 #: src/Admin/ImportPage.php:359
-msgid "discogs_enrich tool"
+msgid "discogs_enrich tool and instructions (GitHub)"
 msgstr ""
 
-#: src/Admin/ImportPage.php:360
-msgid "instructions"
-msgstr ""
-
-#: src/Admin/ImportPage.php:362
+#: src/Admin/ImportPage.php:361
 msgid ""
 "On data.discogs.com, download the latest releases file "
 "(discogs_YYYYMMDD_releases.xml.gz, several GB, no need to unzip it)."
 msgstr ""
 
-#: src/Admin/ImportPage.php:363
+#: src/Admin/ImportPage.php:362
 msgid ""
 "In a terminal: python3 discogs_enrich.py discogs-ids-….csv "
 "discogs_…_releases.xml.gz (Python 3 is already installed on Linux and macOS;"
 " on Windows, install it from python.org and type py instead of python3)."
 msgstr ""
 
-#: src/Admin/ImportPage.php:364
+#: src/Admin/ImportPage.php:363
 msgid ""
 "Upload the discogs-enrichment.csv file it produces with the form above: only"
 " empty fields of existing releases are filled."
 msgstr ""
 
-#: src/Admin/ImportPage.php:366
+#: src/Admin/ImportPage.php:365
 msgid ""
 "With WP-CLI on your server, one command does it all: wp waxsc enrich "
 "/path/to/discogs_YYYYMMDD_releases.xml.gz"
 msgstr ""
 
 #. translators: %d: number of rows.
-#: src/Admin/ImportPage.php:380
+#: src/Admin/ImportPage.php:379
 #, php-format
 msgid "%d row found. Check which column feeds each field."
 msgid_plural "%d rows found. Check which column feeds each field."
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/Admin/ImportPage.php:389
+#: src/Admin/ImportPage.php:388
 msgid "Field"
 msgstr ""
 
-#: src/Admin/ImportPage.php:390
+#: src/Admin/ImportPage.php:389
 msgid "Column in your file"
 msgstr ""
 
-#: src/Admin/ImportPage.php:391
+#: src/Admin/ImportPage.php:390
 msgid "First row value"
 msgstr ""
 
-#: src/Admin/ImportPage.php:401
+#: src/Admin/ImportPage.php:400
 msgid "— Ignore —"
 msgstr ""
 
-#: src/Admin/ImportPage.php:411
+#: src/Admin/ImportPage.php:410
 msgid "When empty or unrecognized:"
 msgstr ""
 
-#: src/Admin/ImportPage.php:413 src/Installer.php:357
+#: src/Admin/ImportPage.php:412 src/Installer.php:357
 msgid "Used"
 msgstr ""
 
-#: src/Admin/ImportPage.php:414 src/Installer.php:353
+#: src/Admin/ImportPage.php:413 src/Installer.php:353
 msgid "New"
 msgstr ""
 
-#: src/Admin/ImportPage.php:415
+#: src/Admin/ImportPage.php:414
 msgid "Do not set"
 msgstr ""
 
-#: src/Admin/ImportPage.php:425
+#: src/Admin/ImportPage.php:424
 msgid "Options"
 msgstr ""
 
-#: src/Admin/ImportPage.php:429
+#: src/Admin/ImportPage.php:428
 msgid ""
 "Publish new releases immediately (otherwise they are saved as drafts for "
 "review)"
 msgstr ""
 
-#: src/Admin/ImportPage.php:435
+#: src/Admin/ImportPage.php:434
 msgid ""
 "Mark as sold the Discogs copies that are not in this file (they were sold on"
 " Discogs)"
 msgstr ""
 
-#: src/Admin/ImportPage.php:437
+#: src/Admin/ImportPage.php:436
 msgid ""
 "Only with a full inventory export from Discogs, never with a partial file: "
 "every missing listing would be marked sold. Needs the listing ID column."
 msgstr ""
 
-#: src/Admin/ImportPage.php:439
+#: src/Admin/ImportPage.php:438
 msgid ""
 "Tip: a column with a unique ID per copy (the Discogs listing ID, or your own"
 " SKU) makes later re-imports fully reliable."
 msgstr ""
 
-#: src/Admin/ImportPage.php:442 src/Admin/PhotoImportPage.php:100
+#: src/Admin/ImportPage.php:441 src/Admin/PhotoImportPage.php:100
 msgid "Start import"
 msgstr ""
 
-#: src/Admin/ImportPage.php:446
+#: src/Admin/ImportPage.php:445
 msgid "Cancel"
 msgstr ""
 
-#: src/Admin/ImportPage.php:458
+#: src/Admin/ImportPage.php:457
 msgid ""
 "Import in progress. Keep this page open; if it closes, the import resumes "
 "where it stopped when you come back."
 msgstr ""
 
-#: src/Admin/ImportPage.php:466
+#: src/Admin/ImportPage.php:465
 msgid "JavaScript is required to run the import."
 msgstr ""
 
-#: src/Admin/ImportPage.php:468
+#: src/Admin/ImportPage.php:467
 msgid "Stop the import"
 msgstr ""
 
-#: src/Admin/ImportPage.php:479
+#: src/Admin/ImportPage.php:478
 msgid "Import finished."
 msgstr ""
 
 #. translators: %d: count.
-#: src/Admin/ImportPage.php:482
+#: src/Admin/ImportPage.php:481
 #, php-format
 msgid "Releases created: %d"
 msgstr ""
 
 #. translators: %d: count.
-#: src/Admin/ImportPage.php:484
+#: src/Admin/ImportPage.php:483
 #, php-format
 msgid "Copies created: %d"
 msgstr ""
 
 #. translators: %d: count.
-#: src/Admin/ImportPage.php:486
+#: src/Admin/ImportPage.php:485
 #, php-format
 msgid "Copies updated: %d"
 msgstr ""
 
 #. translators: %d: count.
-#: src/Admin/ImportPage.php:488
+#: src/Admin/ImportPage.php:487
 #, php-format
 msgid "Rows skipped: %d"
 msgstr ""
 
 #. translators: %d: count.
-#: src/Admin/ImportPage.php:491
+#: src/Admin/ImportPage.php:490
 #, php-format
 msgid "Releases completed with new data: %d"
 msgstr ""
 
 #. translators: %d: count.
-#: src/Admin/ImportPage.php:495
+#: src/Admin/ImportPage.php:494
 #, php-format
 msgid "Copies sold on Discogs, marked sold: %d"
 msgstr ""
 
-#: src/Admin/ImportPage.php:499
+#: src/Admin/ImportPage.php:498
 msgid "Unrecognized formats"
 msgstr ""
 
-#: src/Admin/ImportPage.php:500
+#: src/Admin/ImportPage.php:499
 msgid ""
 "These releases were imported without a format. Set it with bulk edit, or "
 "tell us the wording so it can be recognized."
 msgstr ""
 
-#: src/Admin/ImportPage.php:508
+#: src/Admin/ImportPage.php:507
 msgid "Skipped rows"
 msgstr ""
 
-#: src/Admin/ImportPage.php:516
+#: src/Admin/ImportPage.php:515
 msgid "View the catalog"
 msgstr ""
 
-#: src/Admin/ImportPage.php:519
+#: src/Admin/ImportPage.php:518
 msgid "New import"
 msgstr ""
 
@@ -901,242 +898,242 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:68 src/Admin/SettingsPage.php:219
+#: src/Admin/SettingsPage.php:67 src/Admin/SettingsPage.php:218
 msgid "Record shop settings"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:69 src/Admin/SettingsPage.php:161
+#: src/Admin/SettingsPage.php:68 src/Admin/SettingsPage.php:160
 #: assets/blocks-editor.js:47
 msgid "Settings"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:102 src/Admin/SettingsPage.php:131
+#: src/Admin/SettingsPage.php:101 src/Admin/SettingsPage.php:130
 msgid "You are not allowed to create pages."
 msgstr ""
 
-#: src/Admin/SettingsPage.php:109
+#: src/Admin/SettingsPage.php:108
 msgid "Reservation"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:110
+#: src/Admin/SettingsPage.php:109
 msgctxt "page slug"
 msgid "reservation"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:111
+#: src/Admin/SettingsPage.php:110
 msgid ""
 "Fill in this form: we keep the record for you and get back to you quickly."
 msgstr ""
 
-#: src/Admin/SettingsPage.php:138
+#: src/Admin/SettingsPage.php:137
 msgid "Sell us your records"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:139
+#: src/Admin/SettingsPage.php:138
 msgctxt "page slug"
 msgid "sell-your-records"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:140
+#: src/Admin/SettingsPage.php:139
 msgid ""
 "We buy records and collections of any size. Tell us about yours: we answer "
 "every offer."
 msgstr ""
 
-#: src/Admin/SettingsPage.php:201 src/Content/PostType.php:61
+#: src/Admin/SettingsPage.php:200 src/Content/PostType.php:61
 #: src/Front/ReleaseSchema.php:268 src/Front/Templates.php:118
 #: src/Front/Templates.php:194
 msgid "Catalog"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:222
+#: src/Admin/SettingsPage.php:221
 msgid "Settings sections"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:255
+#: src/Admin/SettingsPage.php:254
 msgid ""
 "These profiles are linked from the site and declared to search engines as "
 "belonging to your shop."
 msgstr ""
 
-#: src/Admin/SettingsPage.php:335
+#: src/Admin/SettingsPage.php:334
 msgid "— Select a page —"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:354 src/Front/ShopStatus.php:132
+#: src/Admin/SettingsPage.php:353 src/Front/ShopStatus.php:132
 #: src/Front/ShopStatus.php:237 src/Front/ShopStatus.php:296
 msgid "Closed"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:402 src/Front/ShopStatus.php:273
+#: src/Admin/SettingsPage.php:401 src/Front/ShopStatus.php:273
 msgid "Monday"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:403 src/Front/ShopStatus.php:274
+#: src/Admin/SettingsPage.php:402 src/Front/ShopStatus.php:274
 msgid "Tuesday"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:404 src/Front/ShopStatus.php:275
+#: src/Admin/SettingsPage.php:403 src/Front/ShopStatus.php:275
 msgid "Wednesday"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:405 src/Front/ShopStatus.php:276
+#: src/Admin/SettingsPage.php:404 src/Front/ShopStatus.php:276
 msgid "Thursday"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:406 src/Front/ShopStatus.php:277
+#: src/Admin/SettingsPage.php:405 src/Front/ShopStatus.php:277
 msgid "Friday"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:407 src/Front/ShopStatus.php:278
+#: src/Admin/SettingsPage.php:406 src/Front/ShopStatus.php:278
 msgid "Saturday"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:408 src/Front/ShopStatus.php:279
+#: src/Admin/SettingsPage.php:407 src/Front/ShopStatus.php:279
 msgid "Sunday"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:423
+#: src/Admin/SettingsPage.php:422
 msgid "Selling mode"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:430
+#: src/Admin/SettingsPage.php:429
 msgid "Other selling modes appear here when a compatible plugin is active."
 msgstr ""
 
-#: src/Admin/SettingsPage.php:434
+#: src/Admin/SettingsPage.php:433
 msgid "Default catalog order"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:441
+#: src/Admin/SettingsPage.php:440
 msgid ""
 "Visitors can change it with the sort menu above the catalog. Artists are "
 "filed without their leading article: The Beatles under B."
 msgstr ""
 
-#: src/Admin/SettingsPage.php:445 src/Admin/SettingsPage.php:448
+#: src/Admin/SettingsPage.php:444 src/Admin/SettingsPage.php:447
 msgid "Sold releases"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:450
+#: src/Admin/SettingsPage.php:449
 msgid "Hidden from the catalog and home page grids"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:451
+#: src/Admin/SettingsPage.php:450
 msgid "Shown with a \"Sold\" sticker; visitors can hide them with a filter"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:453
+#: src/Admin/SettingsPage.php:452
 msgid ""
 "Either way, the page of a sold release stays online: it keeps its search "
 "ranking and lets collectors ask you to look out for it."
 msgstr ""
 
-#: src/Admin/SettingsPage.php:457
+#: src/Admin/SettingsPage.php:456
 msgid "Google Merchant Center"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:460
+#: src/Admin/SettingsPage.php:459
 msgid "Publish a product feed for Google Shopping (free listings)"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:462
+#: src/Admin/SettingsPage.php:461
 msgid ""
 "Feed address to add in Merchant Center (Products > Feeds, scheduled fetch):"
 msgstr ""
 
 #. translators: 1: products in the feed, 2: releases without photo, 3:
 #. releases without price.
-#: src/Admin/SettingsPage.php:470
+#: src/Admin/SettingsPage.php:469
 #, php-format
 msgid ""
 "Last generation: %1$d products in the feed. Left out: %2$d without photo "
 "(Google refuses products without a real image), %3$d without price."
 msgstr ""
 
-#: src/Admin/SettingsPage.php:479
+#: src/Admin/SettingsPage.php:478
 msgid ""
 "One product per release in stock, at the lowest price of its copies. "
 "Shipping and returns are set in your Merchant Center account."
 msgstr ""
 
-#: src/Admin/SettingsPage.php:483
+#: src/Admin/SettingsPage.php:482
 msgid "Currency"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:486
+#: src/Admin/SettingsPage.php:485
 msgid "ISO code: EUR, USD, GBP, CHF…"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:490 src/Admin/SettingsPage.php:493
+#: src/Admin/SettingsPage.php:489 src/Admin/SettingsPage.php:492
 msgid "Grading"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:494
+#: src/Admin/SettingsPage.php:493
 msgid "Goldmine standard (M, NM, VG+, VG, G+, G, F, P)"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:495
+#: src/Admin/SettingsPage.php:494
 msgid "Free text, your own wording"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:497
+#: src/Admin/SettingsPage.php:496
 msgid ""
 "Switching to Goldmine clears grades that do not match the scale the next "
 "time a release is saved."
 msgstr ""
 
-#: src/Admin/SettingsPage.php:501
+#: src/Admin/SettingsPage.php:500
 msgid "Reservation page"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:509
+#: src/Admin/SettingsPage.php:508
 msgid "— No reservation button —"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:514
+#: src/Admin/SettingsPage.php:513
 msgid ""
 "Page holding the Reservation form block. The \"Reserve\" buttons link to it "
 "with the chosen record and copy."
 msgstr ""
 
-#: src/Admin/SettingsPage.php:516
+#: src/Admin/SettingsPage.php:515
 msgid "Create the reservation page"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:521
+#: src/Admin/SettingsPage.php:520
 msgid "Buying records"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:527
+#: src/Admin/SettingsPage.php:526
 msgid "Create the \"Sell us your records\" page"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:529
+#: src/Admin/SettingsPage.php:528
 msgid ""
 "Offers arrive by e-mail and in Record shop > Customer requests, with their "
 "photos and lists."
 msgstr ""
 
-#: src/Admin/SettingsPage.php:533
+#: src/Admin/SettingsPage.php:532
 msgid "Requests sent to"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:536
+#: src/Admin/SettingsPage.php:535
 msgid ""
 "Leave empty to use the shop e-mail from the Contact tab. Every request is "
 "also kept in Record shop > Customer requests."
 msgstr ""
 
-#: src/Admin/SettingsPage.php:540
+#: src/Admin/SettingsPage.php:539
 msgid "Automatic reservation"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:542
+#: src/Admin/SettingsPage.php:541
 msgid "Mark the copy as reserved as soon as a request arrives"
 msgstr ""
 
-#: src/Admin/SettingsPage.php:543
+#: src/Admin/SettingsPage.php:542
 msgid ""
 "Off by default, so that an unwanted request never blocks your stock: you "
 "reserve from the request screen."

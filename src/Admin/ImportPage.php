@@ -351,13 +351,12 @@ final class ImportPage {
 			<?php submit_button( __( 'Upload and continue', 'wax-store-catalog' ) ); ?>
 		</form>
 		<h2><?php esc_html_e( 'Complete releases with Discogs data', 'wax-store-catalog' ); ?></h2>
-		<p><?php esc_html_e( 'Discogs publishes its whole database every month under the CC0 licence (public domain). The discogs_enrich tool, provided with this plugin, reads this file on your computer and keeps your releases only: genres, styles, year, country, barcode and tracklist. Images are not part of this open data.', 'wax-store-catalog' ); ?></p>
+		<p><?php esc_html_e( 'Discogs publishes its whole database every month under the CC0 licence (public domain). The free discogs_enrich tool, by the authors of this plugin, reads this file on your computer and keeps your releases only: genres, styles, year, country, barcode and tracklist. Images are not part of this open data.', 'wax-store-catalog' ); ?></p>
 		<ol>
 			<li>
 				<?php esc_html_e( 'Download the list of your releases and the tool:', 'wax-store-catalog' ); ?>
 				<a href="<?php echo esc_url( wp_nonce_url( admin_url( 'admin-post.php?action=waxsc_discogs_ids' ), 'waxsc_discogs_ids' ) ); ?>"><?php esc_html_e( 'Discogs IDs of the catalog', 'wax-store-catalog' ); ?></a>,
-				<a href="<?php echo esc_url( plugin_dir_url( PLUGIN_FILE ) . 'tools/discogs_enrich.py' ); ?>" download><?php esc_html_e( 'discogs_enrich tool', 'wax-store-catalog' ); ?></a>
-				(<a href="<?php echo esc_url( plugin_dir_url( PLUGIN_FILE ) . ( 0 === strpos( determine_locale(), 'fr' ) ? 'tools/LISEZMOI.md' : 'tools/README.md' ) ); ?>"><?php esc_html_e( 'instructions', 'wax-store-catalog' ); ?></a>).
+				<a href="https://github.com/ds-web73/discogs-enrich"><?php esc_html_e( 'discogs_enrich tool and instructions (GitHub)', 'wax-store-catalog' ); ?></a>.
 			</li>
 			<li><?php esc_html_e( 'On data.discogs.com, download the latest releases file (discogs_YYYYMMDD_releases.xml.gz, several GB, no need to unzip it).', 'wax-store-catalog' ); ?></li>
 			<li><?php esc_html_e( 'In a terminal: python3 discogs_enrich.py discogs-ids-….csv discogs_…_releases.xml.gz (Python 3 is already installed on Linux and macOS; on Windows, install it from python.org and type py instead of python3).', 'wax-store-catalog' ); ?></li>

@@ -383,6 +383,11 @@ final class Settings {
 	 * @return mixed
 	 */
 	private static function sanitize_field( array $field, $value ) {
+		// Only the opening hours field holds an array; anything else must be a scalar.
+		if ( 'hours' !== $field['type'] && ! is_scalar( $value ) ) {
+			$value = '';
+		}
+
 		switch ( $field['type'] ) {
 			case 'textarea':
 				return sanitize_textarea_field( (string) $value );
@@ -456,6 +461,15 @@ final class Settings {
 	/**
 	 * Catalog options, stored separately because the catalog code reads them directly.
 	 */
+	/**
+	 * A submitted value as a string: arrays and objects become an empty string.
+	 *
+	 * @param mixed $value Raw value.
+	 */
+	private static function scalar( $value ): string {
+		return is_scalar( $value ) ? (string) $value : '';
+	}
+
 	public static function register_catalog_options(): void {
 		register_setting(
 			'waxsc_catalog',
@@ -464,7 +478,8 @@ final class Settings {
 				'type'              => 'string',
 				'default'           => 'EUR',
 				'sanitize_callback' => static function ( $value ) {
-					$value = strtoupper( (string) preg_replace( '/[^A-Za-z]/', '', (string) $value ) );
+					$value = strtoupper( (string) preg_replace( '/[^A-Za-z]/', '', self::scalar( $value ) ) );
+
 					return 3 === strlen( $value ) ? $value : 'EUR';
 				},
 			)
@@ -477,7 +492,7 @@ final class Settings {
 				'type'              => 'string',
 				'default'           => 'goldmine',
 				'sanitize_callback' => static function ( $value ) {
-					return 'free' === $value ? 'free' : 'goldmine';
+					return 'free' === self::scalar( $value ) ? 'free' : 'goldmine';
 				},
 			)
 		);
@@ -489,7 +504,9 @@ final class Settings {
 				'type'              => 'string',
 				'default'           => 'az',
 				'sanitize_callback' => static function ( $value ) {
-					return array_key_exists( (string) $value, \WaxStore\Catalog\Front\CatalogQuery::sort_options() ) ? (string) $value : 'az';
+					$value = sanitize_key( self::scalar( $value ) );
+
+					return array_key_exists( $value, \WaxStore\Catalog\Front\CatalogQuery::sort_options() ) ? $value : 'az';
 				},
 			)
 		);
@@ -501,7 +518,7 @@ final class Settings {
 				'type'              => 'string',
 				'default'           => 'hide',
 				'sanitize_callback' => static function ( $value ) {
-					return 'show' === $value ? 'show' : 'hide';
+					return 'show' === self::scalar( $value ) ? 'show' : 'hide';
 				},
 			)
 		);
@@ -512,7 +529,9 @@ final class Settings {
 			array(
 				'type'              => 'string',
 				'default'           => '',
-				'sanitize_callback' => 'sanitize_email',
+				'sanitize_callback' => static function ( $value ) {
+					return sanitize_email( self::scalar( $value ) );
+				},
 			)
 		);
 
@@ -547,7 +566,9 @@ final class Settings {
 			array(
 				'type'              => 'integer',
 				'default'           => 0,
-				'sanitize_callback' => 'absint',
+				'sanitize_callback' => static function ( $value ) {
+					return absint( self::scalar( $value ) );
+				},
 			)
 		);
 
@@ -559,7 +580,9 @@ final class Settings {
 				'default'           => 'showcase',
 				'sanitize_callback' => static function ( $value ) {
 					$providers = waxsc()->commerce()->get_providers();
-					return isset( $providers[ $value ] ) ? (string) $value : 'showcase';
+					$value     = sanitize_key( self::scalar( $value ) );
+
+					return isset( $providers[ $value ] ) ? $value : 'showcase';
 				},
 			)
 		);
