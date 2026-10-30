@@ -4,11 +4,11 @@ Tags: record store, vinyl, music, catalog, ecommerce
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.30.2
+Stable tag: 0.31.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Record shop catalog for vinyl, CD, cassettes and merchandise, with formats, labels, conditions and structured data.
+Record shop catalog: vinyl, CD and cassettes with graded copies, Discogs import, reservations, stock alerts, labels and optional WooCommerce checkout.
 
 == Description ==
 
@@ -59,7 +59,7 @@ Add the shortcode [waxsc_catalog] (optionally [waxsc_catalog count="8"]): artist
 
 = How do I fill genres, tracklists and barcodes from Discogs? =
 
-Discogs publishes its database every month under the CC0 licence. The discogs_enrich tool, in the tools folder of the plugin, reads this file on your computer (Python 3) and produces a CSV to import in Record shop > Tools > CSV import; the steps are on that screen. With WP-CLI: wp waxsc enrich /path/to/discogs_YYYYMMDD_releases.xml.gz. Images are not part of this open data and are never retrieved.
+Discogs publishes its database every month under the CC0 licence. The free discogs_enrich tool (https://github.com/ds-web73/discogs-enrich) reads this file on your computer (Python 3) and produces a CSV to import in Record shop > Tools > CSV import; the steps are on that screen. With WP-CLI: wp waxsc enrich /path/to/discogs_YYYYMMDD_releases.xml.gz. Images are not part of this open data and are never retrieved.
 
 = Do I need WooCommerce? =
 
@@ -96,6 +96,10 @@ This plugin connects to external services only when you start the Automatic cove
 11. WooCommerce mode: add to cart from the release page, one choice per grading, cart and checkout by WooCommerce.
 
 == Changelog ==
+
+= 0.31.0 =
+* Plugin review: the discogs_enrich tool is no longer bundled; it is available from its own repository, linked from the import screen.
+* Every catalog setting is sanitized as a scalar first (arrays and objects are rejected).
 
 = 0.30.2 =
 * Screenshot caption for the WooCommerce mode.
